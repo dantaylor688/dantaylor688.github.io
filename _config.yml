@@ -3,20 +3,20 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Dan Taylor
+tagline:          no witty tagline
+url:              http://dantaylor688.github.io
 paginate:         1
 baseurl:          http://dantaylor688.github.io/
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Dan Taylor
+  url:            https://twitter.com/dantaylor688
+  email:          dantaylor688@gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/dantaylor688.github.io
   
 pages_list:       
   About: '/about'
