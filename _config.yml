@@ -4,7 +4,7 @@ relative_permalinks: true
 
 # Setup
 title:            Dan Taylor
-#tagline:          no witty tagline
+tagline:          Data Scientist
 url:              http://dantaylor688.github.io
 paginate:         1
 baseurl:          http://dantaylor688.github.io/
