@@ -22,3 +22,6 @@ pages_list:
   About: '/about'
   Archive: '/archive'
   Feed: '/atom.xml'
+
+# MathJax  
+markdown: kramdown
