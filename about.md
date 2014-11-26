@@ -3,28 +3,14 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+My name is Dan. I am currently the lead data analyst at Stratos Inc., a startup in Ann Arbor, MI. Previously, I was a research scientist at [Michigan Aerospace Corp.](http://www.michiganaerospace.com/), where I worked on applying machine learning algorithms and solving inverse problems. I have also been an adjunct lecturer at [Eastern Michigan University](http://www.emich.edu/math/), where I have taught Intermediate Algebra and Calculus I. 
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+This blog was inspired by my reading of [Terrance Tao's blog](http://terrytao.wordpress.com/). I want a place to host a variety of items, including:
 
-There are currently two themes built on Poole:
+* My own research
+* Applications to industry
+* Career advice
+* Expository notes
+* Anything else related to math or data analysis that doesn't fit in these categories
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+I welcome comments as a way for everyone to learn more.
