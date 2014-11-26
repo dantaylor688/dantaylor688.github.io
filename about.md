@@ -9,7 +9,7 @@ where I worked on applying machine learning algorithms and solving inverse probl
 have also been an adjunct lecturer at [Eastern Michigan University](http://www.emich.edu/math/), 
 where I have taught Intermediate Algebra and Calculus I. 
 
-I want a place to host a variety of items, including:
+This site is a place to host a variety of items, including:
 
 * My own research
 * Applications to industry
