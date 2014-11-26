@@ -11,6 +11,7 @@ This blog was inspired by my reading of [Terrance Tao's blog](http://terrytao.wo
 * Applications to industry
 * Career advice
 * Expository notes
+* Math education
 * Anything else related to math or data analysis that doesn't fit in these categories
 
 I welcome comments as a way for everyone to learn more.
