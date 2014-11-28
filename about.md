@@ -19,4 +19,5 @@ This site is a place to host a variety of items, including:
 * Math education
 * Anything else related to math or data analysis that doesn't fit in these categories
 
-I welcome comments as a way for everyone to learn more.
+I welcome comments as a way for everyone to learn more. To write equations, surround your code in 
+double dollar signs (i.e. `$$ a^2 + b^2 = c^2$$` is rendered $$a^2+b^2=c^2$$)

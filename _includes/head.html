@@ -27,5 +27,12 @@
   <!-- MathJax -->
   <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    function typeset() {
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+    function disqus_config() {
+      this.callbacks.onNewComment = [typeset];
+      this.callbacks.onInit = [typeset];
+    }
   </script>
 </head>
