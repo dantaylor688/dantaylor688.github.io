@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I am currently the data analyst at Stratos Inc., a startup in Ann Arbor, MI. Previously, 
+I am currently the data analyst at [Stratos Inc.](https://stratoscard.com/), a startup in Ann Arbor, MI. Previously, 
 I was a research scientist at [Michigan Aerospace Corp.](http://www.michiganaerospace.com/), 
 where I worked on applying machine learning algorithms and solving inverse problems. I 
 have also been an adjunct lecturer at [Eastern Michigan University](http://www.emich.edu/math/), 
