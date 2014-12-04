@@ -8,7 +8,7 @@ We have a sparse vector in \\(L^2\\):
 We also have a set of equations (just one equation since we are only working in two dimensions).
 ![plane]({{ site.url }}/assets/L1-fig1.png "Vector on the y-axis with Ax=b")
 If we look at the \\(L^2\\) ball we can more easily see the point on the line that has minimum 
-\\(L2\\)-norm. This point is the one closest to the circle.
+\\(L^2\\)-norm. This point is the one closest to the circle.
 ![plane]({{ site.url }}/assets/L1-fig2.png "L2 ball")
 You can see there is a bit of a discrepency between the goal vector \\(\vec x\\) and the vector with 
 minimum \\(L^2\\)-norm. Though the vectors look close, the difference is substantial when we start 
