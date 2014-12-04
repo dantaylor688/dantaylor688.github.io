@@ -6,8 +6,15 @@ comments: true
 The problem of finding a sparse vector solution to an underdetermined system:
 \\[\min \|\|x\|\|_1 \text{ s.t. } Ax = f\\]
 is known as the Basis Pursuit problem. This is also what is used in the extremely popular field of
-compressive sensing. Here \\(A\\) is an \\(m \times n\\) matrix with \\(m \lt n\\) (and usually \\(m \lt\lt n\\)). 
-When we say that the vector \\(x\\) is sparse, we mean it has few non-zero entries.
+compressive sensing. Here \\(A\\) is an \\(m \times n\\) matrix with \\(m \lt n\\) (and usually \\(m \ll n\\)). 
+When we say that the vector \\(x\\) is sparse, we mean it has few non-zero entries. 
+
+In [this paper](http://arxiv.org/abs/math.CA/0410542), [Terrance Tao](http://terrytao.wordpress.com/) and Emmanuel Candes proved that it is possible to achieve
+near optimal recovery (accurate to within a given \(\varepsilon\)) using "very few" measurements (i.e. equations = rows in \(A\)).
+
+I recently watched the [plenary lecture](https://www.youtube.com/watch?v=W-b4aDGsbJk) Candes gave at The International Congress of Mathematicians.
+The talk was fascinating and I found it much simpler to understand than the first time I heard him speak when he came to town a few years ago; 
+I recommend listening to it in its entirety. In his lecture, he provided the following simple explanation of why \(L^1\) optimization works.
 
 We have a sparse vector in \\(L^2\\):
 ![plane]({{ site.url }}/assets/L1-fig0.png "Vector on the y-axis")
@@ -28,6 +35,11 @@ we notice that we get exact recovery (we get precisely the target vector \\(\vec
 vector on the line with minimum \\(L^1\\)-norm.
 ![plane]({{ site.url }}/assets/L1-fig5.png "Exact recovery")
 
-There is more to say about incoherence and taking a few extra samples to prevent trouble when we are in a less friendly situation.
+There is more to say about incoherence and taking a few extra samples to prevent trouble when we are in a less friendly situation, 
+but I won't include that here.
+
+My work on this problem has revolved around [Bregman Iteration](ftp://ftp.math.ucla.edu/pub/camreport/cam07-37.pdf) 
+and the faster [Split Bregman Iteration](ftp://ftp.math.ucla.edu/pub/camreport/cam08-29.pdf) developed by Yin et. al and 
+Goldstein and Osher respectively. Specifically, I've looked at using their algorithm in the case when our vector \(x \in \mathbb C\).
  
 
