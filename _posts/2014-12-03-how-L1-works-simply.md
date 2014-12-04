@@ -15,7 +15,7 @@ minimum \\(L^2\\)-norm. Though the vectors look close, the difference is substan
 working in higher dimensions. This phenomenon is known as the curse of dimensionality. The best explanation
 I have come across is found near the beginning of [this paper](http://www-users.cs.umn.edu/~kumar/papers/siam_hd_snn_cluster.pdf).
 
-Now, if we look at the $L1$ ball:
+Now, if we look at the \\(L^1\\) ball:
 ![plane]({{ site.url }}/assets/L1-fig4.png "L1 ball")
 
 we notice that we get exact recovery (we get precisely the target vector \\(\vec x\\) when we take the 
