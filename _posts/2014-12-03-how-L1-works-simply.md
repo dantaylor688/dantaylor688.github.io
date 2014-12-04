@@ -4,7 +4,7 @@ title: Why L1 Works, Simply
 comments: true
 ---
 The problem of finding a sparse vector solution to an underdetermined system:
-\\[\min \|\|x\|\|_1 s.t. Ax = f\\]
+\\[\min \|\|x\|\|_1 \text{ s.t. } Ax = f\\]
 is known as the Basis Pursuit problem. This is also what is used in the extremely popular field of
 compressive sensing. Here \\(A\\) is an \\(m \times n\\) matrix with \\(m \lt n\\) (and usually \\(m \lt\lt n\\)). 
 When we say that the vector \\(x\\) is sparse, we mean it has few non-zero entries.
