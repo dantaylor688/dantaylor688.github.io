@@ -4,7 +4,7 @@
  <title>Dan Taylor</title>
  <link href="http://dantaylor688.github.ioatom.xml" rel="self"/>
  <link href="http://dantaylor688.github.io"/>
- <updated>2014-12-04T20:55:26-05:00</updated>
+ <updated>2014-12-04T21:00:18-05:00</updated>
  <id>http://dantaylor688.github.io</id>
  <author>
    <name>Dan Taylor</name>
@@ -30,7 +30,7 @@ near optimal recovery (accurate to within a given \( \epsilon \) ) using “very
 The talk was fascinating and I found it much simpler to understand than the first time I heard him speak when he came to town a few years ago; 
 I recommend listening to it in its entirety. In his lecture, he provided the following simple explanation of why \(L^1\) optimization works.&lt;/p&gt;
 
-&lt;p&gt;We have a sparse vector in \(L^2\):
+&lt;p&gt;We have a sparse vector, \(\vec x\) in \(L^2\):
 &lt;img src=&quot;http://dantaylor688.github.io/assets/why-L1/L1-fig0.png&quot; alt=&quot;plane&quot; title=&quot;Vector on the y-axis&quot; /&gt;
 We also have a set of equations (just one equation since we are only working in two dimensions).
 &lt;img src=&quot;http://dantaylor688.github.io/assets/why-L1/L1-fig1.png&quot; alt=&quot;plane&quot; title=&quot;Vector on the y-axis with Ax=b&quot; /&gt;
@@ -45,7 +45,7 @@ of the problem with distance functions in high dimensions is found near the begi
 &lt;p&gt;Now, if we look at the \(L^1\) ball:
 &lt;img src=&quot;http://dantaylor688.github.io/assets/why-L1/L1-fig4.png&quot; alt=&quot;plane&quot; title=&quot;L1 ball&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;we notice that we get exact recovery (we get precisely the target vector \(\vec x\) when we take the 
+&lt;p&gt;we notice that we get exact recovery (we get precisely the target vector \(\vec x\)) when we take the 
 vector on the line with minimum \(L^1\)-norm.
 &lt;img src=&quot;http://dantaylor688.github.io/assets/why-L1/L1-fig5.png&quot; alt=&quot;plane&quot; title=&quot;Exact recovery&quot; /&gt;&lt;/p&gt;
 

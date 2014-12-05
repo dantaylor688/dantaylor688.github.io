@@ -16,7 +16,7 @@ I recently watched the [plenary lecture](https://www.youtube.com/watch?v=W-b4aDG
 The talk was fascinating and I found it much simpler to understand than the first time I heard him speak when he came to town a few years ago; 
 I recommend listening to it in its entirety. In his lecture, he provided the following simple explanation of why \\(L^1\\) optimization works.
 
-We have a sparse vector in \\(L^2\\):
+We have a sparse vector, \\(\vec x\\) in \\(L^2\\):
 ![plane]({{ site.url }}/assets/why-L1/L1-fig0.png "Vector on the y-axis")
 We also have a set of equations (just one equation since we are only working in two dimensions).
 ![plane]({{ site.url }}/assets/why-L1/L1-fig1.png "Vector on the y-axis with Ax=b")
@@ -31,7 +31,7 @@ of the problem with distance functions in high dimensions is found near the begi
 Now, if we look at the \\(L^1\\) ball:
 ![plane]({{ site.url }}/assets/why-L1/L1-fig4.png "L1 ball")
 
-we notice that we get exact recovery (we get precisely the target vector \\(\vec x\\) when we take the 
+we notice that we get exact recovery (we get precisely the target vector \\(\vec x\\)) when we take the 
 vector on the line with minimum \\(L^1\\)-norm.
 ![plane]({{ site.url }}/assets/why-L1/L1-fig5.png "Exact recovery")
 
