@@ -24,4 +24,4 @@ pages_list:
   Feed: '/atom.xml'
 
 # MathJax  
-# markdown: kramdown
+markdown: kramdown
