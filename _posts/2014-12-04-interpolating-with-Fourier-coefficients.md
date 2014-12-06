@@ -7,7 +7,6 @@ It is often convenient to choose to work with a Fourier basis when modeling your
 If we write the Discrete Fourier Transform (DFT) as 
 
 \\[F_k = \sum_{n=0}^{N-1} f_n exp{-2 \pi i k \frac{n,N}}\\]
-\\[\min \|\|x\|\|_1 \text{ s.t. } Ax = f\\]
 
 for \\(k = 1 \ldots N\\). Then we can get our original function back using the inverse DFT formula. 
 \\[f_n = \frac{1,N} \sum_{k=0}^{N-1} F_k exp{2 \pi i k \frac{n,N}}\\]
