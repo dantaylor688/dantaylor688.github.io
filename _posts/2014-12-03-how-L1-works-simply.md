@@ -5,6 +5,7 @@ comments: true
 ---
 The problem of finding a sparse vector solution to an underdetermined system:
 \\[\min \|\|x\|\|_1 \text{ s.t. } Ax = f\\]
+\\[F_k = \sum_{n=0}^{N-1} f_n exp{-2 \pi i k \frac{n,N}}\\]
 is known as the Basis Pursuit problem. This is also what is used in the extremely popular field of
 compressive sensing. Here \\(A\\) is an \\(m \times n\\) matrix with \\(m \lt n\\) (and usually \\(m \ll n\\)). 
 When we say that the vector \\(x\\) is sparse, we mean it has few non-zero entries. 
