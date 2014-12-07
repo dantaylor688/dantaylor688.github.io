@@ -13,9 +13,9 @@ for $k = 1 \ldots N$. Then we can get our original function back using the inver
 
 However this formula doesn't allow us to interpolate our model between the timestamps of our measurements, \\(t_n = \frac{n}{N}\\) for \\(n = 0, \ldots , N-1\\).
 
-So the question is, using the given $F_k$'s which we may have computed using a simple call to [Numpy's fft function](http://docs.scipy.org/doc/numpy/reference/routines.fft.html), say, 
+So the question is, using the given \\(F_k\\)'s which we may have computed using a simple call to [Numpy's fft function](http://docs.scipy.org/doc/numpy/reference/routines.fft.html), say, 
 how can we estimate \\(f(t)\\) where \\(t_0 \lt t \lt t_{N-1}\\)?
 
 The solution is to use negative frequencies instead of the higher frequencies.
 
-\\[f_n = \frac{1}{N} \left[  \sum_{k=0}^{N/2-1} {F_k e^{2 \pi i k t}} +  \sum_{k= N/2 }^{ N-1 } {F_k e^{-2 \pi i (N-k) t}} \right]\\].
+\\[f_n = \frac{1}{N} \left[  \sum_{k=0}^{N/2-1} {F_k e^{2 \pi i k t}} \\].
