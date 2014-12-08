@@ -18,5 +18,5 @@ how can we estimate \\(f(t)\\) where \\(t_0 \lt t \lt t_{N-1}\\)?
 
 The solution is to use negative frequencies instead of the higher frequencies.
 
-\\[ f_n = \sum_{k= N/2 }^{ N-1 } F_k e^{-2 \pi i (N-k) t} \right] \\] 
+\\[ f_n = \sum_{k= N/2 }^{ N-1 } F_k e^{-2 \pi i (N-k) t} \\] 
 
