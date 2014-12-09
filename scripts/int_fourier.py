@@ -79,7 +79,7 @@ if __name__ == "__main__":
     # now interpolate
     # new timestamps, m samples between former samples. 
     Nf = len(ts)
-    m = 2
+    m = 3
     t = linspace(0,2,num=m*Nf)
     
     Fs = my_slow_fft(f)
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     figure(4)
     plot(ts,Fs.real,ts,Fs.imag)
     legend(('real', 'imaginary'))
-    title("(My) Unshifted Fourier Transform")
+    title("My Unshifted Fourier Transform")
     
     figure(5)
     plot(ts,fm)
