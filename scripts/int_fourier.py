@@ -2,6 +2,8 @@ from numpy import *
 from scipy import *
 from pylab import *
 
+import numpy.random as random
+
 import pdb
 
 ion()
@@ -23,7 +25,7 @@ def my_slow_ifft_interp(F,t):
     f = zeros(len(t), dtype=complex)
     for n in range(len(t)):
         for k in range(N):
-            f[n] += F[k]*e**(2*pi*i*k*t[n])
+            f[n] += F[k]*e**(2.0*pi*i*k*t[n])
     return (1.0/N)*f
     
 def my_slow_ifft(F):
@@ -32,7 +34,7 @@ def my_slow_ifft(F):
     f = zeros(N, dtype=complex)
     for n in range(N):
         for k in range(N):
-            f[n] += F[k]*e**(2*pi*i*k*n/N)
+            f[n] += F[k]*e**(2.0*pi*i*k*n/N)
     return (1.0/N)*f
     
 def my_correct_slow_ifft_interp(F,t):
@@ -40,23 +42,21 @@ def my_correct_slow_ifft_interp(F,t):
     N = len(F)
     f = zeros(len(t), dtype=complex)
     for n in range(len(t)):
-        for k in range(N):
-            if k < N/2:
-                f[n] += F[k]*e**(2*pi*i*k*t[n])
-                print "k in first condition: ",k
-            else:
-                f[n] += F[k]*e**(-2*pi*i*(N-k)*t[n])
-                print "k in second condition: ",k
+        for k in range(N/2):
+            f[n] += F[k]*e**(2.0*pi*i*k*t[n])
+        for k in range(N/2,N):
+            f[n] += F[k]*e**(-2.0*pi*i*(N-k)*t[n])
     return (1.0/N)*f
     
 if __name__ == "__main__":
     # Sample measurements
-    ts = linspace(0,2,num=21)
+    ts = linspace(0,1,num=21)
     f = zeros(len(ts))
     f[0:len(ts)/2] = ts[0:len(ts)/2]
-    f[len(ts)/2:] = e**-ts[len(ts)/2:] + (1.0-1/e)
+    f[len(ts)/2:] = e**-ts[len(ts)/2:] + 0.5 - e**-0.5
     
     F = fftshift(fft(f))
+    F_unshifted = fft(f)
     ff = fftshift(ifftshift(f))
     
     # plot where we are so far
@@ -79,15 +79,15 @@ if __name__ == "__main__":
     # now interpolate
     # new timestamps, m samples between former samples. 
     Nf = len(ts)
-    m = 3
-    t = linspace(0,2,num=m*Nf)
+    
+    t = linspace(0,1,num=42)
     
     Fs = my_slow_fft(f)
     fm = my_slow_ifft(Fs)
     
-    # using the Fourier Coefficients "as-is"
-    fwi = my_slow_ifft_interp(Fs,t)
-    fci = my_correct_slow_ifft_interp(Fs,t)
+    # using the Fourier Coefficients "sas-is"
+    fwi = my_slow_ifft_interp(F_unshifted,t)
+    fci = my_correct_slow_ifft_interp(F_unshifted,t)
     
     figure(4)
     plot(ts,Fs.real,ts,Fs.imag)
