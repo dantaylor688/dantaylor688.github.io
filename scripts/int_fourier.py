@@ -55,6 +55,7 @@ if __name__ == "__main__":
     f[0:len(ts)/2] = ts[0:len(ts)/2]
     # f[len(ts)/2:] = e**-ts[len(ts)/2:] + 0.5 - e**-0.5
     f[len(ts)/2:] = 1.0/ts[len(ts)/2:] - 1.5
+#     f = ts*(ts-1)
     
     F = fftshift(fft(f))
     F_unshifted = fft(f)
@@ -86,7 +87,7 @@ if __name__ == "__main__":
     # new timestamps, m samples between former samples. 
     Nf = len(ts)
     
-    t = linspace(0,1,num=42)
+    t = linspace(0,1,num=len(ts)*2)
     
     Fs = my_slow_fft(f)
     fm = my_slow_ifft(Fs)
@@ -101,7 +102,8 @@ if __name__ == "__main__":
     title("My Unshifted Fourier Transform")
 
     figure(5)
-    plot(ts,fm)
+    plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
+    plot(ts,fm,'g^-',markerfacecolor='none', mec='green')
     ylim(-0.6,0.6)
     title("Original Using My Inverse")
     
@@ -114,7 +116,7 @@ if __name__ == "__main__":
     
     figure(7)
     plot(ts,f,'bo-',markerfacecolor='none', mec='blue')
-    plot(t,fci,'go-',markerfacecolor='none', mec='green')
+    plot(t,fci,'g^-',markerfacecolor='none', mec='green')
     ylim(-0.6,0.6)
     legend(('original', 'interpolatation'))
     title("Interpolating with Fourier Coefficients Accounting for Aliasing")
