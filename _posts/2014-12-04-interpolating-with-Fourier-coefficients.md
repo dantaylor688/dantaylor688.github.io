@@ -29,7 +29,7 @@ Whose Fourier Transform looks like
 
 Note, this is the unshifted [FFT](http://docs.scipy.org/doc/numpy/reference/generated/numpy.fft.fft.html#numpy.fft.fft), so the DC-term, or the coefficient corresponding to frequency zero, is at the beginning.
 
-If we use formula (1) to estimate \\(f_n(t)\\) for values of \\(t\\) in between our original samples we see the following plot:
+If we use formula (2), with the \\(F_k\\)'s in the above plot, to estimate \\(f_n(t)\\) for values of \\(t\\) in between our original samples we get the resulting plot:
 
 ![plane]({{ site.url }}/assets/fourier-interp/interp-with-aliasing.png "Bad Fit")
 
@@ -38,9 +38,12 @@ how can we estimate \\(f(t)\\) where \\(t_0 \lt t \lt t_{N-1}\\)?
 
 The problem is a result of aliasing. The DFT has period \\(N\\)
 
-$$ F_{k+N} = \sum_{n=0}^{N-1} f_n e^{-2 \pi i (k+N) \frac{n}{N}} = \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} e^{-2 \pi i n} =  \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} = F_k$$
+$$\begin{eqnarray}
+F_{k+N} &=& \sum_{n=0}^{N-1} f_n e^{-2 \pi i (k+N) \frac{n}{N}} \\
+&=& \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} e^{-2 \pi i n} \\
+&=&  \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} = F_k$$
 
-So the second half of the coefficients, \\(F_{N/2}, F_{N/2 + 1}, \ldots , F_{N-1}\\) correspond to the negative frequencies, \\( -N/2, -N/2 + 1, \ldots , -1\\). The solution then to our problem is to use the negative frequencies instead of the higher frequencies.
+So the second half of the coefficients, $F_{N/2}, F_{N/2 + 1}, \ldots , F_{N-1}$ correspond to the negative frequencies, \\( -N/2, -N/2 + 1, \ldots , -1\\). The solution then to our problem is to use the negative frequencies instead of the higher frequencies.
 
 $$f_n =\frac{1}{N}\left[ \sum_{k=0}^{N/2-1} F_k e^{2 \pi i k t} + \sum_{k= N/2 }^{ N-1 } F_k e^{-2 \pi i (N-k) t} \right]$$ 
 
