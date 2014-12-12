@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # plot where we are so far
     # this includes F^-1{F(f)} for now
     figure(1)
-    plot(ts,f)
+    plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
     ylim(-0.6,0.6)
     title("Original Function")
     
