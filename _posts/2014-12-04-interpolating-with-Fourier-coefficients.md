@@ -50,3 +50,5 @@ $$f_n =\frac{1}{N}\left[ \sum_{k=0}^{N/2-1} F_k e^{2 \pi i k t} + \sum_{k= N/2 }
 ![plane]({{ site.url }}/assets/fourier-interp/interp-correct.png "Good Fit")
 
 Note that using this formula depends upon the timestamps of the samples being scaled to be between 0 and 1.
+
+You can see the code that generated these plots [here](https://github.com/dantaylor688/dantaylor688.github.io/blob/master/scripts/int_fourier.py).
