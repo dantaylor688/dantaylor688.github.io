@@ -41,7 +41,7 @@ The problem is a result of aliasing. The DFT has period \\(N\\)
 $$\begin{eqnarray}
 F_{k+N} &=& \sum_{n=0}^{N-1} f_n e^{-2 \pi i (k+N) \frac{n}{N}} \\
 &=& \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} e^{-2 \pi i n} \\
-&=&  \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} = F_k$$
+&=&  \sum_{n=0}^{N-1} f_n e^{-2 \pi i k \frac{n}{N}} = F_k \end{eqnarray}$$
 
 So the second half of the coefficients, $F_{N/2}, F_{N/2 + 1}, \ldots , F_{N-1}$ correspond to the negative frequencies, \\( -N/2, -N/2 + 1, \ldots , -1\\). The solution then to our problem is to use the negative frequencies instead of the higher frequencies.
 
