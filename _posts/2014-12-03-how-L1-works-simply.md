@@ -25,7 +25,7 @@ If we look at the \\(L^2\\) ball we can more easily see the point on the line th
 ![plane]({{ site.url }}/assets/why-L1/L1-fig2.png "L2 ball")
 You can see there is a bit of a discrepency between the goal vector \\(\vec x\\) and the vector with 
 minimum \\(L^2\\)-norm. Though the vectors look close, the difference is substantial when we start 
-working in higher dimensions. This phenomenon is known as the curse of dimensionality. A good explanation
+working in higher dimensions. A good explanation
 of the problem with distance functions in high dimensions is found near the beginning of [this paper](http://www-users.cs.umn.edu/~kumar/papers/siam_hd_snn_cluster.pdf).
 
 Now, if we look at the \\(L^1\\) ball:
