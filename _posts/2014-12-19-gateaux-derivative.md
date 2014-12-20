@@ -37,9 +37,9 @@ For the remainder of this post, we will assume **all of our vectors are real**. 
 
 The last piece we need before we are ready to begin our derivation is the G&acirc;teaux derivative of the inner product of two real-valued functions \\(f\\) and \\(g\\). To this end, observe that 
 
-$$\frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f,g \right> \right]$$
+$$\frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f(x),g(x) \right> \right]$$
 
-$$ = \frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f(x+ \varepsilon u),g(x) \right> + \left< f(x+ \varepsilon u),g(x) \right>- \left< f,g \right> \right]$$
+$$ = \frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f(x+ \varepsilon u),g(x) \right> + \left< f(x+ \varepsilon u),g(x) \right>- \left< f(x),g(x) \right> \right]$$
 
 $$= \frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) -g(x)\right> + \left< f(x+ \varepsilon u) - f(x),g(x) \right> \right]$$
 
