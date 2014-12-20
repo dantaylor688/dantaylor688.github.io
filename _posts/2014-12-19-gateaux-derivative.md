@@ -38,8 +38,11 @@ For the remainder of this post, we will assume **all of our vectors are real**. 
 The last piece we need before we are ready to begin our derivation is the G&acirc;teaux derivative of the inner product of two real-valued functions \\(f\\) and \\(g\\). To this end, observe that 
 
 $$\frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f,g \right> \right]$$
+
 $$ = \frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f(x+ \varepsilon u),g(x) \right> + \left< f(x+ \varepsilon u),g(x) \right>- \left< f,g \right> \right]$$
+
 $$= \frac{1}{\varepsilon} \left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) -g(x)\right> + \left< f(x+ \varepsilon u) - f(x),g(x) \right> \right]$$
+
 $$= \left<f(x+ \varepsilon u), \frac{g(x+ \varepsilon u) -g(x)}{\varepsilon}\right> + \left<  \frac{f(x+ \varepsilon u) - f(x)}{\varepsilon},g(x) \right>.$$
 
 Taking $\varepsilon \to 0$ we arrive at the formula analogous to the product rule you learn in your first semester calculus course:
@@ -56,7 +59,7 @@ J(x) &= \frac{1}{2} \left\|\left\| Ax - b\right\|\right\|^2 \\
 We want to minimize \\(J\\). This happens when \\(D_uJ = 0\\).
 
 $$\begin{align*}
-D\_uJ &= \frac{1}{2} D\_u \left< Ax - b,Ax-b \right> \\
+D_u J &= \frac{1}{2} D\_u \left< Ax - b,Ax-b \right> \\
 &= \frac{1}{2} \left[ \left< Ax-b,D\_{u} \left(Ax-b\right) \right> + \left< D\_{u}\left(Ax-b\right),Ax-b \right>\right]\\
 &= \frac{1}{2} \left[ \left< Ax-b,\frac{d}{d \varepsilon} \left. \left(A(x + \varepsilon u)-b\right)\right|_{\varepsilon = 0} \right> + \left< \frac{d}{d \varepsilon} \left.\left(A(x + \varepsilon u)-b\right)\right|_{\varepsilon = 0},Ax-b \right>\right]\\
 &= \frac{1}{2} \left[ \left< Ax-b,Au \right> + \left< Au,Ax-b \right>\right]\\
