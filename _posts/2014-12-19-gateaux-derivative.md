@@ -31,7 +31,7 @@ that satisfies the following properties for all \\(x,y,z \in V\\) and \\(\alpha 
 
 Additionally, the inner product of a vector \\(x \\) with itself is the squared norm of \\(x\\):
 
-\\[ \left\| \left\| x\right\|\right\| = \left< x,x \right>.\\]
+\\[ \left\lVert x\right\rVert^2 = \left< x,x \right>.\\]
 
 For the remainder of this post, we will assume **all of our vectors are real**. With this assumption, we get that the inner product is linear in both arguments.
 
@@ -52,7 +52,7 @@ Taking $\varepsilon \to 0$ we arrive at the formula analogous to the product rul
 Now we are ready to tackle the problem at hand: find the least-square solution to the overdetermined system of equations \\(Ax=b\\). Consider the functional
 
 $$\begin{align*}
-J(x) &= \frac{1}{2} \left\|\left\| Ax - b\right\|\right\|^2 \\
+J(x) &= \frac{1}{2} \left\lVert Ax - b\right\rVert^2 \\
 &= \frac{1}{2} \left<Ax - b,Ax-b\right> 
 \end{align*}$$
 
