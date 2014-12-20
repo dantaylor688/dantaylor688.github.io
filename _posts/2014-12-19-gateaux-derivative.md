@@ -59,8 +59,8 @@ J(x) &= \frac{1}{2} \left\lVert Ax - b\right\rVert^2 \\
 We want to minimize \\(J\\). This happens when \\(D_uJ = 0\\).
 
 $$\begin{align*}
-D_u J &= \frac{1}{2} D\_u \left< Ax - b,Ax-b \right> \\
-&= \frac{1}{2} \left[ \left< Ax-b,D\_{u} \left(Ax-b\right) \right> + \left< D\_{u}\left(Ax-b\right),Ax-b \right>\right]\\
+D_u J &= \frac{1}{2} D_u \left< Ax - b,Ax-b \right> \\
+&= \frac{1}{2} \left[ \left< Ax-b,D_{u} \left(Ax-b\right) \right> + \left< D_{u}\left(Ax-b\right),Ax-b \right>\right]\\
 &= \frac{1}{2} \left[ \left< Ax-b,\frac{d}{d \varepsilon} \left. \left(A(x + \varepsilon u)-b\right)\right|_{\varepsilon = 0} \right> + \left< \frac{d}{d \varepsilon} \left.\left(A(x + \varepsilon u)-b\right)\right|_{\varepsilon = 0},Ax-b \right>\right]\\
 &= \frac{1}{2} \left[ \left< Ax-b,Au \right> + \left< Au,Ax-b \right>\right]\\
 &= \left< Ax-b,Au \right>\\
@@ -77,7 +77,9 @@ and note that this equation holds for all \\(u\\), therefore
 or
 \\[A^TAx=A^Tb,\\]
 
-which is the formula we are familiar with.
+which is the formula we are familiar with. Of course, since \\(A^T A\\) is invertible,
+
+\\[x = \left( A^T A\right)^{-1} A^T b.\\]
 
 
 
