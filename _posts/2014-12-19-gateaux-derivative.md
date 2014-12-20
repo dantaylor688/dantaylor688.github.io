@@ -22,7 +22,7 @@ that satisfies the following properties for all \\(x,y,z \in V\\) and \\(\alpha 
 	\\[\left< x,y \right> = \overline{\left< y,x \right>} \\]
 	
 +	Linearity in the first argument
-	+	\\[\left< \alpha x,y \right> = \alpha \left< y,x \right>\\]
+	+	\\[\left< \alpha x,y \right> = \alpha \left< x,y \right>\\]
 	+	\\[\left< x,z \right> +  \left< y,z \right> = \left< x+y,z \right>\\]
 
 +	Positive-definiteness
