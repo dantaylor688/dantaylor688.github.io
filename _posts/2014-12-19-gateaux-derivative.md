@@ -5,7 +5,7 @@ comments: true
 ---
 Here is a small set of notes demonstrating how to use the G&acirc;teaux derivative. For the sake of this brief exposition, we will go through a derivation of the least squares method for solving an overdetermined set of equations \\(Ax=b\\); that is, \\(A\\) is an \\(m \times n\\) matrix with \\(m \gt n\\).
 
-The G&acirc;teaux derivative of a function, \\(f\\), denoted, \\(D_u(f)\\) is defined by the limit
+The G&acirc;teaux derivative of a function, \\(f\\), denoted \\(D_u(f)\\) is defined by the limit
 
 $$\begin{align*}
 D_u(f) &= \lim_{\varepsilon \to 0} \frac{f(x + \varepsilon u) - f(x)}{\varepsilon} \\
