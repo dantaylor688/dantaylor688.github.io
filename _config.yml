@@ -6,7 +6,7 @@ relative_permalinks: true
 title:            Dan Taylor
 tagline:          Math. Data Science. Exposition.
 url:              http://dantaylor688.github.io
-paginate:         3
+paginate:         1
 baseurl:          http://dantaylor688.github.io/
 author:
   name:           Dan Taylor
