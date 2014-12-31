@@ -11,16 +11,16 @@ $$f(x + t) = f(x) + tf'(x) + \frac{t^2}{2}f''(x) + \frac{t^3}{6}f'''(x) + \cdots
 
 Now, if we multiply the above expression by \\(t\\) and integrate we get the following
 
-\\[\begin{equation} \label{ri}
+\\[\begin{equation}
 \int_{-\varepsilon}^{\varepsilon}tf(x + t)  \, dt = \frac{2 \varepsilon^3}{3}f'(x) + \frac{\varepsilon^5}{15}f'''(x) + \cdots 
 \end{equation}\\]
 
-It is easy to see now that if we solve \\(\ref{ri}\\) for \\(f'(x)\\) (while ignoring higher order derivatives) we get the approximation
+It is easy to see now that if we solve (1) for \\(f'(x)\\) (while ignoring higher order derivatives) we get the approximation
 
-\\[\begin{equation}\label{rr}
+\\[\begin{equation}
 f'(x) = \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~ dt. 
 \end{equation}\\]
 
-The approximation holds as long as \\(\varepsilon\\) is small. Since \\(\varepsilon\\) is in the limits of integration in \\(\eqref{ri}\\); \\(\varepsilon\\) being small corresponds to having samples of our function densely packed together. Indeed, the error in the approximation is \\(\sim \varepsilon^2\\), so when our samples are very close together (\\(\Delta x \ll 1 \\)) the error becomes very small.
+The approximation holds as long as \\(\varepsilon\\) is small. Since \\(\varepsilon\\) is in the limits of integration in (1); \\(\varepsilon\\) being small corresponds to having samples of our function densely packed together. Indeed, the error in the approximation is \\(\sim \varepsilon^2\\), so when our samples are very close together (\\(\Delta x \ll 1 \\)) the error becomes very small.
 
-The formula \\(\eqref{rr}\\) is attributed to [Cornelius Lanczos](http://en.wikipedia.org/wiki/Cornelius_Lanczos). His work, [Applied Analysis](http://www.amazon.com/Applied-Analysis-Dover-Books-Mathematics/dp/048665656X) is a surprisingly delightful read. It seems Lanczos had several results that were not fully appreciated at the time, including his work on an [FFT algorithm](http://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#cite_ref-7) over 20 years before Cooley and Tukey.
+The formula (2) is attributed to [Cornelius Lanczos](http://en.wikipedia.org/wiki/Cornelius_Lanczos). His work, [Applied Analysis](http://www.amazon.com/Applied-Analysis-Dover-Books-Mathematics/dp/048665656X) is a surprisingly delightful read. It seems Lanczos had several results that were not fully appreciated at the time, including his work on an [FFT algorithm](http://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#cite_ref-7) over 20 years before Cooley and Tukey.
