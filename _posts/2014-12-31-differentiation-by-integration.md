@@ -12,7 +12,7 @@ $$f(x + t) = f(x) + tf'(x) + \frac{t^2}{2}f''(x) + \frac{t^3}{6}f'''(x) + \cdots
 Now, if we multiply the above expression by \\(t\\) and integrate we get the following
 
 \\[\begin{equation}
-\int_{-\varepsilon}^{\varepsilon}tf(x + t)  \, dt = \frac{2 \varepsilon^3}{3}f'(x) + \frac{\varepsilon^5}{15}f'''(x) + \cdots 
+\int_{-\varepsilon}^{\varepsilon}tf(x + t)  \, dt = \frac{2 \varepsilon^3}{3}f'(x) + \frac{\varepsilon^5}{15}f''' (x) + \cdots 
 \end{equation}\\]
 
 It is easy to see now that if we solve (1) for \\(f'(x)\\) (while ignoring higher order derivatives) we get the approximation
