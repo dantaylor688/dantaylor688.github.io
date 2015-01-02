@@ -46,9 +46,9 @@ $$\begin{equation}
 
 The same process with (c) yields
 
-\\[\begin{equation*}
+$$\begin{equation}
 10a + 5c - \sum\_{k=-2}^2y_k = 0\tag{c1}
-\end{equation*}\\]
+\end{equation}$$
 
 We first care about the value at \\(x=0\\) (our data point), the theoretical value of which is given to us by our model (1): \\(y=c\\). So we solve the system of equations (a1) and (c1) for \\(c\\).
 
@@ -65,7 +65,9 @@ so that
 
 The final expression in parentheses is the fourth difference at \\(y_0\\). If we denote this by \\(\delta^4y_0\\) we get a succinct formula for our smoothed value
 
-\\[c = y_0 - \frac{3}{35} \delta^4y_0.\\]
+$$\begin{equation}
+c = y_0 - \frac{3}{35} \delta^4y_0.
+\end{equation}$$
 
 It's using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
 
