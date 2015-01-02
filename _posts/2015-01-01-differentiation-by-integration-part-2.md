@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Differentiation by Integration part II
+title: Differentiation by Integration Part II
 comments: true
 ---
 *This post is an attempt to further motivate, and expand upon the content of my [previous post]({% post_url 2014-12-31-differentiation-by-integration %}).*
@@ -15,7 +15,7 @@ y = ax^2 +bx + c
 
 centered on the point using the \\(k=2\\) closest neighbors to the left and to its right. In all, we are fitting a parabola to five points. Since this cannot be done perfectly in general we need to use the principle of [least squares]({% post_url 2014-12-19-gateaux-derivative %}). We need to minimize
 
-$$ \begin{align}
+$$\begin{align}
 \lVert y - y_k\rVert_2^2 &= \sum_{k=-2}^{2}(y-y_k)^2\\
 &= \sum_{k=-2}^{2}(a x_k^2 + bx_k + c -y_k)^2.\tag{2}
 \end{align}$$
@@ -24,7 +24,7 @@ over \\(a,b,\\) and \\(c\\). Just to clarify, we will only be looking at \\(x\_k
 
 When we minimize (2) with respect to \\(a,b,\\) and \\(c\\) we get the following normal equations
 
-$$ \begin{align}
+$$\begin{align}
 \sum_{k=-2}^{2}2(ax_k^2 + bx_k + c - y_k)x_k^2 &= 0\tag{a}\\
 \sum_{k=-2}^{2}2(ax_k^2 + bx_k + c - y_k)x_k&= 0\tag{b}\\
 \sum_{k=-2}^{2}2(ax_k^2 + bx_k + c - y_k)&=0\tag{c}
@@ -32,7 +32,7 @@ $$ \begin{align}
 
 Expanding and simplifying (a) we get 
 
-\\[\begin{align}(4a&-2b+c-y\_{-2})\times4 \\
+\\[\begin{align}(4a &- 2b+c-y\_{-2})\times4 \\
 &+(a - b + c -y\_{-1})\times 1\\
 &+(c-y_0)\times0\\
 &+(a+b+c-y_1)\times1\\
@@ -53,7 +53,7 @@ The same process with (c) yields
 We first care about the value at \\(x=0\\) (our data point), the theoretical value of which is given to us by our model (1): \\(y=c\\). So we solve the system of equations (a1) and (c1) for \\(c\\).
 
 \\[\begin{align}
-35c &=\sum\_{k=-2}^2(17y_k - 5k^2)\\
+35c &= \sum\_{k=-2}^2(17y_k - 5k^2)\\
 &= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
 \implies  70c &= -6y\_{-2} + 24y\_{-1} + 34y_0 + 24y_1 - 6y_2\\
 &= 70y_0 - 6(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)
