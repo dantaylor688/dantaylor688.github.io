@@ -53,9 +53,9 @@ $$\begin{equation}
 We first care about the value at \\(x=0\\) (our data point), the theoretical value of which is given to us by our model (1): \\(y=c\\). So we solve the system of equations (a1) and (c1) for \\(c\\).
 
 $$\begin{align*}
-35c &= \sum\_{k=-2}^2(17y_k - 5k^2)\\
+35c &= \sum_{k=-2}^2(17y_k - 5k^2)\\
 &= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
-\implies  70c &= -6y\_{-2} + 24y\_{-1} + 34y_0 + 24y_1 - 6y_2\\
+\implies  70c &= -6y_{-2} + 24y_{-1} + 34y_0 + 24y_1 - 6y_2\\
 &= 70y_0 - 6(y_{-2} + 4y_{-1} + 6y_0 + 4y_1 + y_2)
 \end{align*}$$
 
