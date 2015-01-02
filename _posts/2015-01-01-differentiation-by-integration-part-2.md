@@ -33,8 +33,8 @@ $$ \begin{align}
 Expanding and simplifying (a) we get 
 
 \\[\begin{align}(4a&-2b+c-y\_{-2})\times4 \\
-&+(a - b + c -y\_{-1})\times 1 \\
-&+(c-y_0)\times0 \\
+&+(a - b + c -y\_{-1})\times 1\\
+&+(c-y_0)\times0\\
 &+(a+b+c-y_1)\times1\\
 &+(4a+2b+c-y_2)\times4 \\
 &= 0
@@ -56,11 +56,12 @@ We first care about the value at \\(x=0\\) (our data point), the theoretical val
 35c &=\sum\_{k=-2}^2(17y_k - 5k^2)\\
 &= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
 \implies  70c &= -6y\_{-2} + 24y\_{-1} + 34y_0 + 24y_1 - 6y_2\\
-&= 70y_0 - 6(y_{-2} + 4y_{-1} + 6y_0 + 4y_1 + y_2)
+&= 70y_0 - 6(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)
 \end{align}\\]
 
 so that 
-\\[c = y_0 - \frac{3}{35}(y_{-2} + 4y_{-1} + 6y_0 + 4y_1 + y_2)\\]
+
+\\[c = y_0 - \frac{3}{35}(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)\\]
 
 The final expression in parentheses is the fourth difference at \\(y_0\\). If we denote this by \\(\delta^4y_0\\) we get a succinct formula for our smoothed value
 
