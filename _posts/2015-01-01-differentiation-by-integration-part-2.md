@@ -32,13 +32,13 @@ $$\begin{align}
 
 Expanding and simplifying (a) we get 
 
-\\[\begin{align}(4a &- 2b+c-y\_{-2})\times4 \\
+$$\begin{align}(4a &- 2b+c-y\_{-2})\times4 \\
 &+(a - b + c -y\_{-1})\times 1\\
 &+(c-y_0)\times0\\
 &+(a+b+c-y_1)\times1\\
 &+(4a+2b+c-y_2)\times4 \\
 &= 0
-\end{align}\\]
+\end{align}$$
 
 $$\begin{equation}
 \implies 34a + 10c - \sum\_{k=-2}^2 k^2y_k = 0\tag{a1}
@@ -52,12 +52,12 @@ The same process with (c) yields
 
 We first care about the value at \\(x=0\\) (our data point), the theoretical value of which is given to us by our model (1): \\(y=c\\). So we solve the system of equations (a1) and (c1) for \\(c\\).
 
-\\[\begin{align}
+$$\begin{align}
 35c &= \sum\_{k=-2}^2(17y_k - 5k^2)\\
 &= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
 \implies  70c &= -6y\_{-2} + 24y\_{-1} + 34y_0 + 24y_1 - 6y_2\\
 &= 70y_0 - 6(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)
-\end{align}\\]
+\end{align}$$
 
 so that 
 
@@ -65,7 +65,7 @@ so that
 
 The final expression in parentheses is the fourth difference at \\(y_0\\). If we denote this by \\(\delta^4y_0\\) we get a succinct formula for our smoothed value
 
-\\[c = y_0 - 6 \delta^4y_0.\\]
+\\[c = y_0 - \frac{3}{35} \delta^4y_0.\\]
 
 It's using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
 
