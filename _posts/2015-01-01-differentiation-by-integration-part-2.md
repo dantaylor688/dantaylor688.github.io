@@ -15,10 +15,10 @@ y = ax^2 +bx + c
 
 centered on the point using the \\(k=2\\) closest neighbors to the left and to its right. In all, we are fitting a parabola to five points. Since this cannot be done perfectly in general we need to use the principle of [least squares]({% post_url 2014-12-19-gateaux-derivative %}). We need to minimize
 
-$$\begin{align}
+$$\begin{align*}
 \lVert y - y_k\rVert_2^2 &= \sum_{k=-2}^{2}(y-y_k)^2\\
 &= \sum_{k=-2}^{2}(a x_k^2 + bx_k + c -y_k)^2.\tag{2}
-\end{align}$$
+\end{align*}$$
 
 over \\(a,b,\\) and \\(c\\). Just to clarify, we will only be looking at \\(x\_k=-2,-1,0,1,2\\), so that \\(x\_{-2} = -2\\) and \\(x_0 = 0\\) corresponds with our data point. 
 
@@ -32,13 +32,13 @@ $$\begin{align}
 
 Expanding and simplifying (a) we get 
 
-$$\begin{align}(4a &- 2b+c-y\_{-2})\times4 \\
+$$\begin{align*}(4a &- 2b+c-y\_{-2})\times4 \\
 &+(a - b + c -y\_{-1})\times 1\\
 &+(c-y_0)\times0\\
 &+(a+b+c-y_1)\times1\\
 &+(4a+2b+c-y_2)\times4 \\
 &= 0
-\end{align}$$
+\end{align*}$$
 
 $$\begin{equation}
 \implies 34a + 10c - \sum\_{k=-2}^2 k^2y_k = 0\tag{a1}
@@ -46,18 +46,18 @@ $$\begin{equation}
 
 The same process with (c) yields
 
-\\[\begin{equation}
+\\[\begin{equation*}
 10a + 5c - \sum\_{k=-2}^2y_k = 0\tag{c1}
-\end{equation}\\]
+\end{equation*}\\]
 
 We first care about the value at \\(x=0\\) (our data point), the theoretical value of which is given to us by our model (1): \\(y=c\\). So we solve the system of equations (a1) and (c1) for \\(c\\).
 
-$$\begin{align}
+$$\begin{align*}
 35c &= \sum\_{k=-2}^2(17y_k - 5k^2)\\
 &= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
 \implies  70c &= -6y\_{-2} + 24y\_{-1} + 34y_0 + 24y_1 - 6y_2\\
 &= 70y_0 - 6(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)
-\end{align}$$
+\end{align*}$$
 
 so that 
 
