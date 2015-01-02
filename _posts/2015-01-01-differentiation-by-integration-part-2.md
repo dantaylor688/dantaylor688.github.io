@@ -20,7 +20,7 @@ $$\begin{align*}
 &= \sum_{k=-2}^{2}(a x_k^2 + bx_k + c -y_k)^2\tag{2}
 \end{align*}$$
 
-over \\(a,b,\\) and \\(c\\). Just to clarify, we will only be looking at \\(x\_k=-2,-1,0,1,2\\), so that \\(x\_{-2} = -2\\) and \\(x_0 = 0\\) corresponds with our data point. 
+over \\(a,b,\\) and \\(c\\). Just to clarify, we will only be looking at \\(x\_k=-2,-1,0,1,2\\), so that \\(x_0 = 0\\) corresponds with our data point. 
 
 When we minimize (2) with respect to \\(a,b,\\) and \\(c\\) we get the following normal equations
 
