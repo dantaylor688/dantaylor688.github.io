@@ -3,9 +3,9 @@ layout: post
 title: Differentiation by Integration Part II
 comments: true
 ---
-*This post is an attempt to further motivate, and expand upon the content of my [previous post]({% post_url 2014-12-31-differentiation-by-integration %}).*
+*This post is an attempt to further motivate, and expand upon the content of my [previous post]({% post_url 2014-12-31-differentiation-by-integration %}). By the end of this post we will be tackling a problem similar to that discussed in my previous post: finding the derivative of an empirical function.*
 
-By the end of this post we will be tackling a problem similar to that discussed in my [previous post]({% post_url 2014-12-31-differentiation-by-integration %}): finding the derivative of an empirical function. 
+##Smoothing Data by Fourth Differences 
 
 Before we talk about finding the derivative though, we will first discuss one way to find a smooth approximation to our data. Throughout the post, we assume that the data is such that the second derivative does not change much between a few neighboring points. This assumption means that for each point in our data set, we can fit a parabola
 
@@ -17,7 +17,7 @@ centered on the point using the \\(k=2\\) closest neighbors to the left and to i
 
 $$\begin{align*}
 \lVert y - y_k\rVert_2^2 &= \sum_{k=-2}^{2}(y-y_k)^2\\
-&= \sum_{k=-2}^{2}(a x_k^2 + bx_k + c -y_k)^2.\tag{2}
+&= \sum_{k=-2}^{2}(a x_k^2 + bx_k + c -y_k)^2\tag{2}
 \end{align*}$$
 
 over \\(a,b,\\) and \\(c\\). Just to clarify, we will only be looking at \\(x\_k=-2,-1,0,1,2\\), so that \\(x\_{-2} = -2\\) and \\(x_0 = 0\\) corresponds with our data point. 
@@ -32,12 +32,12 @@ $$\begin{align}
 
 Expanding and simplifying (a) we get 
 
-$$\begin{align*}(4a &- 2b+c-y\_{-2})\times4 \\
-&+(a - b + c -y\_{-1})\times 1\\
-&+(c-y_0)\times0\\
-&+(a+b+c-y_1)\times1\\
-&+(4a+2b+c-y_2)\times4 \\
-&= 0
+$$\begin{align*}&(4a - 2b+c-y\_{-2})\times4 \\
++&(a - b + c -y\_{-1})\times 1\\
++&(c-y_0)\times0\\
++&(a+b+c-y_1)\times1\\
++&(4a+2b+c-y_2)\times4 \\
+=& 0
 \end{align*}$$
 
 $$\begin{equation}
@@ -69,7 +69,9 @@ $$\begin{equation}
 c = y_0 - \frac{3}{35} \delta^4y_0.
 \end{equation}$$
 
-It's using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
+##Differentiating an Empirical Function
+
+It is by using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
 
 \\[10b = -2y\_{-2} - y\_{-1} + y_1 + 2y_2\\]
 
