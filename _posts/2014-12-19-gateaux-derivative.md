@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A Short Note on Using the G#xc3a2;teaux Derivative
+title: A Short Note on Using the G#x00E2;teaux Derivative
 comments: true
 ---
-Here is a small set of notes demonstrating how to use the G#xc3a2;teaux derivative. For the sake of this brief exposition, we will go through a derivation of the least squares method for solving an overdetermined set of equations \\(Ax=b\\); that is, \\(A\\) is an \\(m \times n\\) matrix with \\(m \gt n\\).
+Here is a small set of notes demonstrating how to use the G#x00E2;teaux derivative. For the sake of this brief exposition, we will go through a derivation of the least squares method for solving an overdetermined set of equations \\(Ax=b\\); that is, \\(A\\) is an \\(m \times n\\) matrix with \\(m \gt n\\).
 
-The G#xc3a2;teaux derivative of a function, \\(f\\), denoted \\(D_u(f)\\) is defined by the limit
+The G#x00E2;teaux derivative of a function, \\(f\\), denoted \\(D_u(f)\\) is defined by the limit
 
 $$\begin{align*}
 D_u(f) &= \lim_{\varepsilon \to 0} \frac{f(x + \varepsilon u) - f(x)}{\varepsilon} \\
@@ -35,7 +35,7 @@ Additionally, the inner product of a vector \\(x \\) with itself is the squared 
 
 For the remainder of this post, we will assume **all of our vectors are real**. With this assumption, we get that the inner product is linear in both arguments.
 
-The last piece we need before we are ready to begin our derivation is the G#xc3a2;teaux derivative of the inner product of two real-valued functions \\(f\\) and \\(g\\). To this end, observe that 
+The last piece we need before we are ready to begin our derivation is the G#x00E2;teaux derivative of the inner product of two real-valued functions \\(f\\) and \\(g\\). To this end, observe that 
 
 $$\begin{align*}
 \frac{1}{\varepsilon} &\left[\left< f(x+ \varepsilon u),g(x+ \varepsilon u) \right> - \left< f,g \right> \right] \\
