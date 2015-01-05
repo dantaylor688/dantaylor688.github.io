@@ -76,6 +76,7 @@ It is by using a similar argument that we can arrive at the value of the **deriv
 $$10b = -2y_{-2} - y_{-1} + y_1 + 2y_2$$
 
 or 
+
 $$b = \frac{-2y_{-2} - y_{-1} + y_1 + 2y_2}{10}.$$
 
 If instead of being one, the interval between our data points is \\(h\\) we divide our difference by \\(h\\) and arrive at the formula
