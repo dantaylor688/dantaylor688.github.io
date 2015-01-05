@@ -54,14 +54,14 @@ We first care about the value at \\(x=0\\) (our data point), the theoretical val
 
 $$\begin{align*}
 35c &= \sum_{k=-2}^2(17y_k - 5k^2)\\
-&= -3y\_{-2} + 12y\_{-1} + 17y_0 + 12y_1 - 3y_2\\
+&= -3y_{-2} + 12y_{-1} + 17y_0 + 12y_1 - 3y_2\\
 \implies  70c &= -6y_{-2} + 24y_{-1} + 34y_0 + 24y_1 - 6y_2\\
 &= 70y_0 - 6(y_{-2} + 4y_{-1} + 6y_0 + 4y_1 + y_2)
 \end{align*}$$
 
 so that 
 
-\\[c = y_0 - \frac{3}{35}(y\_{-2} + 4y\_{-1} + 6y_0 + 4y_1 + y_2)\\]
+$$c = y_0 - \frac{3}{35}(y_{-2} + 4y_{-1} + 6y_0 + 4y_1 + y_2)$$
 
 The final expression in parentheses is the fourth difference at \\(y_0\\). If we denote this by \\(\delta^4y_0\\) we get a succinct formula for our smoothed value
 
@@ -73,10 +73,10 @@ c = y_0 - \frac{3}{35} \delta^4y_0.
 
 It is by using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
 
-\\[10b = -2y\_{-2} - y\_{-1} + y_1 + 2y_2\\]
+$$10b = -2y_{-2} - y_{-1} + y_1 + 2y_2$$
 
 or 
-\\[b = \frac{-2y\_{-2} - y\_{-1} + y_1 + 2y_2}{10}.\\]
+$$b = \frac{-2y_{-2} - y_{-1} + y_1 + 2y_2}{10}.$$
 
 If instead of being one, the interval between our data points is \\(h\\) we divide our difference by \\(h\\) and arrive at the formula
 
