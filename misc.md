@@ -6,8 +6,10 @@ title: Miscellaneous
 Pages of interest to me by other people.
 
 ##Math
+*	[UCLA CAM Reports](http://www.math.ucla.edu/applied/cam)
 *	[Terrance Tao](http://terrytao.wordpress.com/)
 *	[Timothy Gowers](https://gowers.wordpress.com/)
+*	[A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf)
 
 ##Go
 *	[Online Go](https://online-go.com/play)
