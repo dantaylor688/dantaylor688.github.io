@@ -22,7 +22,7 @@ pages_list:
   About: '/about'
   Archive: '/archive'
   Feed: '/atom.xml'
-  Misc: '/misc.md'
+  Misc: '/misc'
 
 # MathJax  
 markdown: kramdown
