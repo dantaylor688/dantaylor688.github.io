@@ -21,5 +21,6 @@ Pages of interest to me by other people.
 *	Also some [videos](http://www.allthingsgym.com/jim-schmitz-olympic-weightlifting-coaching-tips/) by Jim Schmitz
 *	[A Training Program for Beginners](http://www.pendlay.com/A-Training-System-for-Beginning-Olympic-Weightlifters_df_90.html) by Glenn Pendlay
 *	[Mobility 101](http://www.allthingsgym.com/mobility101/). Most of these videos are by [Kelly Starrett](http://www.mobilitywod.com/about/kellystarrett/).
+*   A [forum](http://forum.bodybuilding.com/showthread.php?t=122395951) discussion with [John Broz](http://www.averagebroz.com/)
 *	[Dan John on front squats and clean and jerks](http://danjohn.net/2009/12/the-front-squat/)
 
