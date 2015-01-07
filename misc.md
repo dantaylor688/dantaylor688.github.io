@@ -16,6 +16,10 @@ Pages of interest to me by other people.
 *	[The interactive way to play Go](http://playgo.to/iwtg/en/). A great tutorial for beginners.
 *	[Go for Dummies](http://gofordummies.blogspot.com/2012/05/no-no-shapes.html). This is just a funny blog post.
 
+##Baseball
+*	My [college](http://www.grccraiders.com/index.aspx?path=baseball&) team
+*	[Records](http://www.mhsaa.com/sports/baseball/recordbook/individualrecords.aspx) from highschool
+
 ##Weightlifting
 *	[Articles by Jim Schmitz](http://www.ironmind.com:8080/ironmind/opencms/Lifts/index.html)
 *	Also some [videos](http://www.allthingsgym.com/jim-schmitz-olympic-weightlifting-coaching-tips/) by Jim Schmitz
