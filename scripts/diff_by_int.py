@@ -9,6 +9,7 @@ import pdb
 ion()
 
 if __name__ == "__main__":
+    ## first example
     t = linspace(0,10)
     y = 5.0*t**2 
     noise = random.normal(0,10,len(t))
@@ -30,12 +31,16 @@ if __name__ == "__main__":
     # simple diff
     yd = diff(y)/h
     
+    # integration formula
+    yi = 5.0*t**2
+    
     figure(1)
     title("Original Function")
-    plot(t,y)
+    plot(t,y,'bo',markerfacecolor='none',mec='blue')
     
     figure(2)
     title("Derivative")
-    plot(yp)
-    plot(yd)
-    plot(b[2:-2])
+    plot(yp,label="Theoretical")
+    plot(yd,label="Simple Difference")
+    plot(b[2:-2],label="Sum Formula")
+    legend()
