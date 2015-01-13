@@ -3,7 +3,7 @@ layout: post
 title: Differentiation by Integration Part III
 comments: true
 ---
-*This post is the final in a series of posts on an interesting method for finding the derivative of a function, either empirical or otherwise, using integration. You can see the empirical formula [here]({% post_url 2014-01-01-differentiation-by-integration-part-2 %}) and the analytical version [here]({% post_url 2014-12-31-differentiation-by-integration %}). Here we will be visualizing the results developed previously.*
+*This post is the final in a series of posts on an interesting method for finding the derivative of a function, either empirical or otherwise, using integration. You can see the empirical formula [here]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}) and the analytical version [here]({% post_url 2014-12-31-differentiation-by-integration %}). Here we will be visualizing the results developed previously.*
 
 ##First Example
 For the first example, consider the simple function 
@@ -24,7 +24,7 @@ $$f'(x) = \frac{f(x+h) - f(x)}{h}.$$
 
 Here, I have included the theoretical value for the derivative since it is simple to compute in this example. 
 
-A much smoother and more accurate formula is given by formula (3) in [this post]({% post_url 2014-01-01-differentiation-by-integration-part-2 %}).
+A much smoother and more accurate formula is given by formula (3) in [this post]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}).
 
 $$f'(x) = \frac{\sum_{\alpha=-k}^k\alpha f(x+\alpha h)}{2 \sum_{\alpha = 1}^k \alpha^2h}$$
 
