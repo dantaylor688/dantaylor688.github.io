@@ -37,14 +37,24 @@ if __name__ == "__main__":
     figure(1)
     title("Original Function + Noise")
     plot(t,y,'bo',markerfacecolor='none',mec='blue')
-    plot(t,yt,'b-')
+    plot(t,yt,'g-')
     
     figure(2)
     title("Derivative")
-    plot(yp,label="Theoretical")
-    plot(yd,label="Simple Difference")
-    plot(b[:-2],label="Sum Formula")
-    legend()
+    plot(t,yp,label="Theoretical")
+    plot(t[1:],yd,label="Simple Difference")
+    plot(t[2:-2],b[2:-2],label="Empirical Formula")
+    legend(loc="upper left")
+    
+    figure(22)
+    title("Simple Difference")
+    plot(t,yp)
+    plot(t[1:],yd)
+    
+    figure(33)
+    title("Empirical Formula")
+    plot(t,yp)
+    plot(t[2:-2],b[2:-2],color="r")
     
     ## second example
     t2 = linspace(1,4)
@@ -77,14 +87,14 @@ if __name__ == "__main__":
     figure(3)
     title("Original Function + Noise")
     plot(t2,y2,'bo',markerfacecolor='none',mec='blue')
-    plot(t2,yt2,'b-')
+    plot(t2,yt2,'g-')
     
     figure(4)
     title("Derivative")
     plot(t2,yp2,label="Theoretical")
     plot(t2[1:],yd2,label="Simple Difference")
-    plot(t2[2:-2],b2[2:-2],label="Sum Formula")
-    legend()
+    plot(t2[2:-2],b2[2:-2],label="Empirical Formula")
+    legend(loc="upper left")
     
     # integration formula for different h's
     h2 = array([t2[1]-t2[0],0.5,1.0])
@@ -96,5 +106,5 @@ if __name__ == "__main__":
     title("Integration Formula")
     plot(t2,yp2,label="Theoretical",linewidth=2.5)
     for i in range(len(h2)):
-        plot(t2,yi2[i],label="h = %.2f"%h2[i])
-    legend()
+        plot(t2,yi2[i],label="h = %.2f"%h2[i],linewidth=1.5)
+    legend(loc="upper left")
