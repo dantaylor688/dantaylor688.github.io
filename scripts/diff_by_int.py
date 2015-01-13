@@ -11,9 +11,9 @@ ion()
 if __name__ == "__main__":
     ## first example
     t = linspace(0,10)
-    y = 5.0*t**2 
+    yt = 5.0*t**2 
     noise = random.normal(0,10,len(t))
-    y += noise
+    y = yt + noise
     
     # theoretical derivative
     yp = 10.0*t
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     data_num = len(t)
     for x in range(2,data_num-2):
         num = sum([alpha*y[x + alpha] for alpha in range(-k,k+1)])
-        denom = 2*sum([alpha**2*h for alpha in range(-k,k+1)])
+        denom = 2*h*sum([alpha**2 for alpha in range(1,k+1)])
         b[x] = num/denom
     
     # simple diff
@@ -35,12 +35,13 @@ if __name__ == "__main__":
     yi = 5.0*t**2
     
     figure(1)
-    title("Original Function")
+    title("Original Function + Noise")
     plot(t,y,'bo',markerfacecolor='none',mec='blue')
+    plot(t,yt,'b-')
     
     figure(2)
     title("Derivative")
     plot(yp,label="Theoretical")
     plot(yd,label="Simple Difference")
-    plot(b[2:-2],label="Sum Formula")
+    plot(b[:-2],label="Sum Formula")
     legend()

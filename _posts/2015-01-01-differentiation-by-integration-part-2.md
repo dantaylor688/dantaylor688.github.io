@@ -86,7 +86,7 @@ If instead of being one, the interval between our data points is \\(h\\) we divi
 If we don't want to limit ourselves to just the two closest neighbors, but rather \\(k\\) neighbors to our point of interest we get
 
 \\[\begin{equation}
-b = \frac{\sum\_{\alpha=-k}^k\alpha f(x+\alpha h)}{2 \sum\_{\alpha = -k}^k \alpha^2h}
+b = \frac{\sum\_{\alpha=-k}^k\alpha f(x+\alpha h)}{2 \sum\_{\alpha = 1}^k \alpha^2h}
 \end{equation}.\\]
 
 This is very similar to the formula in the [previous post]({% post_url 2014-12-31-differentiation-by-integration %}). In fact, the results in my earlier post can be seen as the limit as the data points get close. However, this is not an exact formulation. That is, the results from the previous post are not obtained  by taking the limit as \\(h \to 0\\).
