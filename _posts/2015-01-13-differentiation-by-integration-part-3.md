@@ -36,11 +36,11 @@ Side-by-side the difference is obvious.
 
 Finally, equation (2) from my [original post]({% post_url 2014-12-31-differentiation-by-integration %}) on this topic provides an analytical approximation to the derivative.
 
-$$\begin{align}
+$$\begin{align*}
 f'(x) &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~ dt\\
 &= \frac{3}{2 \varepsilon^3}5 \int_{-\varepsilon}^{\varepsilon}t(x+t)^2 ~dt\\
 &= 10x.
-\end{align}$$
+\end{align*}$$
 
 In fact, it gives the exact value for the derivative! This is expected since all the terms in Taylor series expansion of our function, $$f$$ are zero.
 
@@ -59,12 +59,12 @@ The next plot shows how the first two approximations above match the known deriv
 
 This time, the analytical formula does not provide the exact value of the derivative at our data points, but rather an approximation that depends on the parameter $$\varepsilon$$:
 
-$$\begin{align}
+$$\begin{align*}
 f'(x) &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~ dt\\
 &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}t\cos(x + t)  ~ dt\\
 &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}t\cos(t)\cos(x)  - t\sin(t)\sin(x)~ dt\\
 &= \frac{3}{\varepsilon^3}(\varepsilon\cos\varepsilon - \sin \varepsilon)\sin x.
-\end{align}$$
+\end{align*}$$
 
 Below is a plot of the known derivative along with the above approximation with several values for the parameter $$\varepsilon$$. 
 
