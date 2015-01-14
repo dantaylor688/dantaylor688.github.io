@@ -42,7 +42,7 @@ f'(x) &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~
 &= 10x.
 \end{align*}$$
 
-In fact, it gives the exact value for the derivative! This is expected since all the terms in Taylor series expansion of our function, $$f$$ are zero.
+In fact, it gives the exact value for the derivative! This is expected since all the terms above second order in the Taylor series expansion of our function, $$f$$ are zero.
 
 ##A Second Example
 Now consider samples taken from a process expected to follow the relationship
