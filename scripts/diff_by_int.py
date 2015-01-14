@@ -106,5 +106,5 @@ if __name__ == "__main__":
     title("Integration Formula")
     plot(t2,yp2,label="Theoretical",linewidth=2.5)
     for i in range(len(h2)):
-        plot(t2,yi2[i],label="h = %.2f"%h2[i],linewidth=1.5)
+        plot(t2,yi2[i],label=u"\u03B5 = %.2f"%h2[i],linewidth=1.5)
     legend(loc="upper left")
