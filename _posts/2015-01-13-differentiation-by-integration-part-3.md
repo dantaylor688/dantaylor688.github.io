@@ -68,6 +68,6 @@ f'(x) &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~
 
 Below is a plot of the known derivative along with the above approximation with several values for the parameter $$\varepsilon$$. 
 
-![plane]({{ site.url }}/assets/diff-by-int/analytical2.png "Analytical Derivative Comparison for Several Values of epsilon")
+![plane]({{ site.url }}/assets/diff-by-int/analytical2.jpeg "Analytical Derivative Comparison for Several Values of epsilon")
 
 Note that the value $$\varepsilon = 0.06$$ corresponds with the distance between the data points in the second example. At this value of $$\varepsilon$$, the true derivative and the approximation are nearly indistinguishable. 
