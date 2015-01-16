@@ -93,4 +93,4 @@ This is very similar to the formula in the [previous post]({% post_url 2014-12-3
 
 As an aside, the methods discussed here exclude the first and last couple of data points (where there are not enough neighbors before/after the data). We will not discuss now ways to handle this issue.
 
-~~Perhaps in the future I will include examples to help illustrate the concepts in these posts.~~ *I have added some examples visualizing the techniques of the past two posts [here]({% post_url 2015-01-13-differentiation-by-integration-part-3 %})*.
+<del>Perhaps in the future I will include examples to help illustrate the concepts in these posts.</del> *I have added some examples visualizing the techniques of the past two posts [here]({% post_url 2015-01-13-differentiation-by-integration-part-3 %})*.
