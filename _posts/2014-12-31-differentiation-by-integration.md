@@ -26,3 +26,5 @@ The approximation holds as long as \\(\varepsilon\\) is small. Since \\(\varepsi
 *We emphasize the fact that (2) establishes a formula for the derivative for a function even when one does not exist in the ordinary sense. This can be especially helpful in the presence of noisy measurements which ruin the smooth nature of the true function, \\(f\\).*
 
 The formula (2) is attributed to [Cornelius Lanczos](http://en.wikipedia.org/wiki/Cornelius_Lanczos). His work, [Applied Analysis](http://www.amazon.com/Applied-Analysis-Dover-Books-Mathematics/dp/048665656X) is a surprisingly delightful read. It seems Lanczos had several results that were not fully appreciated at the time, including his work on an [FFT algorithm](http://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#cite_ref-7) over 20 years before Cooley and Tukey.
+
+*I have added some examples visualizing the techniques of this post and the next one [here]({% post_url 2015-01-13-differentiation-by-integration-part-3 %}).*
