@@ -10,6 +10,7 @@ Pages of interest to me by other people.
 *	[Terrance Tao](http://terrytao.wordpress.com/)
 *	[Timothy Gowers](https://gowers.wordpress.com/)
 *	[A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf)
+*   A helpful [thread](http://www.mathworks.com/matlabcentral/newsreader/view_thread/285244) about the proper use of fftshift and ifftshift in MATLAB (applicable to Numpy/Scipy)
 
 ##Go
 *	[Online Go](https://online-go.com/play)
