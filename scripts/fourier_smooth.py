@@ -83,5 +83,14 @@ if __name__=="__main__":
     legend()
     title("Smoothed Fit")
     
+    figure(7)
+    plot(cdata-ff)
+    title("Residuals")
+    
+    figure(8)
+    plot(data,label="Original")
+    plot(ff+mu,label="Recovered")
+    legend()
+    title("Smoothed Fit")
     
        
