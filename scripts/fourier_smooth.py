@@ -8,11 +8,26 @@ import pdb
 ion()
 i = 1j
 
-def ifft_trunc(A,nu, N):
-    a = zeros(N)
-    for m in range(N):
-        a[m] = (1.0/N)*sum([A[k]*exp(2.0*pi*i*(m*k/N)) for k in range(nu)])
-    return a
+def fst(f):
+    N = len(f)
+    F = zeros(N)
+    for k in range(N):
+        F[k] = (2.0/N)*sum([f[a]*sin(k*a*pi/N) for a in range(1,N)])
+    return F
+
+def ifst(F):
+    N = len(F)
+    f = zeros(N)
+    for x in range(N):
+        f[x] = sum([F[k]*sin(x*k*pi/N) for k in range(1,N)])
+    return f
+    
+def ifst_trunc(F, nu):
+    N = len(F)
+    f = zeros(N)
+    for x in range(N):
+        f[x] = sum([F[k]*sin(x*k*pi/N) for k in range(1,nu)])
+    return f
     
 if __name__=="__main__":
     data = genfromtxt('sample-data/monthly-lake-erie-levels-1921-19.csv', delimiter=',',\
@@ -37,26 +52,35 @@ if __name__=="__main__":
     title("Removing the Mean")
     
     ## here is where we will smooth using Fourier Series
-    F = fftshift(fft(cdata))
+    F = fst(cdata)
     magF = abs(F)
     
     figure(4)
     plot(magF)
     title("Magnitude of Fourier Coefficients")
     
-    figure(5)
-    plot(magF[225:376])
-    title("Magnitude of Chosen Fourier Coefficients")
+    
+    ff1 = ifst(F)
+    
+    figure(55)
+    plot(cdata,label="Original")
+    plot(ff1,label="Recovered")
+    legend()
+    title("Getting Back the Original")
     
     # Fit with sample of Fourier Coefficients
-    fit_idx = r_[225:376]
-    Fc = F[fit_idx]
+    fit_idx = r_[0:120]
     
-#     ff = fftshift(ifft(ifftshift(Fc)))
-    ff = ifft_trunc(Fc,len(fit_idx), len(data))
+    figure(5)
+    plot(magF[fit_idx])
+    title("Magnitude of Chosen Fourier Coefficients")
+    
+    ff = ifst_trunc(F,len(fit_idx))
     
     figure(6)
-    plot(ff)
+    plot(cdata,label="Original")
+    plot(ff,label="Recovered")
+    legend()
     title("Smoothed Fit")
     
     
