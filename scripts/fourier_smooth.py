@@ -32,6 +32,7 @@ def ifst_trunc(F, nu):
 if __name__=="__main__":
     data = genfromtxt('sample-data/monthly-lake-erie-levels-1921-19.csv', delimiter=',',\
                       skip_header=1,dtype=None) 
+
     raw_x =  [datetime.strptime(dat[0],'"%Y-%m"') for dat in data[:-1]]                   
     data = array([dat[1] for dat in data[:-1]])
     
@@ -45,11 +46,12 @@ if __name__=="__main__":
     
     mu = mean(data)
     
-    cdata = data - mu
+#     cdata = data - mu
+    cdata = data - (data[0] + (data[-1] - data[0])/len(data))
     
     figure(3)
     plot(cdata)
-    title("Removing the Mean")
+    title("Removing the Linear Term")
     
     ## here is where we will smooth using Fourier Series
     F = fst(cdata)
@@ -88,8 +90,8 @@ if __name__=="__main__":
     title("Residuals")
     
     figure(8)
-    plot(data,label="Original")
-    plot(ff+mu,label="Recovered")
+    plot(raw_x,data,label="Original")
+    plot(raw_x,ff+mu,label="Recovered")
     legend()
     title("Smoothed Fit")
     
