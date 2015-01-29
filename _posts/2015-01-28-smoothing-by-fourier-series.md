@@ -82,20 +82,20 @@ We start with the following data set provided by  R.J. Hyn­d­man [here](https:
 
 ![plane]({{ site.url }}/assets/fourier-smooth/data.png "Original Data")
 
-We first subtract off the linear term and ensure that the x axis is taking numerical input.
+We first subtract off the linear term and ensure that the $$x$$ axis is taking numerical values.
 
 ![plane]({{ site.url }}/assets/fourier-smooth/modified.png "Modified Data")
 
 
 We perform the transformation using Eq 1 and plot the magnitude of the result.
 
-![plane]({{ site.url }}/assets/fourier-smooth/mag-all.png "Magnitudes of Coefficients")'
+![plane]({{ site.url }}/assets/fourier-smooth/mag-all.png "Magnitudes of Coefficients")
 
 Notice that the first 100 or so terms drop off very quickly and then the terms more-or-less flatten out. This is where we will cut off the series.
 
 ![plane]({{ site.url }}/assets/fourier-smooth/chosen.png "Chosen Coefficients")
 
-Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great. 
+Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great. However, the exact number of terms is not critical. A few extra terms will not have a profound effect on the result.
 
 We truncate the series after the first 120 terms and arrive at the smoothed fit
 
