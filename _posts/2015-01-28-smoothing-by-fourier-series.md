@@ -76,35 +76,4 @@ g(x) = \sum_{k=1}^{m}b_k\sin \left( k\frac{\pi}{l}x\right).
 
 Equation 2 is the smoothed fit to our data.
 
-## An Example
-
-We start with the following data set provided by  R.J. Hyn­d­man [here](https://datamarket.com/data/set/22pw/monthly-lake-erie-levels-1921-1970#!ds=22pw&display=line). 
-
-![plane]({{ site.url }}/assets/fourier-smooth/data.png "Original Data")
-
-We first subtract off the linear term and ensure that the $$x$$ axis is taking numerical values.
-
-![plane]({{ site.url }}/assets/fourier-smooth/modified.png "Modified Data")
-
-
-We perform the transformation using Eq 1 and plot the magnitude of the result.
-
-![plane]({{ site.url }}/assets/fourier-smooth/mag-all.png "Magnitudes of Coefficients")
-
-Notice that the first 100 or so terms drop off very quickly and then the terms more-or-less flatten out. This is where we will cut off the series.
-
-![plane]({{ site.url }}/assets/fourier-smooth/chosen.png "Chosen Coefficients")
-
-Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great. However, the exact number of terms is not critical. A few extra terms will not have a profound effect on the result.
-
-We truncate the series after the first 120 terms and arrive at the smoothed fit
-
-![plane]({{ site.url }}/assets/fourier-smooth/smoothed1.png "Smoothed Fit Modified")
-
-and residuals.
-
-![plane]({{ site.url }}/assets/fourier-smooth/residuals.png "Residuals")
-
-Adding back the linear term we get the smoothed fit to the original data.
-
-![plane]({{ site.url }}/assets/fourier-smooth/smoothed.png "Smoothed Fit Raw")
+*I will add a worked example, illustrating the technique shortly.*

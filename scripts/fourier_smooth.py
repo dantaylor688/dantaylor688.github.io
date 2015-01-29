@@ -44,10 +44,11 @@ if __name__=="__main__":
     plot(data)
     title("Data with Numeric x-values")
     
-    mu = mean(data)
+#     mu = mean(data)
+    mu = data[0] + (data[-1] - data[0])/len(data)
     
 #     cdata = data - mu
-    cdata = data - (data[0] + (data[-1] - data[0])/len(data))
+    cdata = data - mu
     
     figure(3)
     plot(cdata)
