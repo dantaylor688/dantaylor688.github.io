@@ -3,7 +3,7 @@ layout: post
 title: Smoothing Data By Fourier Analysis
 comments: true
 ---
-In an [earlier post]({% post_url 2014-01-01-differentiation-by-integration-part-2 %}), we discussed smoothing data using a method that concerned only looking at the local neighborhood around each data point. Specifically, we saw how we could smooth the data by assuming that the second derivative didn't change much between any five consecutive data points. This assumption allowed us to fit a parabola to these five points using the principle of [least squares]({% post_url 2014-12-19-gateaux-derivative %}). Doing this for each data point allowed us to construct a smooth approximation to the data.
+In an [earlier post]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}), we discussed smoothing data using a method that concerned only looking at the local neighborhood around each data point. Specifically, we saw how we could smooth the data by assuming that the second derivative didn't change much between any five consecutive data points. This assumption allowed us to fit a parabola to these five points using the principle of [least squares]({% post_url 2014-12-19-gateaux-derivative %}). Doing this for each data point allowed us to construct a smooth approximation to the data.
 
 In this post, we take an entirely different approach. Instead of considering each data point individually, we will look at the data set as a whole. This method has the advantage that it doesn't make any assumptions about the process underlying our data. It also has the advantage of working, and fitting the entire data set at once, rather than considering a neighborhood near each point. It is kind of like looking at the forest instead of the individual trees.
 
