@@ -30,7 +30,7 @@ $$\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{\pi i (K-k)t}\,dt = \begin{cases}
 
 However, we don't need this result for our purposes.
 
-If the function to which the Fourier series is applied is continuous everywhere but its derivative has a discontinuity at a point, then by Theorem 1 the series converges as $$\frac{1}{n^2}$$. However, if the function itself has a discontinuity, then the terms only converge as $$\frac{1}{n}$$. Further the Fourier series of an infinite pulse concentrated at a point (a [delta function](http://en.wikipedia.org/wiki/Dirac_delta_function)) will not converge. (If you need further help understanding this fact, consider the [uncertainty principle](http://en.wikipedia.org/wiki/Fourier_transform#Uncertainty_principle).) Now, the noise on our measurements can be considered a series of such pulses impeding on our true signal. It is this realization that will allow us to distinguish between the true function and the noise. To make it explicit: *the Fourier coefficients of the analytic function will converge much faster than the terms associated predominantly with the noise*. Of course, all the terms in the series are affected somewhat what by both the function and the presence of noise, but we will see shortly that this does not pose much of a problem.
+If the function to which the Fourier series is applied is continuous everywhere but its derivative has a discontinuity at a point, then by Theorem 1 the series converges as $$\frac{1}{n^2}$$. However, if the function itself has a discontinuity, then the terms only converge as $$\frac{1}{n}$$. Further the Fourier series of an infinite pulse concentrated at a point (a [delta function](http://en.wikipedia.org/wiki/Dirac_delta_function)) will not converge. (If you need further help understanding this fact, consider the [uncertainty principle](http://en.wikipedia.org/wiki/Fourier_transform#Uncertainty_principle).) Now, the noise on our measurements can be considered a series of such pulses impeding on our true signal. It is this realization that will allow us to distinguish between the true function and the noise. To make it explicit: *the Fourier coefficients of the analytic function will converge much faster than the terms associated predominantly with the noise*. Of course, all the terms in the series are affected somewhat by both the function and the presence of noise, but we will see shortly that this does not pose much of a problem.
 
 To begin, we get a little greedy and observe that if we can subtract a linear term from our data 
 
@@ -44,9 +44,9 @@ and then reflect $$g(x)$$ as an *odd* function
 
 $$g(-x) = -g(x)$$
 
-then $$g(x)$$ is not only continuous throughout its domain, $$\left(0,l\right)$$ it is also smooth throughout the entire domain. Thus the first discontinuity can only arise in the *second* derivative. This formulation gives Fourier coefficients that converge as $$\frac{1}{n^3}$$by Theorem 1. Recall that this convergence applies **only to the analytic part of our data**. 
+then $$g(x)$$ is not only continuous throughout its domain, $$\left(0,l\right)$$ it is also smooth throughout the entire domain. Thus the first discontinuity can only arise in the *second* derivative. This formulation gives Fourier coefficients that converge as $$\frac{1}{n^3}$$ by Theorem 1. Recall that this convergence applies **only to the analytic part of our data**. 
 
-We start with our data the points
+We start with our data points
 
 $$y_k = f(kh), ~~~ \left(k = 0,1,2,\ldots, n\right)$$
 
@@ -99,7 +99,7 @@ Here we have kept 120 coefficients. The need to keep even this many (vs the 600 
 
 We truncate the series after the first 120 terms and arrive at the smoothed fit
 
-![plane]({{ site.url }}/assets/fourier-smooth/smooth1.png "Smoothed Fit Modified")
+![plane]({{ site.url }}/assets/fourier-smooth/smoothed1.png "Smoothed Fit Modified")
 
 and residuals
 
@@ -107,4 +107,4 @@ and residuals
 
 Adding back the linear term we get the smoothed fit to the original data
 
-![plane]({{ site.url }}/assets/fourier-smooth/data.png "Smoothed Fit Raw")
+![plane]({{ site.url }}/assets/fourier-smooth/smoothed.png "Smoothed Fit Raw")
