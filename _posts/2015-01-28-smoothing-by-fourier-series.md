@@ -101,10 +101,10 @@ We truncate the series after the first 120 terms and arrive at the smoothed fit
 
 ![plane]({{ site.url }}/assets/fourier-smooth/smoothed1.png "Smoothed Fit Modified")
 
-and residuals
+and residuals.
 
 ![plane]({{ site.url }}/assets/fourier-smooth/residuals.png "Residuals")
 
-Adding back the linear term we get the smoothed fit to the original data
+Adding back the linear term we get the smoothed fit to the original data.
 
 ![plane]({{ site.url }}/assets/fourier-smooth/smoothed.png "Smoothed Fit Raw")
