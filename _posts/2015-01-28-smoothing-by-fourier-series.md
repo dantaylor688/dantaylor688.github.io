@@ -19,7 +19,7 @@ $$\begin{eqnarray*}
 \sum \lvert n^k c_n\rvert^2 &\lt \infty.
 \end{eqnarray*}$$
 
-*Proof*: We first use the fact that we can differentiate the Fourier series term-by-term, giving $$a_n^{(k)} = (in)^ka_n$$, $$b_n^{(k)} = (in)^kb_n$$, and $$c_n^{(k)} = (in)^kc_n$$. The result then follows from [Bessel's Inequality](http://en.wikipedia.org/wiki/Bessel%27s_inequality)  and the fact that the terms of the Fourier series tend to zero as $$n \to \infty$$. $$\Box$$ 
+*Proof*: We first use the fact that we can differentiate the Fourier series term-by-term, giving $$c_n^{(k)} = (in)^kc_n$$ and similarly for $$a_k$$ and $$b_k$$. The result then follows from [Bessel's Inequality](http://en.wikipedia.org/wiki/Bessel%27s_inequality)  and the fact that the terms of the Fourier series tend to zero as $$n \to \infty$$. $$\Box$$ 
 
 Note that Bessel's inequality is actually a strict [equality](http://en.wikipedia.org/wiki/Parseval%27s_identity) in our case since the Fourier basis vectors are orthogonal, that is 
 
