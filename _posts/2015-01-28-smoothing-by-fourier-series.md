@@ -77,6 +77,7 @@ g(x) = \sum_{k=1}^{m}b_k\sin \left( k\frac{\pi}{l}x\right).
 Equation 2 is the smoothed fit to our data.
 
 <del>*I will add a worked example, illustrating the technique shortly.*</del>
+
 ## An Example
 
 We start with the following data set provided by  R.J. Hyn­d­man [here](https://datamarket.com/data/set/22pw/monthly-lake-erie-levels-1921-1970#!ds=22pw&display=line). 
