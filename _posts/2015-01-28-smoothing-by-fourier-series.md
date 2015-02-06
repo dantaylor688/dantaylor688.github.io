@@ -9,7 +9,7 @@ In this post, we take an entirely different approach. Instead of considering eac
 
 Whenever one considers smoothing over an entire data set, the Fourier series comes to mind as one of the first methods to try. We will thus attempt through the rest of the post to understand the noise on our measurements in terms of this expansion. The noise on our measurements is not a smooth process and thus does not share the property of differentiability with the analytical model.  It is this property that we can exploit through use of the Fourier series.
 
-Although technically the Fourier series requires infinitely many terms to exactly represent a function, the speed with which it converges allows us to use only the first $$n$$ terms with a fair amount of accuracy. We will use the following theorem in our analysis. 
+Although technically the Fourier series requires infinitely many terms to exactly represent a function, the speed with which it converges allows us to use only the first $$n$$ terms with a fair amount of accuracy. We will use the following theorem in our analysis.
 
 **Theorem 1**. *Suppose $$f$$ is periodic. If $$f$$ is such that $$f^{(k)}$$ exists (except at finitely many points in each bounded interval) and is piecewise continuous, then the Fourier coefficients of $$f$$ satisfy*
 
@@ -114,4 +114,4 @@ Adding back the linear term we get the smoothed fit to the original data.
 ##Additional Note
 I think it's important to mention the fact that if, after smoothing our data, we then wish to find an approximation to the derivative of the underlying process, we should **NOT** simply take the derivative of the smoothed approximation (2). Several higher order terms were dropped in (2) and the derivative is not as smooth as our original function. Therefore it is reasonable to expect that we will need to keep more terms in the Fourier series of the derivative. To put it simply: **the derivative of a good approximation is not necessarily a good approximation to the derivative**. 
 
-The derivative by definition is concerned with the immediate vicinity of our data points. So a better solution to the problem is to use a method similar to the one outlined in my [previous post]{% post_url 2015-01-01-differentiation-by-integration-part-2 %} and just use the $$k$$ closest neighbors to each data point to compute an approximation to the derivative. 
+The derivative by definition is concerned with the immediate vicinity of our data points. So a better solution to the problem is to use a method similar to the one outlined in my [previous post]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}) and just use the $$k$$ closest neighbors to each data point to compute an approximation to the derivative. 
