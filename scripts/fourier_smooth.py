@@ -44,8 +44,9 @@ if __name__=="__main__":
     plot(data)
     title("Data with Numeric x-values")
     
+    x = arange(len(raw_x))
 #     mu = mean(data)
-    mu = data[0] + (data[-1] - data[0])/len(data)
+    mu = data[0] + (data[-1] - data[0])/(len(data) - 1)*x
     
 #     cdata = data - mu
     cdata = data - mu
@@ -72,7 +73,7 @@ if __name__=="__main__":
     title("Getting Back the Original")
     
     # Fit with sample of Fourier Coefficients
-    fit_idx = r_[0:120]
+    fit_idx = r_[0:105]
     
     figure(5)
     plot(magF[fit_idx])

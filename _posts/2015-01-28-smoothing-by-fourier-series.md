@@ -76,4 +76,41 @@ g(x) = \sum_{k=1}^{m}b_k\sin \left( k\frac{\pi}{l}x\right).
 
 Equation 2 is the smoothed fit to our data.
 
-*I will add a worked example, illustrating the technique shortly.*
+<del>*I will add a worked example, illustrating the technique shortly.*</del>
+## An Example
+
+We start with the following data set provided by  R.J. Hyn­d­man [here](https://datamarket.com/data/set/22pw/monthly-lake-erie-levels-1921-1970#!ds=22pw&display=line). 
+
+![plane]({{ site.url }}/assets/fourier-smooth/data.png "Original Data")
+
+We first subtract off the linear term and ensure that the $$x$$ axis is taking numerical values.
+
+![plane]({{ site.url }}/assets/fourier-smooth/modified.png "Modified Data")
+
+
+We perform the transformation using Eq 1 and plot the magnitude of the result.
+
+![plane]({{ site.url }}/assets/fourier-smooth/mag-all.png "Magnitudes of Coefficients")
+
+Notice that the first 100 or so terms drop off very quickly and then the terms more-or-less flatten out. This is where we will cut off the series.
+
+![plane]({{ site.url }}/assets/fourier-smooth/chosen.png "Chosen Coefficients")
+
+Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great. However, the exact number of terms is not critical. A few extra terms will not have a profound effect on the result.
+
+We truncate the series after the first 120 terms and arrive at the smoothed fit
+
+![plane]({{ site.url }}/assets/fourier-smooth/smoothed1.png "Smoothed Fit Modified")
+
+and residuals.
+
+![plane]({{ site.url }}/assets/fourier-smooth/residuals.png "Residuals")
+
+Adding back the linear term we get the smoothed fit to the original data.
+
+![plane]({{ site.url }}/assets/fourier-smooth/smoothed.png "Smoothed Fit Raw")
+
+##Additional Note
+I think it's important to mention the fact that if, after smoothing our data, we then wish to find an approximation to the derivative of the underlying process, we should **NOT** simply take the derivative of the smoothed approximation (2). Several higher order terms were dropped in (2) and the derivative is not as smooth as our original function. Therefore it is reasonable to expect that we will need to keep more terms in the Fourier series of the derivative. To put it simply: **the derivative of a good approximation is not necessarily a good approximation to the derivative**. 
+
+The derivative by definition is concerned with the immediate vicinity of our data points. So a better solution to the problem is to use a method similar to the one outlined in my [previous post]{% post_url 2014-01-01-differentiation-by-integration-part-2 %} and just use the $$k$$ closest neighbors to each data point to compute an approximation to the derivative. 
