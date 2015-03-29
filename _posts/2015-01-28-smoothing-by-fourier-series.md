@@ -97,7 +97,7 @@ Notice that the first 100 or so terms drop off very quickly and then the terms m
 
 ![plane]({{ site.url }}/assets/fourier-smooth/chosen.png "Chosen Coefficients")
 
-Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great. However, the exact number of terms is not critical. A few extra terms will not have a profound effect on the result.
+Here we have kept 120 coefficients. The need to keep even this many (vs the 600 that we originally computed) is because our data set is not great (by this, I mean it actually contains some high frequency components that are not merely noise.). However, the exact number of terms is not critical. A few extra terms will not have a profound effect on the result.
 
 We truncate the series after the first 120 terms and arrive at the smoothed fit
 
