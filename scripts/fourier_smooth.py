@@ -8,7 +8,19 @@ import pdb
 ion()
 i = 1j
 
+"""
+A script demonstrating the method of smoothing data in the whole using 
+Fourier analysis. To run the script, download the data at 
+https://datamarket.com/data/set/22pw/monthly-lake-erie-levels-1921-1970#!ds=22pw&display=line
+and put it in the same directory as this file. 
+
+The method is discussed in detail here: 
+http://dantaylor688.github.io/2015/01/28/smoothing-by-fourier-series/
+"""
 def fst(f):
+    """
+    Compute the Fourier sine series.
+    """
     N = len(f)
     F = zeros(N)
     for k in range(N):
@@ -16,6 +28,9 @@ def fst(f):
     return F
 
 def ifst(F):
+    """
+    Compute the inverse Fourier sine series.
+    """
     N = len(F)
     f = zeros(N)
     for x in range(N):
@@ -23,6 +38,11 @@ def ifst(F):
     return f
     
 def ifst_trunc(F, nu):
+    """
+    Compute the inverse Fourier sine series using only nu terms. As
+    discussed in the link above, the mere truncating of the series
+    provides the smoothed fit to the data.
+    """
     N = len(F)
     f = zeros(N)
     for x in range(N):
@@ -30,10 +50,14 @@ def ifst_trunc(F, nu):
     return f
     
 if __name__=="__main__":
+    # load the data
+    # a numpy array of tuples: array([('"1970-12"', 16.584), ... ])
     data = genfromtxt('sample-data/monthly-lake-erie-levels-1921-19.csv', delimiter=',',\
-                      skip_header=1,dtype=None) 
-
-    raw_x =  [datetime.strptime(dat[0],'"%Y-%m"') for dat in data[:-1]]                   
+                      skip_header=1,dtype=None)                   
+    # dates for plotting                  
+    raw_x =  [datetime.strptime(dat[0],'"%Y-%m"') for dat in data[:-1]]
+    
+    # data is now just an array of numbers                  
     data = array([dat[1] for dat in data[:-1]])
     
     figure(1)
@@ -44,11 +68,10 @@ if __name__=="__main__":
     plot(data)
     title("Data with Numeric x-values")
     
+    # subtract a linear term so that our data fits an odd, continuous, and
+    # smooth function
     x = arange(len(raw_x))
-#     mu = mean(data)
     mu = data[0] + (data[-1] - data[0])/(len(data) - 1)*x
-    
-#     cdata = data - mu
     cdata = data - mu
     
     figure(3)
@@ -63,7 +86,7 @@ if __name__=="__main__":
     plot(magF)
     title("Magnitude of Fourier Coefficients")
     
-    
+    # Just checking
     ff1 = ifst(F)
     
     figure(55)
