@@ -19,6 +19,7 @@ if __name__ == "__main__":
     # line
     figure(1)
     xlim(min(x), max(x))
+    ylim(-1, 5)
     for xx, yy in zip(x,y):
         try:
             color = cit.next()[0]
@@ -26,6 +27,8 @@ if __name__ == "__main__":
             cit = colors.cnames.iteritems()
             color = cit.next()[0]
         scatter(xx, yy, facecolor='none', edgecolor=color, hold=True)
+    xlabel("R")
+    ylabel("C", rotation='horizontal')
     
     # circle
     ## colors
@@ -43,3 +46,5 @@ if __name__ == "__main__":
             cit = colors.cnames.iteritems()
             color = cit.next()[0]
         scatter(z.real, z.imag, facecolor='none', edgecolor=color, hold=True)
+    xlabel("R")
+    ylabel("C", rotation='horizontal')
