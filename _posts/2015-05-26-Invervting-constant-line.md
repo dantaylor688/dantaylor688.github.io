@@ -21,7 +21,7 @@ $$\begin{align*}
 &= \frac{1}{2a}
 \end{align*}$$
 
-Since $$\left| z - z_0 \right| = \rho $$ is an equation for a circle with radius $$\rho$$ in the complex plane, the proposition is proven.
+Since $$\left_| z - z_0 \right__| = \rho $$ is an equation for a circle with radius $$\rho$$ in the complex plane, the proposition is proven.
 
 I also decided to plot this result because I found it so simple and yet surprising. 
 
