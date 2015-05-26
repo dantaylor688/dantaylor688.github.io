@@ -20,13 +20,14 @@ if __name__ == "__main__":
     figure(1)
     xlim(min(x), max(x))
     ylim(-1, 5)
-    for xx, yy in zip(x,y):
-        try:
-            color = cit.next()[0]
-        except:
-            cit = colors.cnames.iteritems()
-            color = cit.next()[0]
-        scatter(xx, yy, facecolor='none', edgecolor=color, hold=True)
+    # for xx, yy in zip(x,y):
+    #     try:
+    #         color = cit.next()[0]
+    #     except:
+    #         cit = colors.cnames.iteritems()
+    #         color = cit.next()[0]
+    #     scatter(xx, yy, facecolor='none', edgecolor=color, hold=True)
+    plot(x,y, 'bo',markerfacecolor='none',mec='blue')
     xlabel("R")
     ylabel("C", rotation='horizontal')
     
@@ -39,12 +40,13 @@ if __name__ == "__main__":
     
     ylim(min(cir.imag) - gap,max(cir.imag) + gap)
     xlim(min(cir.real) - gap, max(cir.real) + gap)
-    for z in cir:
-        try:
-            color = cit.next()[0]
-        except:
-            cit = colors.cnames.iteritems()
-            color = cit.next()[0]
-        scatter(z.real, z.imag, facecolor='none', edgecolor=color, hold=True)
+    # for z in cir:
+    #     try:
+    #         color = cit.next()[0]
+    #     except:
+    #         cit = colors.cnames.iteritems()
+    #         color = cit.next()[0]
+    #     scatter(z.real, z.imag, facecolor='none', edgecolor=color, hold=True)
+    plot(cir.real,cir.imag, 'bo', markerfacecolor='none',mec='blue')
     xlabel("R")
     ylabel("C", rotation='horizontal')
