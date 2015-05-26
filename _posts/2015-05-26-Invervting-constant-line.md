@@ -13,11 +13,11 @@ During my reading, I came across this fascinating result
 Sure enough, if we write $$z= x + ia$$ (since $$z \in L$$), then 
 
 $$\begin{align*}
-\left | \frac{1}{z} - \frac{-i}{2a} \right | &= \left | \frac{1}{x+ ia} + \frac{i}{2a} \right |\\
+\left| \frac{1}{z} - \frac{-i}{2a} \right| &= \left| \frac{1}{x+ ia} + \frac{i}{2a} \right|\\
 &= \left| \frac{2a + ix - a}{(x+ ia)2a} \right|\\
 &= \left| \frac{a + ix}{(x + ia)2a} \right|\\
 &= \frac{1}{2a} \left| \frac{a + ix}{x + ia} \right|\\
-&= \frac{1}{2a}  \frac{\left|z\bar\right|}{\left| z \right|}\\
+&= \frac{1}{2a}  \frac{\left|\bar{z}\right|}{\left| z \right|}\\
 &= \frac{1}{2a}
 \end{align*}$$
 
