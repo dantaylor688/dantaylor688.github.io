@@ -17,7 +17,6 @@ $$\begin{align*}
 &= \left| \frac{2a + ix - a}{(x+ ia)2a} \right|\\
 &= \left| \frac{a + ix}{(x + ia)2a} \right|\\
 &= \frac{1}{2a} \left| \frac{a + ix}{x + ia} \right|\\
-&= \frac{1}{2a}  \frac{\left|\bar{z}\right|}{\left| z \right|}\\
 &= \frac{1}{2a}
 \end{align*}$$
 
