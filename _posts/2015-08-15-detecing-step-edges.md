@@ -6,6 +6,8 @@ comments: true
 
 Edge detection is a preliminary step in many computer vision algorithms. In particular, a step edge is an important feature of an image to identify. Here, I will outline John Canny's 1986 paper, "[A Computational Approach to Edge Detection](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=4767851&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D4767851)". I will focus, as Canny does in most of his paper, on a one dimensional edge. This corresponds to detecting a mean shift or step edge in a time series. 
 
+There are three criteria that we will consider in judging whether our edge detector is a success: 
+
 1. Good detection -- There should be a low probability of failing to mark real edge points as well as a low probability of marking points that are not edges. This goal is reached by maximizing the output signal-to-noise ratio.
 2. Good localization -- The points marked as edge points should be as close as possible to the true edge. 
 3. Only one response per edge -- This is implicit in the first criteria. If we get multiple responses for a single edge we are obviously marking non-edge points as belonging to an edge. However, this points needs to be made explicit due to the mathematical formulation to follow.
@@ -57,7 +59,7 @@ $$
 x_0^2 \approx \frac{-H'_n(x_0)}{H''_G(0)}
 $$
 
-and substituting for [fix format]$H_G$ we get for all $$x_0 \approx 0$$
+and substituting for $$H_G$$ we get for all $$x_0 \approx 0$$
 
 \begin{equation}
 E[x_0^2]  \approx \frac{n_0^2 \int_{-W}^W f'^2(x)\,dx}{\left[\int_{-W}^W G'(-x)f'(x)\,dx\right]^2}.
@@ -78,11 +80,12 @@ Simultaneously optimizing the SNR and Localization as defined above allows us to
 There may be additional restraints that need to be imposed on the problem such as the multiple edge criteria which we will discuss next.
 
 ## Eliminating Multiple Responses
-We need an expression for the distance between peaks. It should be clear that the mean distance between peaks in the output will be twice the distance between zero-crossings in the derivative. Then we can make use of a result formulated by [Rice](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6771565) that the average distance between zero-crossings of the response of a function [fix format]$g$ to Gaussian noise is
+We need an expression for the distance between peaks. It should be clear that the mean distance between peaks in the output will be twice the distance between zero-crossings in the derivative. Then we can make use of a result formulated by [Rice](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6771565) that the average distance between zero-crossings of the response of a function $$g$$ to Gaussian noise is
 
 $$
 x_{ave} = \pi \left( \frac{-R(0)}{R''(0)}\right)^{1/2}
 $$
+
 where $$R(g)$$ is the [autocorrelation](https://en.wikipedia.org/wiki/Autocorrelation) of $$g$$. Here, we are looking for the mean zero-crossing spacing for $$f'$$. Making use of Rice's result we have
 
 $$
