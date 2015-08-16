@@ -46,7 +46,7 @@ $$H'_G(x_0) = H'_G(0) + H''_G(0)x_0 + O(x_0^2) .$$
 By assumption $$H'_G(0) = 0$$ and if $$x_0$$ is small, we can ignore the last quadratic term. This gives us the equation
 
 \begin{equation}
-H'\''_G(0)x_0 \approx -H'_n(x_0).
+H'\'_G(0)x_0 \approx -H'_n(x_0).
 \end{equation}
 
 $$H'_n(x_0)^2$$ is a Gaussian random quantity whose variance is given by
@@ -73,9 +73,9 @@ $$
 
 Simultaneously optimizing the SNR and Localization as defined above allows us to meet the first two criteria set out in the first section. Although any monotonic combination of these functions would be sufficient, we will choose to optimize their product
 
-\begin{equation}
+$$
 \frac{\left| \int_{-W}^W G(-x)f(x) \,dx \right|}{n_0\sqrt{\int_{-W}^W f^2(x)\,dx}}\frac{\left| \int_{-W}^W G'(-x)f'(x) \,dx \right|}{n_0\sqrt{\int_{-W}^W f'^2(x)\,dx}}.
-\end{equation}
+$$
 
 There may be additional restraints that need to be imposed on the problem such as the multiple edge criteria which we will discuss next.
 
@@ -108,7 +108,7 @@ Fixing $$k$$ fixes the number of maxima in the response attributed to noise.
 
 ##Approximating Optimal Detectors
 
-In general, it will be difficult or impossible to find an optimal solution to our problem satisfying a constraint such as the multiple response constraint (4). Instead, you can use what Canny refers to as a penalty method, or in the language of modern machine learning, regularization. Instead of optimizing your desired functional with constraints, $$P_i$$, we can instead optimize their linear combination:
+In general, it will be difficult or impossible to find an optimal solution to our problem satisfying a constraint such as the multiple response constraint. Instead, you can use what Canny refers to as a penalty method, or in the language of modern machine learning, regularization. Instead of optimizing your desired functional with constraints, $$P_i$$, we can instead optimize their linear combination:
 
 $$
 J(f) = \mathsf{SNR}(f)\times \mathsf{Localization}(f) + \sum\mu_i P_i
