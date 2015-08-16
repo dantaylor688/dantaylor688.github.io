@@ -46,7 +46,7 @@ $$H'_G(x_0) = H'_G(0) + H''_G(0)x_0 + O(x_0^2) .$$
 By assumption $$H'_G(0) = 0$$ and if $$x_0$$ is small, we can ignore the last quadratic term. This gives us the equation
 
 \begin{equation}
-H''_G(0)x_0 \approx -H'_n(x_0).
+H'\''_G(0)x_0 \approx -H'_n(x_0).
 \end{equation}
 
 $$H'_n(x_0)^2$$ is a Gaussian random quantity whose variance is given by
@@ -61,11 +61,11 @@ $$
 
 and substituting for $$H_G$$ we get for all $$x_0 \approx 0$$
 
-\begin{equation}
+$$
 E[x_0^2]  \approx \frac{n_0^2 \int_{-W}^W f'^2(x)\,dx}{\left[\int_{-W}^W G'(-x)f'(x)\,dx\right]^2}.
-\end{equation}
+$$
 
-The square-root of the inverse of Eq (2) is what we will use as our definition of localization:
+The square-root of the inverse of this last expression is what we will use as our definition of localization:
 
 $$
 \mathsf{Localization} = \frac{\left| \int_{-W}^W G'(-x)f'(x) \,dx \right|}{n_0\sqrt{\int_{-W}^W f'^2(x)\,dx}}.
@@ -100,15 +100,15 @@ $$
 
 This final equation can then be used quite naturally to control the number of maxima due to noise, $$N_n$$
 
-\begin{equation}
+$$
 N_n = \frac{2W}{x_{max}} = \frac{2}{k}.
-\end{equation}
+$$
 
 Fixing $$k$$ fixes the number of maxima in the response attributed to noise.
 
 ##Approximating Optimal Detectors
 
-In general, it will be difficult or impossible to find an optimal solution to (3) satisfying a constraint such as the multiple response constraint (4). Instead, you can use what Canny refers to as a penalty method, or in the language of modern machine learning, regularization. Instead of optimizing your desired functional with constraints, $$P_i$$, we can instead optimize their linear combination:
+In general, it will be difficult or impossible to find an optimal solution to our problem satisfying a constraint such as the multiple response constraint (4). Instead, you can use what Canny refers to as a penalty method, or in the language of modern machine learning, regularization. Instead of optimizing your desired functional with constraints, $$P_i$$, we can instead optimize their linear combination:
 
 $$
 J(f) = \mathsf{SNR}(f)\times \mathsf{Localization}(f) + \sum\mu_i P_i
