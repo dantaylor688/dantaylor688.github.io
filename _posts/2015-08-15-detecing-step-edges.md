@@ -56,7 +56,7 @@ $$E[H'_n(x_0)^2] = n_0^2 \int_{-W}^W f'^2(x)\,dx.$$
 Where $$E[y]$$ is the expected value of $$y$$. Then from Eq (1) above we get
 
 $$
-x_0^2 \approx \frac{-H'_n(x_0)}{H''_G(0)}
+x_0^2 \approx \frac{-H'_n^2(x_0)}{H''_G^2(0)}
 $$
 
 and substituting for $$H_G$$ we get for all $$x_0 \approx 0$$
