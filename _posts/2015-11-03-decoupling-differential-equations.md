@@ -277,7 +277,7 @@ y &= C_1e^t - C_2e^{-t}
 \end{align}
 $$
 
-Below is a plot of these solutions for different combinations of $$C_1$$ and $$C_2$$ both varying between -1 and 1.
+Below is a plot of these solutions for different combinations of $$C_1$$ and $$C_2$$ both varying between -1 and 1 and $$-1.7 \le t\le 1.7$$.
 
 ![plane]({{ site.url }}/assets/decouple/solution.png "solution") 
 
