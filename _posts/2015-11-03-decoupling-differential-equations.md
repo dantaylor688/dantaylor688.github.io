@@ -38,6 +38,7 @@ $$\begin{equation}
 $$
 
 where 
+
 $$
 \mathbf{x} = \left(\begin{matrix}
 					x_1\\
@@ -52,6 +53,7 @@ One solution is to immediately write down
 $$
 \mathbf{x} = e^{At}\mathbf{x}_0
 $$
+
 but this requires knowledge of how to compute a matrix exponential
 
 $$
@@ -113,13 +115,12 @@ $$
 $$
 
 To diagonalize $$A$$ we need to calculate the eigenvectors of $$A$$. To this end, we find the eigenvalues by solving the characteristic function 
+
 $$
-\begin{align}
+\begin{align*}
 \det\left(A-\lambda I\right) &= 0\\
-\implies \det\left( \begin{matrix} -\lambda & 1\\
-1 & -\lambda \end{matrix}\right) &= 0\\
 \implies \lambda^2 - 1 &= 0
-\end{align}
+\end{align*}
 $$
 
 so that $$\lambda = \pm 1$$. Then we can find the corresponding eigenvectors using the equation
@@ -148,17 +149,22 @@ $$
 $$  
 \implies x = -y 
 $$
-So that the eigenvector associated with the first eigenvalue is $$\mathbf{x} =  \left(\begin{matrix}
+
+So that the eigenvector associated with the first eigenvalue is 
+
+$$ \mathbf{x} =  \left(\begin{matrix}
 					1\\
 					1
         \end{matrix}\right)$$.
 
-Similarly, the eigenvector corresponding with the eigenvalue $$\lambda = -1$$ is $$\mathbf{x} =  \left(\begin{matrix}
+Similarly, the eigenvector corresponding with the eigenvalue $$\lambda = -1$$ is 
+
+$$\mathbf{x} =  \left(\begin{matrix}
 					1\\
 					-1
         \end{matrix}\right)$$.
 
-These leads us to the following definitions for matrices $$P$$ and $$D$$ above,
+These lead us to the following definitions for matrices $$P$$ and $$D$$ above,
 
 $$
 P = \left(\begin{matrix}
@@ -177,7 +183,7 @@ $$
 So our system of decoupled differential equations is 
 
 $$
-\begin{align}
+\begin{align*}
 \left(P\mathbf{x}\right)' &= D\left(P\mathbf{x}\right)\\
 \left(\begin{matrix}
 					u\\
@@ -189,13 +195,13 @@ $$
 					u\\
 					v
         \end{matrix}\right)
-\end{align}
+\end{align*}
 $$
 
 where 
 
 $$
-\begin{align}
+\begin{align*}
 \left(\begin{matrix}
 					u\\
 					v
@@ -211,16 +217,16 @@ $$
 					x + y\\
 					x - y
         \end{matrix}\right)
- \end{align}
+ \end{align*}
 $$
 
 Writing out our new system of equations we see
 
 $$
-\begin{align}
+\begin{align*}
 u' &= u\\
 v' &= v
-\end{align}
+\end{align*}
 $$
 
 which quickly leads to the solutions
@@ -244,7 +250,7 @@ $$
 Doing this we get
 
 $$
-\begin{align}
+\begin{align*}
 \mathbf{x}  &= P^{-1}\mathbf{y}\\
 &= \frac{1}{2}\left(\begin{matrix}
 					-1 & -1\\
@@ -259,7 +265,7 @@ $$
 				 -C_1e^t - C_2e^{-t}\\
 					-C_1e^t + C_2 e^{-t}
         \end{matrix}\right)    
- \end{align}
+ \end{align*}
 $$
 
 By redefining our constants $$C_1 \equiv \frac{1}{2}C_1$$ and $$C_2 \equiv \frac{1}{2}C_2$$ we get our solutions to the original set of coupled differential equations to be
