@@ -155,14 +155,14 @@ So that the eigenvector associated with the first eigenvalue is
 $$ \mathbf{x} =  \left(\begin{matrix}
 					1\\
 					1
-        \end{matrix}\right)$$.
+        \end{matrix}\right).$$
 
 Similarly, the eigenvector corresponding with the eigenvalue $$\lambda = -1$$ is 
 
 $$\mathbf{x} =  \left(\begin{matrix}
 					1\\
 					-1
-        \end{matrix}\right)$$.
+        \end{matrix}\right).$$
 
 These lead us to the following definitions for matrices $$P$$ and $$D$$ above,
 
@@ -276,5 +276,9 @@ x &= C_1e^t + C_2e^{-t}\\
 y &= C_1e^t - C_2e^{-t}
 \end{align}
 $$
+
+Below is a plot of these solutions for different combinations of $$C_1$$ and $$C_2$$ both varying between -1 and 1.
+
+![plane]({{ site.url }}/assets/decouple/solution.png "solution") 
 
 This is a technique used in a lot of physics and engineering problems that a student in a beginning linear algebra class could understand (given a basic calculus background that most would be expected to have in such a course). I also feel it could be another good way to answer a question of the form "what is this good for?" Perhaps if I teach again.
