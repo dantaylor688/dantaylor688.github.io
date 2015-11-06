@@ -147,7 +147,7 @@ $$
 $$
 
 $$  
-\implies x = -y 
+\implies x = y 
 $$
 
 So that the eigenvector associated with the first eigenvalue is 
