@@ -41,7 +41,7 @@ $$H'_G(x_0) + H'_n(x_0) = 0.$$
 
 The Taylor expansion of $$H'_G(x_0)$$ about the origin is
 
-$$H'_G(x_0) = H'_G(0) + H''_G(0)x_0 + O(x_0^2) .$$
+$$H'_G(x_0) = H'_G(0) + H''_G(0)x_0 + O(x_0^2).$$
 
 By assumption $$H'_G(0) = 0$$ and if $$x_0$$ is small, we can ignore the last quadratic term. This gives us the equation
 
@@ -56,7 +56,7 @@ $$E[H'_n(x_0)^2] = n_0^2 \int_{-W}^W f'^2(x)\,dx.$$
 Where $$E[y]$$ is the expected value of $$y$$. Then from Eq (1) above we get
 
 $$
-x_0^2 \approx \frac{-H'_n^2(x_0)}{H''_G^2(0)}
+x_0^2 \approx \frac{-H'^2_n(x_0)}{H''^2_G(0)}
 $$
 
 and substituting for $$H_G$$ we get for all $$x_0 \approx 0$$
