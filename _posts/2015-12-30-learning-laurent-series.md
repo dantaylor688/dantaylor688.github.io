@@ -16,11 +16,11 @@ This changed when I worked through the proof of the theorem below. I thought thi
 ## Isolated Singularities
 An analytic function $f$ has an **isolated singularity** at a point $z_0$ if $f$ is analytic in the punctured disc $0 \lt \left\|z-z_0\right\| \lt r$, for some $r \gt 0$.  There are three possibilities for the behavior of $\left\|f\right\|$ when $0 \lt \left\|z-z_0\right\| \lt r$,
 
-$$
+
 \begin{equation}
 \left\|f(z)\right\| \mathsf{remains bounded as} z \rightarrow z_0.
 \end{equation}
-$$
+
 
 $$
 \begin{equation}
@@ -30,7 +30,7 @@ $$
 
 $$
 \begin{equation}
-\mathsf{Neither (1) nor (2) holds.}
+\text{Neither (1) nor (2) holds.}
 \end{equation}
 $$
 
