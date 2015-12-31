@@ -18,7 +18,7 @@ An analytic function $f$ has an **isolated singularity** at a point $z_0$ if $f$
 
 $$
 \begin{equation}
-\left\|f(z)\right\| \text{remains bounded as} z \rightarrow z_0.
+\left\|f(z)\right\| \mathsf{remains bounded as} z \rightarrow z_0.
 \end{equation}
 $$
 
@@ -28,9 +28,9 @@ $$
 \end{equation}
 $$
 
-
+$$
 \begin{equation}
-\text{Neither 1 nor 2 holds.}
+\mathsf{Neither (1) nor (2) holds.}
 \end{equation}
 $$
 
@@ -54,7 +54,7 @@ g'\left(z_0\right) &= \lim_{z \rightarrow z_0}\frac{g(z) - g\left(z_0\right)}{z-
 \end{align*}
 $$
 
-The final equality holds because $\left\|f(z)\right\|$$ is bounded as $z \rightarrow z_0$. Because of this and the fact that $g$ is analytic we know it has a power series valid in $D$ of the form
+The final equality holds because $\left\|f(z)\right\|$ is bounded as $z \rightarrow z_0$. Because of this and the fact that $g$ is analytic we know it has a power series valid in $D$ of the form
 
 $$\begin{align*}
 g(z) &= \frac{g''\left(z_0\right)}{2}\left(z-z_0\right)^2 +  \frac{g'''\left(z_0\right)}{3!} \left(z-z_0\right)^3+\cdots\\
@@ -250,7 +250,7 @@ $$
 	f(z) = \frac{a_{-m}}{\left(z-z_0\right)^m} + \frac{a_{-m+1}}{\left(z-z_0\right)^{m-1}} + \cdots + a_0 + a_1z + \cdots
 	$$  
 	
-where $a_{-m} \neq 0$ for some fixed $m >0$. But then by the second part of the theorem, $f$ has a pole of order $m$. In either case, $z_0$ is not an essential singularity.
+	where $a_{-m} \neq 0$ for some fixed $m >0$. But then by the second part of the theorem, $f$ has a pole of order $m$. In either case, $z_0$ is not an essential singularity.
 
 * For the reverse implication, if $z_0$ is not an essential singularity then it is either a removable singularity or $f$ has a pole of order $m$ at $z_0$. In either case, there are not infinitely many $a_{-n}$, $n \gt0$ not zero by the first two parts of this theorem.
 	
