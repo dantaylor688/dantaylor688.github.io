@@ -18,7 +18,7 @@ An analytic function $f$ has an **isolated singularity** at a point $z_0$ if $f$
 
 
 \begin{equation}
-\left\|f(z)\right\| \mathsf{remains bounded as} z \rightarrow z_0.
+\left\|f(z)\right\| \text{remains bounded as} z \rightarrow z_0.
 \end{equation}
 
 
@@ -126,34 +126,34 @@ $$
 
 we can make the substitution
 
-$$\begin{align}
+$$\begin{align*}
 \varepsilon &= \frac{1}{\zeta}\\
 d\varepsilon &= \frac{-1}{\zeta^2}d\zeta
-\end{align}
+\end{align*}
 $$
 
 We are integrating over the circle $$\left\|\zeta\right\|=s=\frac{1}{r}>R$$, so if $-\zeta$ is on the circle so is $\zeta$. Then
 
-$$\begin{align}
+$$\begin{align*}
 c_k &=  \frac{1}{2\pi i }\int_{\left\|\varepsilon\right\|=r} \frac{G(\varepsilon)}{\varepsilon^{k+1}}\,d\varepsilon\\
 &= \frac{1}{2\pi i }\int_{\left\|\zeta\right\|=s}F\left(\zeta\right)\zeta^{k-1}\,d\zeta
-\end{align}
+\end{align*}
 $$
 
 are the coefficients of this series in terms of values of $F$.
 
 So we can write any function, $f$ that is analytic on the annulus  $$0 \le r \lt \left\|z-z_0\right\| \lt R$$ as a combination of a power series valid on the disc $$\left\|z-z_0\right\| \lt R$$ and the "power series" just developed over $$\left\|z-z_0\right\| \gt r$$. So that
 
-$$\begin{align}
+$$\begin{align*}
 f(z) &= f_1(z) + f_2(z)\\
 &= \sum_0^\infty{a_k\left(z-z_0\right)^k} + \sum_0^\infty{b_k\frac{1}{\left(z-z_0\right)^k}}\\
 &= \sum_{-\infty}^\infty{c_k\left(z-z_0\right)^k}
-\end{align}
+\end{align*}
 $$
 
 where $c_k = a_k$, $k \ge 0$ and $c_{-k} = b_k$, $k=1,2,3,\ldots$
 
-In applications, we often care about a function with a pole of order $m$. We start with equation (1) above
+In applications, we often care about a function with a pole of order $m$. We start with equation (4) above
 
 $$
 f(z) = \frac{H(z)}{\left(z-z_0\right)^m}
