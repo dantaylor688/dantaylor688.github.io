@@ -3,7 +3,7 @@ layout: post
 title: A Tip on Learning Mathematics
 comments: true
 ---
-As I have mentioned in a [previous post]({% post_url 2015-05-26-Inverting-constant-line %}), I am reading through Fisher's Complex Analysis during my lunch break at work. I am currently nearing the end of chapter two and reading about isolated singularities and a function's Laurent series.
+As I have mentioned in a [previous post]({% post_url 2015-05-26-Invervting-constant-line %}), I am reading through Fisher's Complex Analysis during my lunch break at work. I am currently nearing the end of chapter two and reading about isolated singularities and a function's Laurent series.
 
 My first exposure to these topics came while I was [preparing for the GRE mathematics subject test](https://www.quora.com/How-does-one-prepare-for-the-GRE-Mathematics-Subject-test/answers/2928285). Then, I just skimmed over the material with an eye toward simply being able to solve problems I would encounter on the test. I didn't focus very hard on digesting the theory nor try to understand the motivation behind each definition and theorem.
 
