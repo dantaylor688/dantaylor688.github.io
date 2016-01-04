@@ -16,23 +16,23 @@ This changed when I worked through the proof of the theorem below. I thought thi
 ## Isolated Singularities
 An analytic function $f$ has an **isolated singularity** at a point $z_0$ if $f$ is analytic in the punctured disc $0 \lt \left\|z-z_0\right\| \lt r$, for some $r \gt 0$.  There are three possibilities for the behavior of $\left\|f\right\|$ when $0 \lt \left\|z-z_0\right\| \lt r$,
 
-
+$$
 \begin{equation}
 \left\|f(z)\right\| \text{ remains bounded as } z \rightarrow z_0.
 \end{equation}
+$$
 
-
-
+$$
 \begin{equation}
 \lim_{z \rightarrow z_0} \left\|f(z)\right\| = \infty
 \end{equation}
+$$
 
-
-
+$$
 \begin{equation}
 \text{Neither (1) nor (2) holds.}
 \end{equation}
-
+$$
 
 
 If the first case holds, define
@@ -47,20 +47,22 @@ $$
 
 Then, $g$ is analytic and $g(z_0) = 0$ furthermore it is differentiable at $z_0$ and $g'\left(z_0\right)=0$ since
 
+$$
 \begin{align*}
 g'\left(z_0\right) &= \lim_{z \rightarrow z_0}\frac{g(z) - g\left(z_0\right)}{z-z_0}\\
 &= \lim_{z \rightarrow z_0} \left(z-z_0\right)f(z)\\
 &= 0
 \end{align*}
-
+$$
 
 The final equality holds because $\left\|f(z)\right\|$ is bounded as $z \rightarrow z_0$. Because of this and the fact that $g$ is analytic we know it has a power series valid in $D$ of the form
 
+$$
 \begin{align*}
 g(z) &= \frac{g''\left(z_0\right)}{2}\left(z-z_0\right)^2 +  \frac{g'''\left(z_0\right)}{3!} \left(z-z_0\right)^3+\cdots\\
 &=b_2\left(z-z_0\right)^2 + b_3\left(z-z_0\right)^3 + \cdots
 \end{align*}
-
+$$
 
 Set $f\left(z_0\right) = b_2$, then the power series expansion for $g$ can also work for $f$ after dividing out the $\left(z-z_0\right)^2$ term. Thus we have shown that under the condition (1) we can extend $f$ to be analytic on the disc $\left\|z-z_0\right\| \lt r$. In this case, we say $f$ has a **removable singularity** at $z_0$.
 
@@ -88,11 +90,11 @@ $$
 
 where $h$ is analytic in $\left\|z-z_0\right\| \lt r$ and $h\left(z_0\right) \neq 0$. Finally,  we know that $H(z) = \frac{1}{h}$ is analytic in $\left\|z-z_0\right\| \lt r$ and $H\left(z_0\right) \neq 0$ so that
 
-
+$$
 \begin{equation}
 f = \frac{1}{g} = \frac{1}{\left(z-z_0\right)^mh(z)} = \frac{H(z)}{\left(z-z_0\right)^m}
 \end{equation}
-
+$$
 
 Then as $z \rightarrow z_0$, $f \rightarrow \infty$ as a power of $\frac{1}{z}$. In this case, we say a function $f$ has a **pole of order $m$**. That is, if the function $\frac{1}{f}$ has a zero of order $m$ at $z_0$, then $f$ has a pole of order $m$.
 
@@ -126,30 +128,33 @@ $$
 
 we can make the substitution
 
+$$
 \begin{align*}
 \varepsilon &= \frac{1}{\zeta}\\
 d\varepsilon &= \frac{-1}{\zeta^2}d\zeta
 \end{align*}
-
+$$
 
 We are integrating over the circle $\left\|\zeta\right\|=s=\frac{1}{r}>R$, so if $-\zeta$ is on the circle so is $\zeta$. Then
 
+$$
 \begin{align*}
 c_k &=  \frac{1}{2\pi i }\int_{\left\|\varepsilon\right\|=r} \frac{G(\varepsilon)}{\varepsilon^{k+1}}\,d\varepsilon\\
 &= \frac{1}{2\pi i }\int_{\left\|\zeta\right\|=s}F\left(\zeta\right)\zeta^{k-1}\,d\zeta
 \end{align*}
-
+$$
 
 are the coefficients of this series in terms of values of $F$.
 
 So we can write any function, $f$ that is analytic on the annulus  $0 \le r \lt \left\|z-z_0\right\| \lt R$ as a combination of a power series valid on the disc $\left\|z-z_0\right\| \lt R$ and the "power series" just developed over $\left\|z-z_0\right\| \gt r$. So that
 
+$$
 \begin{align*}
 f(z) &= f_1(z) + f_2(z)\\
 &= \sum_0^\infty{a_k\left(z-z_0\right)^k} + \sum_0^\infty{b_k\frac{1}{\left(z-z_0\right)^k}}\\
 &= \sum_{-\infty}^\infty{c_k\left(z-z_0\right)^k}
 \end{align*}
-
+$$
 
 where $c_k = a_k$, $k \ge 0$ and $c_{-k} = b_k$, $k=1,2,3,\ldots$
 
