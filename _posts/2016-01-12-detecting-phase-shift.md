@@ -10,11 +10,11 @@ Given a sine wave with a known phase, $\phi$ as a reference and a received sine 
 
 ![plane]({{ site.url }}/assets/phase-shift/sinx.png "Signal and Reference Shifted")
 
-We permit for the possibility of noise on our measurements.
+We permit the possibility of noise on our measurements.
 
 ![plane]({{ site.url }}/assets/phase-shift/sig-ref-before.png "Signal and Reference with Noisy Measurements")
 
-We make use of the difference of angles formula for sine
+Recall the difference of angles formula for sine
 
 $$
 \begin{equation}
@@ -52,7 +52,7 @@ $$
 
 The constant term allows for our signal to have some vertical shift. 
 
-The matrix equation (2) can be solved using [least squares]({% post_url 2014-12-19-gateaux-derivative %})l. Upon solving (2), notice that 
+The matrix equation (2) can be solved using [least squares]({% post_url 2014-12-19-gateaux-derivative %}). Upon solving (2), notice that 
 
 $$
 \frac{-x_2}{x_1} = \frac{\sin\delta}{\cos\delta} = \tan\delta
