@@ -22,7 +22,7 @@ $$
 \end{equation}
 $$
 
-Then, instead of a single measure of the phase, we can have a series of measurements of reference phase, $\mathbf{\phi} = \left( \phi_1, \phi_2, \ldots, \phi_n\right)$. Then because of (1) we can form a basis from $\sin\mathbf{\phi}$, $\cos\mathbf{\phi}$, and $ \mathbf{1} = \left(1,1,\ldots,1\right)$ and write a system of equations,
+Then, instead of a single measure of the phase, we can have a series of measurements for the phase of our reference, $\mathbf{\phi} = \left( \phi_1, \phi_2, \ldots, \phi_n\right)$. Then because of (1) we can form a basis from $\sin\mathbf{\phi}$, $\cos\mathbf{\phi}$, and $ \mathbf{1} = \left(1,1,\ldots,1\right)$ and write a system of equations,
 
 $$\begin{equation}
 A\mathbf{x} = \mathbf{f}
@@ -66,6 +66,6 @@ $$\begin{equation}
 \end{equation}
 $$
 
-![plane]({{ site.url }}/assets/phase-shift/diff.png "Phase Shift")
+![plane]({{ site.url }}/assets/phase-shift/sig-shift-calc-full.png "Phase Shift")
 
 Note that while we do allow for a vertical shift in the sine wave, since our final answer only depends on the ratio of two entries in our vector, any amplitude scaling in our original model is unnecessary.
