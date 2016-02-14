@@ -36,7 +36,7 @@ Now, the first result we will prove is a statement about the zeros of an analyti
 
 **Proof**
 
-Throughout, we will make use of a couple of statements in [this post]({% post_url  2015-12-30-learning-laurent-series%}). Since $f$ is analytic, it has a power series valid on some disc $\left|z-z_0\right|\lt\delta$, for some $\delta \gt 0$.
+Throughout, we will make use of a couple of statements in [this post]({% post_url  2015-12-30-learning-laurent-series%}). Since $f$ is analytic, it has a power series valid on some disc $\left\|z-z_0\right\|\lt\delta$, for some $\delta \gt 0$.
 
 $$
 f(z) = \sum_{n=0}^{\infty}a_n\left(z-z_0\right)^n
@@ -103,7 +103,8 @@ An important corollary to this theorem is the [Maximum Modulus Principle](https:
 >If $f$ is analytic on a domain $D$, then $$\left\|f\right\|$$ does not attain any local maximum on $D$.
 
 **Proof**
-If $$\left|f\left(z_0\right)\right| \ge \left|f\left(z\right)\right|$ for all $z \in \left|z-z_0\right| \lt r$$, $r\gt0$ then $f\left(z_0\right)$ must be on the boundary of the set $$W=\left\{f\left(z\right) | z \in \left|z-z_0\right| \lt r\right\}$$ but this contradicts the fact that $W$ is an open set.$\Box$
+
+If $$\left|f\left(z_0\right)\right| \ge \left|f\left(z\right)\right|$$ for all $z \in \left|z-z_0\right| \lt r$$, $r\gt0$ then $f\left(z_0\right)$ must be on the boundary of the set $$W=\left\{f\left(z\right) | z \in \left|z-z_0\right| \lt r\right\}$$ but this contradicts the fact that $W$ is an open set.$\Box$
 
 The first line in this proof took me some time to feel comfortable with. Now it seems obvious, but it was the following picture that I had in my mind that convinced me.
 
