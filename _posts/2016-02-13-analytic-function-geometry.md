@@ -11,11 +11,11 @@ Before we begin, we state one result that we will not prove.
 **Proposition** 
 
 >If $f$ is an analytic function on a domain $D$ and 
-
+>
 >$$
 f^{(k)}\left(z_0\right) = 0 \qquad k=0,1,2\ldots
 $$
-
+>
 >for some $z_0 \in D$. Then $f(z)=0$ for all $z \in D$.
 
 This result can be reached by looking at the power series representation of $f$:
@@ -35,7 +35,8 @@ Now, the first result we will prove is a statement about the zeros of an analyti
 
 
 **Proof**
-We make use of a couple of statements in [this post]({% post_url  2015-12-30-learning-laurent-series%}). Since $f$ is analytic, it has a power series valid on some disc $\left|z-z_0\right|\lt\delta$, for some $\delta \gt 0$.
+
+Throughout, we will make use of a couple of statements in [this post]({% post_url  2015-12-30-learning-laurent-series%}). Since $f$ is analytic, it has a power series valid on some disc $\left|z-z_0\right|\lt\delta$, for some $\delta \gt 0$.
 
 $$
 f(z) = \sum_{n=0}^{\infty}a_n\left(z-z_0\right)^n
@@ -84,21 +85,22 @@ Next, we see that we can say quite a bit about the range of a non-constant analy
 >Let $f$ be a non-constant, analytic function on a domain $D$. Then the range of $f$ is an open set.
 
 **Proof**
+
 Let $z_0 \in D$ and write $f\left(z_0\right) = w_0$. Since $f$ is not constant $f-w_0$ is not identically zero so it has a zero of order $m \ge 1$. 
 
-Let $r \gt 0$ be such that $$f\left(z_0\right) - w_0$$ does not have any zeros inside the punctured disc $$0 \lt \left|z-z_0\right| \le r$$.(This is possible because the zeros of an analytic function are isolated.) Let $\delta$ be the minimum value of  $$\left|f\left(z_0\right) - w_0\right|$$ on $$\left|z-z_0\right| \le r$$ and $w$ be any point such that $$\left|w - w_0\right|\lt \delta$$. Then,
+Let $r \gt 0$ be such that $$f\left(z_0\right) - w_0$$ does not have any zeros inside the punctured disc $$0 \lt \left\|z-z_0\right\| \le r$$.(This is possible because the zeros of an analytic function are isolated.) Let $\delta$ be the minimum value of  $$\left\|f\left(z_0\right) - w_0\right\|$$ on $$\left\|z-z_0\right\| \le r$$ and $w$ be any point such that $$\left\|w - w_0\right\|\lt \delta$$. Then,
 
 $$
  \left|\left(f(z) - w\right) - \left(f\left(z\right) - w_0\right)\right| = \left|w - w_0\right| \lt \delta \le \left|f(z) -w0\right|
 $$ 
 
-So by [Rouch&#233;'s Theorem](https://en.wikipedia.org/wiki/Rouch%C3%A9%27s_theorem), $f(z) - w$ and $f\left(z\right) - w_0$ have an equal number of zeros inside $$\left|z-z_0\right| = r$$ . But we know that $f\left(z\right) - w_0$ has exactly $m$ such zeros. Therefore $f(z) - w$ also has $m$ zeros. So $w$ lies in the range of $f$. This shows that every point in the range of $f$ is at the center of a disc of values also in the range of $f$ and we have proved the theorem.$\Box$
+So by [Rouch&#233;'s Theorem](https://en.wikipedia.org/wiki/Rouch%C3%A9%27s_theorem), $f(z) - w$ and $f\left(z\right) - w_0$ have an equal number of zeros inside $$\left\|z-z_0\right\| = r$$ . But we know that $f\left(z\right) - w_0$ has exactly $m$ such zeros. Therefore $f(z) - w$ also has $m$ zeros. So $w$ lies in the range of $f$. This shows that every point in the range of $f$ is at the center of a disc of values also in the range of $f$ and we have proved the theorem.$\Box$
 
 An important corollary to this theorem is the [Maximum Modulus Principle](https://en.wikipedia.org/wiki/Maximum_modulus_principle).
 
 **Maximum Modulus Principle**
 
->If $f$ is analytic on a domain $D$, then $$\left|f\right|$$ does not attain any local maximum on $D$.
+>If $f$ is analytic on a domain $D$, then $$\left\|f\right\|$$ does not attain any local maximum on $D$.
 
 **Proof**
 If $$\left|f\left(z_0\right)\right| \ge \left|f\left(z\right)\right|$ for all $z \in \left|z-z_0\right| \lt r$$, $r\gt0$ then $f\left(z_0\right)$ must be on the boundary of the set $$W=\left\{f\left(z\right) | z \in \left|z-z_0\right| \lt r\right\}$$ but this contradicts the fact that $W$ is an open set.$\Box$
