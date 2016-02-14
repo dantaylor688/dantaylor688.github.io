@@ -104,7 +104,7 @@ An important corollary to this theorem is the [Maximum Modulus Principle](https:
 
 **Proof**
 
-If $\left\|f\left(z_0\right)\right\| \ge \left\|f\left(z\right)\right\|$ for all $z \in \left\|z-z_0\right\| \lt r$, $r\gt0$ then $f\left(z_0\right)$ must be on the boundary of the set $W=\left\{f\left(z\right) : z\in\left\|z-z_0\right\|\lt r\right\}$ but this contradicts the fact that $W$ is an open set.$\Box$
+If $\left\|f\left(z_0\right)\right\| \ge \left\|f\left(z\right)\right\|$ for all $z \in \left\|z-z_0\right\| \lt r$, $r\gt0$ then $f\left(z_0\right)$ must be on the boundary of the set $W=\left\{f\left(z\right) : z \in \left\|z-z_0\right\| \lt r\right\}$ but this contradicts the fact that $W$ is an open set.$\Box$
 
 The first line in this proof took me some time to feel comfortable with. Now it seems obvious, but it was the following picture that I had in my mind that convinced me.
 
