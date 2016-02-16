@@ -113,6 +113,7 @@ The first line in this proof took me some time to feel comfortable with. Now it 
 The complex, analytic function $f$ maps the circle on the left to the set on the right. The point with the maximum modulus is obviously the point farthest from the origin in the right plot. This clearly must be on the boundary of $W$.
 
 ##Example
+
 By the maximum modulus principle, we know that the maximum value of the modulus of $f$ given by, 
 
 $$
