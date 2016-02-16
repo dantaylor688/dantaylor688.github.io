@@ -111,3 +111,24 @@ The first line in this proof took me some time to feel comfortable with. Now it 
 ![plane]({{ site.url }}/assets/analytic-func-geom/modulus.png "Modulus Map")
 
 The complex, analytic function $f$ maps the circle on the left to the set on the right. The point with the maximum modulus is obviously the point farthest from the origin in the right plot. This clearly must be on the boundary of $W$.
+
+##Example
+By the maximum modulus principle, we know that the maximum value of the modulus of $f$ given by, 
+
+$$
+f(z) = \frac{z^2}{z+2}
+$$
+
+on $\left\|z\right\| \le 1$, cannot come inside $\left\|z\right\| \lt 1$. So it must come on the boundary $\left\|z\right\| = 1$. Indeed, the modulus of the function $f$ above is
+
+$$
+|f(z)| = \frac{|z|^4}{|z|^2 + 4\text{Re}(z) + 4}
+$$
+
+from which it is clear that the maximum on the disc $\left\|z\right\| \le 1$ comes when $\left\|z\right\| = 1$ and $\text{Re}(z) = 0$.
+
+
+![plane]({{ site.url }}/assets/analytic-func-geom/mod1.png "Modulus 1")
+![plane]({{ site.url }}/assets/analytic-func-geom/mod2.png "Modulus 2")
+
+An application of the maximum modulus principle tells us that if we have a constant, sourceless ($\int_{\gamma}f\cdot n\,ds=0$ or all smooth, simple, closed curves $\gamma$ in $D$), [irrotational](https://en.wikipedia.org/wiki/Flow_velocity#Irrotational_flow) flow on a domain $D$, then at no point in $D$ is the speed of the fluid the greatest. 
