@@ -12,7 +12,7 @@ $$
 
 $G$ is known as the **complex potential** of the flow. In this post, we will see that the level curves $\text{Im }G = c_0$ where $c_0$ is a constant are the paths followed by a particle in the flow. That is, these level curves are the [streamlines](https://en.wikipedia.org/wiki/Streamlines,_streaklines,_and_pathlines) of the flow.
 
-Let $z_0$ be a point in $D$ such that $G(z_0) \ne 0$. Then $G'(z_0) = \overline{f(z_0)} \ne 0$ so $G$ is one-to-one in $\left\{ z : |z-z_0| \lt \delta \right\}$ that is some disc centered at $z_0$ (see the discussion [here]({% post_url 2015-12-30-learning-laurent-series %})). Since $G$ is one-to-one, it is invertible. Denote its inverse by $H$ so that $H(G(z)) = z$ at least for all $z$ in $|z-z_0| \lt \delta$. Then, $H(w)$ is an analytic function for $w \in \Omega = \left\{G(z) : |z - z_0 | \lt \delta\right\}$. 
+Let $z_0$ be a point in $D$ such that $G(z_0) \ne 0$. Then $G'(z_0) = \overline{f(z_0)} \ne 0$ so $G$ is one-to-one in $\left\{ z : \|z-z_0\| \lt \delta \right\}$ that is some disc centered at $z_0$ (see the discussion [here]({% post_url 2015-12-30-learning-laurent-series %})). Since $G$ is one-to-one, it is invertible. Denote its inverse by $H$ so that $H(G(z)) = z$ at least for all $z$ in $|z-z_0| \lt \delta$. Then, $H(w)$ is an analytic function for $w \in \Omega = \left\{G(z) : |z - z_0 | \lt \delta\right\}$. 
 
 Now the level curve
 
@@ -50,7 +50,7 @@ $$
 
 So the unit tangent vector of $\Gamma_0$ is parallel to that of $f(z)$ for all $z$ in $\Gamma_0$. 
 
-Now if $u(t)$, $a \lt t \lt b$ is a continuously differentiable function with values on the line $L = \left\{ \tau + ic_0: \tau + ic_0 \in \Omega, c_0 = \text{Im }G(z_0) \right\}$ such that
+Now if $u(t)$, $a \lt t \lt b$ is a continuously differentiable function with values on the line $$L = \left\{ \tau + ic_0: \tau + ic_0 \in \Omega, c_0 = \text{Im }G(z_0) \right\}$$ such that
 
 $$
 u'(t) = \left|H'(u(t))\right|^{-2}, \qquad a \lt t \lt b
