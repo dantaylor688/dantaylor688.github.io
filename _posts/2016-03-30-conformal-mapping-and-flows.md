@@ -4,7 +4,7 @@ title: Conformal Mapping and Flows
 comments: true
 ---
 
-If $f$ is a [sourcless and irrotational flow]({% post_url 2015-02-13-analytic-function-geometry %}) on a domain $D$ then there exists an analytic function $G$ such that
+If $f$ is a [sourcless and irrotational flow]({% post_url 2016-02-13-analytic-function-geometry %}) on a domain $D$ then there exists an analytic function $G$ such that
 
 $$
 G'(z) = \overline{f(z)} \qquad z \in D
