@@ -83,4 +83,4 @@ $$
 
 for $a \lt t \lt b$. So the tangent vectors of $\gamma$ are precisely the paths that a particle in the flow will follow. That is, the level curves given by $\Gamma_0$ are exactly the streamlines of $f$. 
 
-This observation serves to motivate the [Riemann Mapping theorem](https://en.wikipedia.org/wiki/Riemann_mapping_theorem) and  [Schwarz-Christoffel Transformations](https://en.wikipedia.org/wiki/Schwarz%E2%80%93Christoffel_mapping) because it shows us why we might care to find specific conformal maps. Perhaps there will be a follow up post on these results.
+This observation serves to motivate the [Riemann Mapping theorem](https://en.wikipedia.org/wiki/Riemann_mapping_theorem) and  [Schwarz-Christoffel Transformations](https://en.wikipedia.org/wiki/Schwarz%E2%80%93Christoffel_mapping) because it shows us why we might care to find specific conformal maps. Perhaps there will be a follow up post on these results. Working through this section and some of the computations for the examples, I realized I may need to have a look at [The Geometry of Complex Numbers](http://www.amazon.com/Geometry-Complex-Numbers-Dover-Mathematics/dp/0486638308) down the road.
