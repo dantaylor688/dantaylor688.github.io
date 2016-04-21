@@ -12,7 +12,7 @@ There are three criteria that we will consider in judging whether our edge detec
 2. Good localization -- The points marked as edge points should be as close as possible to the true edge. 
 3. Only one response per edge -- This is implicit in the first criteria. If we get multiple responses for a single edge we are obviously marking non-edge points as belonging to an edge. However, this points needs to be made explicit due to the mathematical formulation to follow.
 
-##Detection and Localization Criteria
+## Detection and Localization Criteria ##
 We now look at how to formalize the first two criteria above. We will begin with a step edge, $$G(x)$$ in white Gaussian noise,  $$n(x)$$. For simplicity, we will assume the step is centered at  $$x=0$$. We will then form the convolution of  $$G(x)$$ and the filter we are yet to discover whose impulse response will be denoted by,  $$f(x)$$. A local maximum of this convolution will denote the center of the edge we hope to detect. Our work now is to find the ideal filter.
 
 The response of the filter to the step edge will be denoted by  $$H_G$$ and is given by the convolution integral:
@@ -106,7 +106,7 @@ $$
 
 Fixing $$k$$ fixes the number of maxima in the response attributed to noise.
 
-##Approximating Optimal Detectors
+## Approximating Optimal Detectors ##
 
 In general, it will be difficult or impossible to find an optimal solution to our problem satisfying a constraint such as the multiple response constraint. Instead, you can use what Canny refers to as a penalty method, or in the language of modern machine learning, regularization. Instead of optimizing your desired functional with constraints, $$P_i$$, we can instead optimize their linear combination:
 
@@ -126,7 +126,7 @@ He admits that the results are about 20% worse with this filter than that of the
 
 Below we use this $$f$$ in an example.
 
-##An Example
+## An Example ##
 For a quick example, we have a signal with a single step.
 
 ![plane]({{ site.url }}/assets/step-detection/signal.png "signal")
