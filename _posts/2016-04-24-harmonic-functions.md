@@ -78,7 +78,35 @@ With the conclusion of the last section under our belts, we can quickly conclude
 
 >If a function $u$ is harmonic on a domain $D$ and continuous on $D \cup B$ (where $B$ is the boundary of $D$), then $u$ does not attain a maximum on $D$ and its maximum is on $B$.
 
-Furthermore, we have a **Mean-Value Theorem for harmonic functions**. Let $u$ be a (possibly complex) harmonic function. Then we can write it as a sum of two real valued harmonic functions 
+Furthermore, we have a **Mean-Value Theorem for harmonic functions**. We will make use of the following mini-lemma.
+
+>**Lemma**
+>The components of a complex valued harmonic function are themselves harmonic.
+
+**Proof**
+Let $u$ be a complex-valued harmonic function and write $u = u_1 + iu_2$ where $u_1$ and $u_2$ are each real-valued. Then 
+
+$$\begin{align*}
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2u}{\partial y^2} &= 0\\
+\implies \frac{\partial^2 u_1}{\partial x^2} + \frac{\partial^2u_1}{\partial y^2} + i\left(\frac{\partial^2 u_2}{\partial x^2} + \frac{\partial^2u_2}{\partial y^2}\right) &= 0
+\end{align*}
+$$
+
+Equating real and imaginary parts yields
+
+$$
+\frac{\partial^2 u_1}{\partial x^2} + \frac{\partial^2u_1}{\partial y^2}=0
+$$
+
+and
+
+$$
+\frac{\partial^2 u_2}{\partial x^2} + \frac{\partial^2u_2}{\partial y^2} = 0
+$$
+
+So $u_1$ and $u_2$ are each harmonic. $\Box$
+
+Now to show our Mean-Value Theorem, let $u$ be a (possibly complex) harmonic function and write it as a sum of two real valued harmonic functions 
 
 $$
 u = u_1 + iu_2
