@@ -89,11 +89,11 @@ Define $f_1$ and $f_2$ to be the corresponding analytic functions for which $u_1
 $$\begin{align*}
 u(z_0) &= u_1(z_0) + iu_2(z_0)\\
 &= \text{Re}f_1(z_0) + i\text{Re}f_2(z_0)\\
-&=\text{Re}\int_0^{2\pi}f_1(z_0 + re^{it})\,dt + i\text{Re}\int_0^{2\pi}f_2(z_0 + re^{it})\,dt \\
-&=  \int_0^{2\pi}\text{Re}f_1(z_0 + re^{it})\,dt + \int_0^{2\pi}i\text{Re}f_2(z_0 + re^{it})\,dt\\
-&=\int_0^{2\pi}\text{Re}f_1(z_0 + re^{it}) + i\text{Re}f_2(z_0 + re^{it})\,dt\\ 
-&= \int_0^{2\pi}u_1(z_0 + re^{it}) + iu_2(z_0 + re^{it}) \,dt \\
-&= \int_0^{2\pi}u(z_0 + re^{it})\,dt
+&=\text{Re}\left\{\frac{1}{2 \pi}\int_0^{2\pi}f_1(z_0 + re^{it})\,dt \right\} + i\text{Re}\left\{\frac{1}{2 \pi}\int_0^{2\pi}f_2(z_0 + re^{it})\,dt \right\} \\
+&=  \frac{1}{2 \pi}\int_0^{2\pi}\text{Re}f_1(z_0 + re^{it})\,dt + \frac{1}{2 \pi}\int_0^{2\pi}i\text{Re}f_2(z_0 + re^{it})\,dt\\
+&=\frac{1}{2 \pi}\int_0^{2\pi}\text{Re}f_1(z_0 + re^{it}) + i\text{Re}f_2(z_0 + re^{it})\,dt\\ 
+&= \frac{1}{2 \pi}\int_0^{2\pi}u_1(z_0 + re^{it}) + iu_2(z_0 + re^{it}) \,dt \\
+&= \frac{1}{2 \pi}\int_0^{2\pi}u(z_0 + re^{it})\,dt
 \end{align*}
 $$
 
@@ -102,7 +102,7 @@ To reiterate
 > The **Mean-Value Theorem for harmonic functions** is
 >
 >$$
-u(z_0)   =\int_0^{2\pi}u(z_0 + re^{it})\,dt
+u(z_0) = \frac{1}{2 \pi}\int_0^{2\pi}u(z_0 + re^{it})\,dt
 $$
 
 
