@@ -437,7 +437,7 @@ We have again reduced the problem of finding the minimum of a integral to that o
 
 #### Example ####
 
-To find the displacement of points on a membrane streched over a region $B$ with boundary values $u|_l=\phi$ we minimize the potential energy
+To find the displacement of points on a membrane streched over a region $B$ with boundary values $\phi$ we minimize the potential energy
 
 $$
 \frac{\mu}{2}\iint_B u_x^2 + u_y^2 \,dx\,dy
