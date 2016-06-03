@@ -141,14 +141,15 @@ We pause for a brief lemma
 **Lemma**
 
 >If
-  
+>
 >$$
 \int_{a}^{b} f(x)\xi(x) \,dx = 0 
 $$
-
+>
 > for all functions $\xi$, then $f(x) = 0$ on the interval $[a,b]$. 
 
 **Proof**
+
 Suppose to the contrary that for some $c \in [a,b]$ $f(c) \neq 0$. Then since $f$ is continuous, there exists an interval $[\alpha,\beta]$ on which $f$ is not identically zero and has the same sign as $f(c)$. 
 
 We can then construct a continuously differentiable function, $\xi$ that will cause the integral to be non-zero over $[\alpha,\beta]$. For instance,
