@@ -139,6 +139,7 @@ $$
 We pause for a brief lemma
 
 **Lemma**
+
 >If  
 $$
 \int_{a}^{b} f(x)\xi(x) \,dx = 0 
