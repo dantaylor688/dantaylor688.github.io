@@ -140,10 +140,12 @@ We pause for a brief lemma
 
 **Lemma**
 
->If  
-$$
+>If
+  
+>$$
 \int_{a}^{b} f(x)\xi(x) \,dx = 0 
 $$
+
 > for all functions $\xi$, then $f(x) = 0$ on the interval $[a,b]$. 
 
 **Proof**
