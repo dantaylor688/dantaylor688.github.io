@@ -107,14 +107,14 @@ $$
 Where, $O(\eta^2)$ are terms quadratic in the perturbation $\eta$. Since $ x_1$ is a fixed point, $f( x_1)=0$. Then,
 
 $$
-\dot(\eta) = \eta f'( x_1) + O(\eta^2)
+\dot{\eta} = \eta f'( x_1) + O(\eta^2)
 $$
 
 If $f'( x_1) \neq 0$ then the  $O(\eta^2)$ is negligible and we have established the **linearization** of $\eta$. 
 
 $$
 \begin{equation}
-\dot(\eta) = \eta f'( x_1)
+\dot{\eta} = \eta f'( x_1)
 \end{equation}
 $$
 
