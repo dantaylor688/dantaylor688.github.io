@@ -23,7 +23,13 @@ $$
 \end{align*}
 $$
 
-If $x(0) = x_0$, then $c = \log\left| \csc x_0 + \cot x_0\right|$ and 
+If $x(0) = x_0$, then 
+
+$$
+c = \log\left| \csc x_0 + \cot x_0\right|
+$$ 
+
+and 
 
 $$
 \begin{equation}
@@ -80,38 +86,38 @@ Note, that all of this information (and more) is available in the analytic solut
 
 ## Linear Stability Analysis ##
 
-Now we make one final observation in this post regarding an analytic method for determining the stability of a fixed point. To begin, let $x^*$ be a fixed point of the system, $\dot{x} = f(x)$ and $\eta(t) = x(t) - x^*$ a small perturbation from $x^*$. Recall that for a stable fixed point, this perturbation will decay leading back to $x^*$, if $x^*$ is unstable the perturbation will grow and lead the phase particle far away from $x^*$. To decide whether $\eta$ will grow or decay we form a differential equation involving $\eta$. Differentiating the expression for $\eta$ leads to
+Now we make one final observation in this post regarding an analytic method for determining the stability of a fixed point. To begin, let $ x_1$ be a fixed point of the system, $\dot{x} = f(x)$ and $\eta(t) = x(t) -  x_1$ a small perturbation from $ x_1$. Recall that for a stable fixed point, this perturbation will decay leading back to $ x_1$, if $ x_1$ is unstable the perturbation will grow and lead the phase particle far away from $ x_1$. To decide whether $\eta$ will grow or decay we form a differential equation involving $\eta$. Differentiating the expression for $\eta$ leads to
 
 $$
-\dot{\eta} = \frac{d}{dt}\left(x - x^*\right) = \dot{x}
+\dot{\eta} = \frac{d}{dt}\left(x -  x_1\right) = \dot{x}
 $$
 
 Thus, 
 
 $$
-\dot{\eta} = \dot{x} = f(x) = f(x^* + \eta)
+\dot{\eta} = \dot{x} = f(x) = f( x_1 + \eta)
 $$
 
 Then we can look at the Taylor expansion for this final term
 
 $$
-f(x^* + \eta) = f(x^*) + \eta f'(x^*) + O(\eta^2)
+f( x_1 + \eta) = f( x_1) + \eta f'( x_1) + O(\eta^2)
 $$
 
-Where, $O(\eta^2)$ are terms quadratic in the perturbation $\eta$. Since $x^*$ is a fixed point, $f(x^*)=0$. Then,
+Where, $O(\eta^2)$ are terms quadratic in the perturbation $\eta$. Since $ x_1$ is a fixed point, $f( x_1)=0$. Then,
 
 $$
-\dot(\eta) = \eta f'(x^*) + O(\eta^2)
+\dot(\eta) = \eta f'( x_1) + O(\eta^2)
 $$
 
-If $f'(x^*) \neq 0$ then the  $O(\eta^2)$ is negligible and we have established the **linearization** of $\eta$. 
+If $f'( x_1) \neq 0$ then the  $O(\eta^2)$ is negligible and we have established the **linearization** of $\eta$. 
 
 $$
 \begin{equation}
-\dot(\eta) = \eta f'(x^*)
+\dot(\eta) = \eta f'( x_1)
 \end{equation}
 $$
 
-This is a first order linear differential equation to which we know the solutions. Indeed, if $f'(x^*) \lt 0$ the perturbations will tend to zero, and if $f'(x^*) \gt 0$ the perturbations will grow. 
+This is a first order linear differential equation to which we know the solutions. Indeed, if $f'( x_1) \lt 0$ the perturbations will tend to zero, and if $f'( x_1) \gt 0$ the perturbations will grow. 
 
 Looking back at the example (1) notice that all the stable fixed points happen where $\frac{d}{dx} \sin x \lt 0$ and unstable ones happen where $\frac{d}{dx} \sin x \gt 0$. 
