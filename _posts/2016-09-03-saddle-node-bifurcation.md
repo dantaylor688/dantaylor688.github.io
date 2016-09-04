@@ -2,7 +2,7 @@
 layout: post
 title: Saddle-node Bifurcations
 comments: true
-
+---
 
 Often, a non-linear dynamical system will depend on a parameter. The value of which can drastically affect the long term behavior of the system. As a simple example consider the system
 
