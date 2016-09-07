@@ -8,7 +8,7 @@ Often, a non-linear dynamical system will depend on a parameter. The value of wh
 
 $$
 \begin{equation}
-\dot{x} = r - x^2
+\dot{x} = r + x^2
 \end{equation}
 $$
 
@@ -27,13 +27,13 @@ There are several ways to visualize how the fix points of a system depend on the
 If we look at the fixed points of the system (1), $x^*$ they will solve the equation
 
 $$
-0 = r - x^2
+0 = r + x^2
 $$
 
 So that 
 
 $$
-r = {x^*}^2
+r = -{x^*}^2
 $$
 
 Which is a simple plot. However, it is preferable to look at the this image with the axes inverted. This makes it clear that the fixed points of the system, $x^*$ are a function of the parameter, $r$.

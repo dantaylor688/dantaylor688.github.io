@@ -310,22 +310,23 @@ if __name__ == "__main__":
     frame1.axes.get_yaxis().set_visible(True)
     
 
-    ## x = +-sqrt(r)
+    ## x = +-sqrt(-r)
     rp = arange(0,5,0.01)
     fig= figure(6001)
+    lx = arange(-5,3,0.01)
     ax = fig.add_subplot(111)
     frame1 = plt.gca()
     hold
-    ax.plot(rp,sqrt(rp),'b--')
-    ax.plot(rp,-sqrt(rp),'b-')
+    ax.plot(-rp,sqrt(rp),'b--')
+    ax.plot(-rp,-sqrt(rp),'b-')
     ax.plot(lx,zeros_like(lx),'k-')
     xlabel(r'$r$',fontsize=fs)
     ylabel(r'$x^*$',fontsize=fs)
-    # xlim([-5,5])
-    ax.annotate('Stable', xy=(4, -2), xytext=(3,-2.5),
+    xlim([-5,3])
+    ax.annotate('Stable', xy=(-4, -2), xytext=(-3,-2.5),
              arrowprops=dict(facecolor='black', shrink=0.04, width=1),
              )
-    ax.annotate('Unstable', xy=(4, 2), xytext=(3, 2.5),
+    ax.annotate('Unstable', xy=(-4, 2), xytext=(-3, 2.5),
              arrowprops=dict(facecolor='black', shrink=0.04, width=1),
              )
     frame1.axes.get_xaxis().set_visible(True)
