@@ -1,8 +1,10 @@
 ---
-Transcritical Bifurcations
+layout: post
+title: Transcritical Bifurcations
+comments: true
 ---
 
-In my [last post](post_link), we discussed the simplest type of bifurcation, the saddle-node bifurcation. Next, we look at a different type of bifurcation. The transcritical bifurcation has the normal form
+In my [last post]({% post_url  2016-09-03-saddle-node-bifurcation%}), we discussed the simplest type of bifurcation, the saddle-node bifurcation. Next, we look at a different type of bifurcation. The transcritical bifurcation has the normal form
 
 $$
 \begin{equation}
@@ -31,7 +33,7 @@ We will handle this in two different ways. First, we look at the phase diagram o
 
 ![plane]({{ site.url }}/assets/transcritical/log-bif.png "log phase diagram")
 
-Notice that $x=1$ is a fixed point for all $r$. We can employ the same method as in the [previous post](previous_post_link) and solve for $r$ in terms of $x$ and then just invert the axes. For a fixed point, 
+Notice that $x=1$ is a fixed point for all $r$. We can employ the same method as in the [previous post]({% post_url  2016-09-03-saddle-node-bifurcation%}) and solve for $r$ in terms of $x$ and then just invert the axes. For a fixed point, 
 
 $$
 \begin{align*}
@@ -76,4 +78,4 @@ And here are the two plots together to get a better feel for how good the approx
 
 ![plane]({{ site.url }}/assets/transcritical/log-lin.png "comparison")
 
-We have yet to discuss, pitchfork bifurcations. It was my intention for that to be the topic of my next post. However, I recently started a new job working on the [autonomous car](http://media.gm.com/media/us/en/gm/news.detail.html/content/Pages/news/us/en/2016/mar/0311-cruise.html) at [GM](http://www.gm.com/index.html). Because of this, my area of focus will be shifting, so I don't know if my current study of nonlinear dynamics will continue nor do I know what the topic of my next post will be. We shall see.
+We have yet to discuss pitchfork bifurcations. It was my intention for that to be the topic of my next post. However, I recently started a new job working on the [autonomous car](http://media.gm.com/media/us/en/gm/news.detail.html/content/Pages/news/us/en/2016/mar/0311-cruise.html) at [GM](http://www.gm.com/index.html). Because of this, my area of focus will be shifting, so I don't know if my current study of nonlinear dynamics will continue nor do I know what the topic of my next post will be. We shall see.
