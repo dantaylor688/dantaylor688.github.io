@@ -133,11 +133,11 @@ if __name__ == "__main__":
     r = log(1+rp)/rp
     rr = log(1+rn)/rn
     ax = fig.add_subplot(111)
-    
+    plot(zeros(8),'k-')
     plot(r,rp,'b--')
     plot(rr,rn,'b-')
     
-    plot(zeros(8),'k-')
+    
     a[0:1] = ['',1]
     a[2:] = ['' for k in a[2:]]
     ax.set_xticklabels(a)
