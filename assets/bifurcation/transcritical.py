@@ -67,7 +67,7 @@ if __name__ == "__main__":
     xdot = r*x - x**2
     ax.plot(x,xdot,'b-')
     ax.plot(0,0,'bo',fillstyle='full',mec='b')
-    ax.plot(r,0,'bo',fillstyle='right',mec='b')
+    ax.plot(r,0,'bo', mfc='none',mec='b')
     ylim([min(xdot)-1,max(xdot)+3])
     xlim([min(x),max(x)])
     ax.plot(x,zeros_like(x),'k-')
