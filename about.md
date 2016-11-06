@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-I am currently a quality engineer at [Ford Motor Company](http://www.ford.com/). Previously, I was the data analyst at (now extinct) [Stratos Inc.](https://stratoscard.com/), a startup in Ann Arbor, MI. Before that, I was a research scientist at [Michigan Aerospace Corp.](http://www.michiganaerospace.com/), 
+I am currently a computer scientist working on the autonomous vehicle at [GM](https://www.gm.com/all-news-stories/technology.html). Prior to this I spent time at [Ford Motor Company](http://www.ford.com/). Before that, I was the data analyst at (now extinct) [Stratos Inc.](https://stratoscard.com/), a startup in Ann Arbor, MI. Going even further back, I was a research scientist at [Michigan Aerospace Corp.](http://www.michiganaerospace.com/), 
 where I worked on applying machine learning algorithms and solving inverse problems. I 
 have also been an adjunct lecturer at [Eastern Michigan University](http://www.emich.edu/math/), 
 where I have taught Intermediate Algebra and Calculus I. Here is a link to my [CV]({{ site.url }}/assets/about/dan_taylor_cv.pdf) or if you prefer a shorter version, you can see my 
