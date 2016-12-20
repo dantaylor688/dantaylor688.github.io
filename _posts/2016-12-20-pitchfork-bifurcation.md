@@ -8,7 +8,7 @@ This will be a *very* brief treatment of bifurcations of the pitch-fork variety.
 
 Pitchfork bifurcations are common in physical problems that involve symmetry. An example of such a system would be a beam with a weight placed on top of it. As weight is added on top of the beam, the beam holds the mass without any trouble. At some critical weight, the beam begins to buckle and this may happen in either direction. This buckling is an example of a pitchfork bifurcation. There are two types of pitchfork bifurcations: supercritical and subcritical. We will start with the easier of the two: supercritical.
 
-###Supercritical Pitchfork Bifurcation###
+### Supercritical Pitchfork Bifurcation ###
 
 The normal form of the supercritical pitchfork bifurcation is 
 
@@ -26,7 +26,7 @@ The bifurcation diagram makes it clear where the name 'pitchfork' comes from
 
 ![plane]({{ site.url }}/assets/pitchfork/super-bifurcation.png "Supercritical Bifurcation Diagram")
  
-###Subcritical Pitchfork Bifurcation####
+### Subcritical Pitchfork Bifurcation ####
 
 The normal form of the subcritical pitchfork bifurcation is 
 
