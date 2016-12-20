@@ -133,13 +133,13 @@ if __name__ == "__main__":
     hold
     rpp = sqrt(arange(0,5,0.1))
     rpn = -1*sqrt(arange(0,5,0.1))
-    rn = zeros_like(arange(-5,0,0.1))
+    rn = zeros_like(arange(-8,0,0.1))
     rzp = zeros_like(arange(0,5,0.1))
-    rzn = zeros_like(arange(-5,0,0.1))
+    rzn = zeros_like(arange(-8,0,0.1))
     rps = sqrt(arange(0,10,0.1)) + rpp[-1]
     rpns = -1*sqrt(arange(0,10,0.1)) + rpn[-1]
     
-    ax.plot(arange(-5,0,0.1),rzn,'b-')
+    ax.plot(arange(-8,0,0.1),rzn,'b-')
     ax.plot(arange(0,5,0.1),rzp,'b--')
     ax.plot(arange(-5,0,0.1),rpp[::-1],'b--')
     ax.plot(arange(-5,0,0.1),rpn[::-1],'b--')
