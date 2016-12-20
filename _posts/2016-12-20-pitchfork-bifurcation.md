@@ -26,7 +26,7 @@ The bifurcation diagram makes it clear where the name 'pitchfork' comes from
 
 ![plane]({{ site.url }}/assets/pitchfork/super-bifurcation.png "Supercritical Bifurcation Diagram")
  
-### Subcritical Pitchfork Bifurcation ####
+### Subcritical Pitchfork Bifurcation ###
 
 The normal form of the subcritical pitchfork bifurcation is 
 
