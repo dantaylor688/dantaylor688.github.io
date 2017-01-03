@@ -276,7 +276,7 @@ $$
 \end{equation}
 $$
 
-where $C>0$ is a constant and $\theta$ depends on $n$ such that $|\theta | \le 1.$
+where $C>0$ is a constant and $\theta$ depends on $n$ such that $\|\theta \| \le 1.$
 
 Now we come to the point of the post. *For a given constant $M$, we will establish inequalities for the number of primes, $T$ in the interval  $[n,Mn].$* We first note that 
 
@@ -290,13 +290,13 @@ $$
 \sum_{p \le Mn} \frac{\ln p}{p} = \ln (Mn) + \theta' C = \ln M + \ln n + \theta ' C
 $$
 
-where $\theta '$ is defined analogously to $\theta$ in (9). This equation with the two preceding it gives
+where $\theta'$ is defined analogously to $\theta$ in (9). This equation with the two preceding it gives
 
 $$
 \sum_{n \le p \le Mn} \frac{\ln p}{p} = \ln M + \theta 'C - \theta C = \ln M + 2\theta_0C
 $$
 
-where $|\theta_0| \le 1$. So the following inequality holds
+where $\|\theta_0\| \le 1$. So the following inequality holds
 
 $$
 \ln M - 2C \le \sum_{n \le p \le Mn} \frac{\ln p}{p} \le \ln M + 2C
@@ -315,9 +315,11 @@ $$
 T \frac{\ln n}{n} \gt \ln M - 2C
 \end{equation}
 $$ 
+
  and 
- $$
- \begin{equation}
+ 
+$$
+\begin{equation}
 T \frac{\ln (Mn)}{Mn} \gt \ln M + 2C.
 \end{equation}
 $$ 
