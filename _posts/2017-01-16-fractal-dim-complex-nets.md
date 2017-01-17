@@ -26,7 +26,7 @@ The canonical example of a fractal observed in nature is measuring the coastline
 
 ![plane]({{ site.url }}/assets/fractal-dim/Britain-fractal-coastline-combined.jpg "Great Britain Coastline")
 
-(This image also came from [Wikipedia](https://commons.wikimedia.org/w/index.php?curid=391622).) From left to right, top to bottom we have 11.5 rulers each 200 km long, then 28 rulers 100 km long each, and finally 70 rulers that are 50 km long each. The total length of the coastline of Great Britain increases in each case is: 2300 km , 2800 km, and 3500 km respectively. The fractal dimension is a measure of how much the total length increases as the ruler shrinks. 
+(This image also came from [Wikipedia](https://commons.wikimedia.org/w/index.php?curid=391622).) From left to right we have 11.5 rulers each 200 km long, then 28 rulers 100 km long each, and finally 70 rulers that are 50 km long each. The total length of the coastline of Great Britain increases in each case: 2300 km , 2800 km, and 3500 km respectively. The fractal dimension is a measure of how much the total length increases as the ruler shrinks. 
 
 While a country's coastline is not a perfect fractal, we can use the Sierpinski triangle example from above as another example. Recall that we recover the original image if we zoom in on a third of the image by a factor of two. So we can *define* the fractal dimension of the Sierpinski triangle as
 
