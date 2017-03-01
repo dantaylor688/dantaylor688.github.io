@@ -8,7 +8,6 @@ Here, we look at a *simple* model for traffic speed on the streets of San Franci
 
 The data was taken from [Caltrans PeMS](http://pems.dot.ca.gov/). For the purpose of this post, we are using the hourly aggregate data. Here is a sample from station id 400043.
 
-[plot - raw speed data]
 ![plane]({{ site.url }}/assets/fourier-traffic/raw.png "Raw Speed Data")
 
 From this, it is obvious that there is a periodic component to the data. This leads us to suspect a Fourier representation would be a good place to start. Something of the form:
