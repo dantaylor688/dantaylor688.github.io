@@ -17,11 +17,11 @@ First a few definitions are in order. By a *linear space*, $V$ over a field of s
 7. $(\alpha + \beta)f = \alpha f + \beta f$
 8. $\alpha(f+g) = \alpha f + \alpha g$
 
-We refer to a function, $\|\cdot\| : V \to \mathbb{R}$ as a *norm* on $V$ if it satisfies the following criteria:
+We refer to a function, $\|\|\cdot\|\| : V \to \mathbb{R}$ as a *norm* on $V$ if it satisfies the following criteria:
 
-1. $\|f\| \ge 0$ and $\|f\| = 0 \iff f =0$
-2. $\|\alpha f\| = |\alpha| \|f\|$
-3. $\|f+g\| \le \|f\| + \|g\| $
+1. $\|\|f\|\| \ge 0$ and $\|\|f\|\| = 0 \iff f =0$
+2. $\|\|\alpha f\|\| = \|\alpha \| \|\|f\|\|$
+3. $\|\|f+g\|\| \le \|\|f\|\| + \|\|g\|\| $
 
 We call the space a *normed linear space* if, $V$ is a linear space that is also equipped with a norm.
 
