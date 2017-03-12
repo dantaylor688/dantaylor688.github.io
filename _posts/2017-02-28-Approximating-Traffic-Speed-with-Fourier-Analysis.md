@@ -40,7 +40,7 @@ From this plot, we see that the daily changes in traffic speed are captured. How
 
 ### Short-comings ###
 
-As I said at the outset, this model has several short-comings. Two name two:
+As I said at the outset, this model has several short-comings. To name two:
 
 * **It does not capture shocks in speed.**
 	Traffic flow is not a linear process. As evidenced by the plots above, there are regular shocks to the traffic flow. These occur at *nearly* periodic intervals. These *near* periodicity suggests a chaotic element to the process. However, I would need to look at this more (and perhaps at more granular data) because the power spectrum is not as dense as I would expect for a chaotic system.
