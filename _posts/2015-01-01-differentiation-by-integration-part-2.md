@@ -5,7 +5,7 @@ comments: true
 ---
 *This post is an attempt to further motivate, and expand upon the content of my [previous post]({% post_url 2014-12-31-differentiation-by-integration %}). By the end of this post we will be tackling a problem similar to that discussed in my previous post: finding the derivative of an empirical function.*
 
-##Smoothing Data by Fourth Differences 
+## Smoothing Data by Fourth Differences 
 
 Before we talk about finding the derivative though, we will first discuss one way to find a smooth approximation to our data. Throughout the post, we assume that the data is such that the second derivative does not change much between a few neighboring points. This assumption means that for each point in our data set, we can fit a parabola
 
@@ -69,7 +69,7 @@ $$\begin{equation}
 c = y_0 - \frac{3}{35} \delta^4y_0.
 \end{equation}$$
 
-##Differentiating an Empirical Function
+## Differentiating an Empirical Function
 
 It is by using a similar argument that we can arrive at the value of the **derivative** of \\(f\\) at \\(y_0\\). From our model (1) we know the derivative at \\(x=0\\) is simply \\(b\\). Making the necessary substitutions into (a), (b), and (c) and solving for \\(b\\) (as we did for \\(c\\) above) we come to
 
