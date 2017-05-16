@@ -111,7 +111,8 @@ Adding back the linear term we get the smoothed fit to the original data.
 
 ![plane]({{ site.url }}/assets/fourier-smooth/smoothed.png "Smoothed Fit Raw")
 
-##Additional Note
+## Additional Note
+
 I think it's important to mention the fact that if, after smoothing our data, we then wish to find an approximation to the derivative of the underlying process, we should **NOT** simply take the derivative of the smoothed approximation (2). Several higher order terms were dropped in (2) and the derivative is not as smooth as our original function. Therefore it is reasonable to expect that we will need to keep more terms in the Fourier series of the derivative. To put it simply: **the derivative of a good approximation is not necessarily a good approximation to the derivative**. 
 
 The derivative by definition is concerned with the immediate vicinity of our data points. So a better solution to the problem is to use a method similar to the one outlined in my [previous post]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}) and just use the $$k$$ closest neighbors to each data point to compute an approximation to the derivative. 

@@ -5,7 +5,7 @@ comments: true
 ---
 *This post is the final in a series of posts on an interesting method for finding the derivative of a function, either empirical or otherwise, using integration. You can see the empirical formula [here]({% post_url 2015-01-01-differentiation-by-integration-part-2 %}) and the analytical version [here]({% post_url 2014-12-31-differentiation-by-integration %}). Here we will be visualizing the results developed previously.*
 
-##First Example
+## First Example
 For the first example, consider the simple function 
 
 $$y = 5x^2$$
@@ -44,7 +44,7 @@ f'(x) &= \frac{3}{2 \varepsilon^3} \int_{-\varepsilon}^{\varepsilon}tf(x + t)  ~
 
 In fact, it gives the exact value for the derivative! This is expected since all the terms above second order in the Taylor series expansion of our function, $$f$$ are zero.
 
-##A Second Example
+## A Second Example
 Now consider samples taken from a process expected to follow the relationship
 
 $$y  = \cos x.$$
