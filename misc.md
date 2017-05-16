@@ -14,7 +14,7 @@ Pages of interest to me by other people.
 
 ## Baseball ##
 *	My [college](http://www.grccraiders.com/index.aspx?path=baseball&) team
-*	[Records](http://www.mhsaa.com/sports/baseball/recordbook/individualrecords.aspx) from highschool
+*	[Records](http://www.mhsaa.com/sports/baseball/recordbook/individualrecords.aspx) from highschool. *Update* ten years later these records were [mentioned on Mlive](http://www.mlive.com/sports/2017/05/high_school_baseballs_record_s.html).
 
 ## Weightlifting ##
 I enjoy olympic weightlifting in my garage gym. Here are some helpful links that have helped me with developing my technique and have influenced my training philosophy.
