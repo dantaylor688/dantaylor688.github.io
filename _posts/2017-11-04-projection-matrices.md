@@ -116,7 +116,7 @@ $$
 
 ## Projection with an Arbitrary Basis (and Least Squares)##
 
-An orthogonal projector can be constructed from an arbitrary set set $n$ linearly independent vectors in $\mathbb{C}^m$ (not necessarily orthogonal). Suppose that the $n$-dimensional space is spanned by the linearly independent set of vectors $\left\{ a_1, \ldots, a_n \right\}$ and let $A$ be the $m \times n$ matrix whose $j^{\text{th}}$ column is $a_j$.
+An orthogonal projector can be constructed from an arbitrary set set $n$ linearly independent vectors in $\mathbb{C}^m$ (not necessarily orthogonal). Suppose that the $n$-dimensional space is spanned by the linearly independent set of vectors $\left{ a_1, \ldots, a_n \right}$ and let $A$ be the $m \times n$ matrix whose $j^{\text{th}}$ column is $a_j$.
 
 If $A$ is orthogonal, then in passing from the vector $v$ to it's orthogonal projection $y \in \text{range}(A)$, we must have that the difference $y-v$ is orthogonal to $\text{range}(A)$. This is equivalent to saying that $a_j^* (y-v) = 0$ for all $j$. Since this is true for all $j$, we can write $A^* (Ax - v)=0$ or 
 
