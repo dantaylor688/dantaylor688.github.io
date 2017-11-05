@@ -116,21 +116,21 @@ $$
 
 ## Projection with an Arbitrary Basis (and Least Squares)##
 
-An orthogonal projector can be constructed from an arbitrary set set $n$ linearly independent vectors in $\mathbb{C}^m$ (not necessarily orthogonal). Suppose that the $n$-dimensional space is spanned by the linearly independent set of vectors $\left\{ a_1,\ldots, a_n \right\}$ and let $A$ be the $m \times n$ matrix whose $j^{\text{th}}$ column is $a_j$.
+An orthogonal projector can be constructed from an arbitrary set set $n$ linearly independent vectors in $\mathbb{C}^m$ (not necessarily orthogonal). Suppose that the $n$-dimensional space is spanned by the linearly independent set of vectors $\left\{ a_1, \ldots, a_n \right\}$ and let $A$ be the $m \times n$ matrix whose $j^{\text{th}}$ column is $a_j$.
 
-If $A$ is orthogonal, then in passing from the vector $v$ to it's orthogonal projection $y \in \text{range}(A)$, we must have that the difference $y-v$ is orthogonal to $\text{range}(A)$. This is equivalent to saying that $a_j^*(y-v) = 0$ for all $j$. Since this is true for all $j$, we can write $A^*(Ax - v)=0$ or 
+If $A$ is orthogonal, then in passing from the vector $v$ to it's orthogonal projection $y \in \text{range}(A)$, we must have that the difference $y-v$ is orthogonal to $\text{range}(A)$. This is equivalent to saying that $a_j^* (y-v) = 0$ for all $j$. Since this is true for all $j$, we can write $A^* (Ax - v)=0$ or 
 
 $$
 A^*Ax =A^*v
 $$
 
-which is the [normal equation]({% post_url 2014-12-19-gateaux-derivative %}). Since $A$ has full rank $A^*A$ is invertible and 
+which is the [normal equation]({% post_url 2014-12-19-gateaux-derivative %}). Since $A$ has full rank $A^* A$ is invertible and 
 
 $$
 x =\left(A^*A\right)^{-1}A^*v
 $$
 
-Then the projection $y$ of the vector $v$, $y=Ax$ in the space spanned by the columns of $A$, is given by $y=A\left(A^*A\right)^{-1}A^*v$. So the orthogonal projector, $P$ onto $\text{range}(A)$ is given by
+Then the projection $y$ of the vector $v$, $y=Ax$ in the space spanned by the columns of $A$, is given by $y=A\left(A^* A\right)^{-1}A^* v$. So the orthogonal projector, $P$ onto $\text{range}(A)$ is given by
 
 $$
 P = A\left(A^*A\right)^{-1}A^*.
