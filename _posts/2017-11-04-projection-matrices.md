@@ -59,7 +59,7 @@ So, $P$ and $I-P$ split the space $\mathbb{C}^m$ into two subspaces, $S_1$ and $
 
 ## Orthogonal Projectors ##
 
-An *orthogonal projector* is one that projects onto one subspace, $S_1$ along another space, $S_2$ such that $S_1$ and $S_2$ are orthogonal to each other (that is if $x \in S_1$ and $y \in S_2$, then $x^*y = 0$). Another useful definition is that in addition to the criterion for projection matrices above in (1), an orthogonal projection matrix is also Hermitian with $P^*=P$.
+An *orthogonal projector* is one that projects onto one subspace, $S_1$ along another space, $S_2$ such that $S_1$ and $S_2$ are orthogonal to each other (that is if $x \in S_1$ and $y \in S_2$, then $x^{*}y = 0$). Another useful definition is that in addition to the criterion for projection matrices above in (1), an orthogonal projection matrix is also Hermitian with $P^*=P$.
 
 >**Theorem:** A projector $P$ is orthogonal if and only if $P = P^*$.
 
