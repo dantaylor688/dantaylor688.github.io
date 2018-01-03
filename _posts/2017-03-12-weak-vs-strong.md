@@ -35,9 +35,9 @@ It is clear that if a function, $y$ belongs to $\mathscr{D}_1$ then $y \in \math
 
 With these, and the definition of a [functional]({% post_url 2016-06-02-calculus-of-variations %}) we are ready to state the last two definitions and hit the main point of this post. For these definitions, we consider functions that are defined on the interval $I=[a,b]$. 
 
-A functional, $J[y]$ is said to have a weak extremum for $y=\hat{y}$ if there exists $\epsilon \gt 0$ such that $J[y] - J[\hat{y}]$ has the same sign for all $y$ in the set $\{{ y : \|y(x) - \hat{y}(x)\|_1 \lt \epsilon; x \in I\}} $ where $\|\cdot \|_1$ is the norm in $\mathscr{D}_1$.
+A functional, $J[y]$ is said to have a weak extremum for $y=\hat{y}$ if there exists $\epsilon \gt 0$ such that $J[y] - J[\hat{y}]$ has the same sign for all $y$ in the set $\{{ y : \|y(x) - \hat{y}(x)\|_1 \lt \epsilon; x \in I \}} $ where $\|\cdot \|_1$ is the norm in $\mathscr{D}_1$.
 
-We say that a functional, $J[y]$ has a strong extremum for $y=\hat{y}$ if there exists $\epsilon \gt 0$ such that $J[y] - J[\hat{y}]$ has the same sign for all $y$ in the set $\{{ y : \|y(x) - \hat{y}(x)\|_0 \lt \epsilon; x \in I\}}$ where $\| \cdot \|_0$ is the norm in $\mathscr{C}$.
+We say that a functional, $J[y]$ has a strong extremum for $y=\hat{y}$ if there exists $\epsilon \gt 0$ such that $J[y] - J[\hat{y}]$ has the same sign for all $y$ in the set $\{{ y : \|y(x) - \hat{y}(x)\|_0 \lt \epsilon; x \in I \}}$ where $\| \cdot \|_0$ is the norm in $\mathscr{C}$.
 
 The confusion for me came in with the naming convention. Why is the one called weak and the other strong? Furthermore, why is my book stating it is so obvious that a strong extremum is automatically a weak extremum? My confusion arose from the fact that if $y \in \mathscr{D}_1 \implies y \in \mathscr{C}$, so I incorrectly reasoned that since a weak extremum is related to the norm in $\mathscr{D}_1$ and a strong extremum to that in $\mathscr{C}$ that the naming convention (and thus the implication) should be the other way.
 
