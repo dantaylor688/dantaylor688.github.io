@@ -19,16 +19,16 @@ First a few definitions are in order. By a linear space, $V$ over a field of sca
 
 We refer to a function, $||\cdot|| : V \to \mathbb{R}$ as a norm on $V$ if it satisfies the following criteria:
 
-* $||f|| \ge 0$ and $||f|| = 0 \iff f =0$
-* $||\alpha f|| = |\alpha | ||f||$
-* $||f+g|| \le ||f|| + ||g|| $
+* $\|f\| \ge 0$ and $\|f\| = 0 \iff f =0$
+* $\|\alpha f\| = \|\alpha \| \|f\|$
+* $\|f+g\| \le \|f\| + \|g\| $
 
 We call the space a normed linear space if, $V$ is a linear space that is also equipped with a norm.
 
 Now we define a few normed linear spaces of functions that will be the main point of this post.
 
 The function space $\mathscr{C}(a,b)$ consists of those functions, $y(x)$ that are continuous on the closed interval $[a,b]$. The norm of $\mathscr{C}(a,b)$, denoted $\|\cdot\|_0$ is defined as
-$$ \|y(x)\|0 = \max{a \le x \le b}\|y(x)\| $$
+$$ \|y(x)\|_0 = \max{a \le x \le b}\|y(x)\| $$
 
 By $\mathscr{D}_1(a,b)$, we mean those functions $y(x)$ that are continuous, and have continuous first derivative. The norm of $\mathscr{D}_1$ is
 $$ \|y(x)\|_1 = \max_{a \le x \le b}\|y(x)\| + \max_{a \le x \le b}\|y'(x)\| $$
