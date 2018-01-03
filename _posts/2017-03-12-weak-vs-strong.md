@@ -29,7 +29,7 @@ Now we define a few normed linear spaces of functions that will be the main poin
 
 The function space $\mathscr{C}(a,b)$ consists of those functions, $y(x)$ that are continuous on the closed interval $[a,b]$. The norm of $\mathscr{C}(a,b)$, denoted $\|\cdot\|_0$ is defined as
 
-$$ \|y(x)\|_0 = \max{a \le x \le b}\|y(x)\| $$
+$$ \|y(x)\|_0 = \max_{a \le x \le b}\|y(x)\| $$
 
 By $\mathscr{D}_1(a,b)$, we mean those functions $y(x)$ that are continuous, and have continuous first derivative. The norm of $\mathscr{D}_1$ is
 
