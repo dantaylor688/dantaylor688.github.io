@@ -42,9 +42,9 @@ def my_correct_slow_ifft_interp(F,t):
     N = len(F)
     f = zeros(len(t), dtype=complex)
     for n in range(len(t)):
-        for k in range(N/2):
+        for k in range(int(N/2)):
             f[n] += F[k]*e**(2.0*pi*i*k*t[n])
-        for k in range(N/2,N):
+        for k in range(int(N/2),N):
             f[n] += F[k]*e**(-2.0*pi*i*(N-k)*t[n])
     return (1.0/N)*f
     
@@ -52,10 +52,12 @@ if __name__ == "__main__":
     # Sample measurements
     ts = linspace(0,1,num=21)
     f = zeros(len(ts))
-    f[0:len(ts)/2] = ts[0:len(ts)/2]
-    # f[len(ts)/2:] = e**-ts[len(ts)/2:] + 0.5 - e**-0.5
-    f[len(ts)/2:] = 1.0/ts[len(ts)/2:] - 1.5
-#     f = ts*(ts-1)
+    hf = int(len(ts)/2)
+    f[0:hf] = ts[0:hf]
+    #f[hf:] = e**-ts[hf:] + 0.5 - e**-0.5
+    f[hf:] = 1.0/ts[hf:] - 1.5
+    #f = ts*(ts-1)
+    #f = sin(ts*(2.*pi)) + cos(ts*(2.*pi))#-1.0*ts**2#exp(ts)
     
     F = fftshift(fft(f))
     F_unshifted = fft(f)
@@ -65,7 +67,7 @@ if __name__ == "__main__":
     # this includes F^-1{F(f)} for now
     figure(1)
     plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
-    ylim(-0.6,0.6)
+    #ylim(-0.6,0.6)
     title("Original Function")
     
     figure(2)
@@ -80,14 +82,14 @@ if __name__ == "__main__":
     
     figure(3)
     plot(ts,ff)
-    ylim(-0.6,0.6)
+    #ylim(-0.6,0.6)
     title("Getting Back The Original")
     
     # now interpolate
     # new timestamps, m samples between former samples. 
     Nf = len(ts)
     
-    t = linspace(0,1,num=len(ts)*2)
+    t = linspace(0,1,num=len(ts)*3)
     
     Fs = my_slow_fft(f)
     fm = my_slow_ifft(Fs)
@@ -104,24 +106,27 @@ if __name__ == "__main__":
     figure(5)
     plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
     plot(ts,fm,'g^-',markerfacecolor='none', mec='green')
-    ylim(-0.6,0.6)
+    #ylim(-0.6,0.6)
     title("Original Using My Inverse")
     
+    figure(500)
+    plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
+    plot(ts[:-1],my_correct_slow_ifft_interp(fft(f[:-1]),ts[:-1]),'g^-',markerfacecolor='none', mec='green')
+    #ylim(-0.6,0.6)
+    title("Original Using My Inverse Interp ")
+	
     figure(6)
     plot(ts,f, 'bo-',markerfacecolor='none', mec='blue')
     plot(t,fwi,'go-',markerfacecolor='none', mec='green')
-    ylim(-0.6,0.6)
+    #ylim(-0.6,0.6)
     legend(('original', 'interpolatation'))
     title("Interpolating with Fourier Coefficients, No Change")
     
     figure(7)
     plot(ts,f,'bo-',markerfacecolor='none', mec='blue')
-    plot(t,fci,'g^-',markerfacecolor='none', mec='green')
-    ylim(-0.6,0.6)
+    plot(t[:-1],my_correct_slow_ifft_interp(fft(f[:-1]),t[:-1]),'g^-',markerfacecolor='none', mec='green')
+    #ylim(-0.6,0.6)
     legend(('original', 'interpolatation'))
     title("Interpolating with Fourier Coefficients Accounting for Aliasing")
     
     show()
-    
-    
-    
