@@ -51,7 +51,7 @@ $$f_n =\frac{1}{N}\left[ \sum_{k=0}^{N/2-1} F_k e^{2 \pi i k t} + \sum_{k= N/2 }
 
 Note that using this formula depends upon the timestamps of the samples being scaled to be between 0 and 1. 
 
-*Edit:* We also require that the Fourier series be computed on all but the final sample of the original signal. The original post did not account for this and the interpolated values were skewed. This results from the Fourier series being periodic, but we were including a jump dicontinuity at the end of our signal. I think adding some zero-padding to the original signal would also correct this issue, but I haven't checked. I have also included a new plot with a truly periodic signal that begins and ends at the same value so that you can see the result without the ugly edge effects.
+*Edit:* We also require that the Fourier series be computed on all but the final sample of the original signal. The original post did not account for this and the interpolated values were skewed. This results from the Fourier series being periodic, but we were including a jump discontinuity at the end of our signal. I think adding some zero-padding to the original signal would also correct this issue, but I haven't checked. I have also included a new plot with a truly periodic signal that begins and ends at the same value so that you can see the result without the ugly edge effects.
 
 ![plane]({{ site.url }}/assets/fourier-interp/Figure_7.png "Good Fit - Periodic")
 
