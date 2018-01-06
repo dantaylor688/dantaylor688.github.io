@@ -1,4 +1,4 @@
-​---
+---
 layout: post
 title: QR Factorization
 comments: true
