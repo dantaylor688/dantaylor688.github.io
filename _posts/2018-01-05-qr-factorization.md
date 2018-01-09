@@ -4,7 +4,7 @@ title: QR Factorization
 comments: true
 ---
 
-In this post, we move on to the topic of matrix factorization. While we've already looked at the [SVD]({% post_url 2016-06-02-calculus-of-variations %}), we now study the QR factorization.
+In this post, we move on to the topic of matrix factorization. While we've already looked at the [SVD]({% post_url 2017-08-19-svd-geometry %}), we now study the QR factorization.
 
 The idea behind $QR$ factorization is to find a series of orthogonal vectors, $q_1, q_2, \ldots $ that span the same (successive) spaces as their counterparts in the columns of $A$, $a_1, a_2, \ldots$. It isn't too hard to see that if $A \in \mathbb{C}^{m \times n}, m \ge n$ has full rank then this implies that the following system holds
 
