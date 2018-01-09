@@ -68,7 +68,9 @@ $$
 \frac{\partial }{\partial x} \text{Re}(f) = \text{Re}\left( \frac{\partial f}{\partial x}\right)
 \end{equation}
 $$
- by the exact same argument
+
+By the exact same argument
+ 
 $$
 \begin{equation}
 \frac{\partial }{\partial x} \text{Im}(f) = \text{Im}\left( \frac{\partial f}{\partial x}\right)
