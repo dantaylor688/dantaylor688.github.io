@@ -9,7 +9,7 @@ $$
 f(z) = a_nz^n + a_{n-1}z^{n-1} + \cdots + a_1z + a_0
 $$
 
-where the $a_i \in \mathbb{C}$, $i = 1, \ldots, n$ show that the real and imaginary part of $f = u + iv$ ($u$ and $v$ real) individually satisfy Laplace's equation
+where the $a_j \in \mathbb{C}$, $j = 1, \ldots, n$ show that the real and imaginary part of $f = u + iv$ ($u$ and $v$ real) individually satisfy Laplace's equation
 
 $$
 \begin{align*}
