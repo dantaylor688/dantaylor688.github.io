@@ -83,7 +83,7 @@ so
 $$
 \begin{equation}
 x^2 = \frac{1}{\lambda}
-\begin{equation}
+\end{equation}
 $$
 
 The quantity
