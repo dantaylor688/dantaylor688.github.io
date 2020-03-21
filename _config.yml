@@ -16,12 +16,17 @@ author:
 version:          1.0.0
 github:
   repo:           https://github.com/dantaylor688.github.io
-  
-pages_list:       
+
+collections:
+   sunday_school_lessons:
+       output: true
+
+pages_list:
   About: '/about'
   Archive: '/archive'
   Feed: '/atom.xml'
   Misc: '/misc'
+  Sunday School: '/sunday_school.html'
 
-# MathJax  
+# MathJax
 markdown: kramdown
