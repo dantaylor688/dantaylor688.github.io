@@ -4,7 +4,7 @@ title: Sunday School
 ---
 
 <div class="posts">
-  {% for post in site.sunday_school%}
+  {% for post in site.sunday_school_lessons%}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">

@@ -26,7 +26,7 @@ pages_list:
   Archive: '/archive'
   Feed: '/atom.xml'
   Misc: '/misc'
-  Sunday School: '/sunday_school.html'
+  Sunday School: '/sunday_school'
 
 # MathJax
 markdown: kramdown
