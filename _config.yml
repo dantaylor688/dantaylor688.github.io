@@ -18,7 +18,7 @@ github:
   repo:           https://github.com/dantaylor688.github.io
 
 collections:
-   sunday_school_lessons:
+   sunday-school-lessons:
        output: true
 
 pages_list:
@@ -26,7 +26,7 @@ pages_list:
   Archive: '/archive'
   Feed: '/atom.xml'
   Misc: '/misc'
-  Sunday School: '/sunday_school'
+  Sunday School: '/sunday-school'
 
 # MathJax
 markdown: kramdown
