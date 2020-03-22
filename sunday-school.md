@@ -14,7 +14,11 @@ Note that you will need to sign up for an account with [Disqus](https://disqus.c
 
 I hope this exercise will allow us to still feel somewhat connected during this crazy time in our country.
 
-<div class="posts">
+{% for post in site.sunday-school-lessons %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
+
+<!-- <div class="posts">
   {% for post in site.sunday-school-lessons%}
   <article class="post">
     <h1 class="post-title">
@@ -26,7 +30,7 @@ I hope this exercise will allow us to still feel somewhat connected during this 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
   </article>
   {% endfor %}
-</div>
+</div> -->
 
 <!-- <div class="pagination">
   {% if paginator.next_page %}
