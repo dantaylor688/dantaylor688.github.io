@@ -18,7 +18,7 @@ github:
   repo:           https://github.com/dantaylor688.github.io
 
 collections:
-   sunday-school:
+   sunday-school-lessons:
        output: true
 
 pages_list:
