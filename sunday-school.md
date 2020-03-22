@@ -14,7 +14,7 @@ Note that you will need to sign up for an account with [Disqus](https://disqus.c
 
 I hope this exercise will allow us to still feel somewhat connected during this crazy time in our country.
 
-{% for post in site.sunday-school-lessons %}
+{% for post in site.sunday-school %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endfor %}
 
