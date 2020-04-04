@@ -8,7 +8,7 @@ In compliance with the requests of Federal, State and Local government authoriti
 
 1. Read the relevant chapter of the Bible and whatever notes I post
 2. Answer ~~at least _two_~~ all of the questions given throughout the lesson (in the comments section) and
-3. Read and respond to someone else's answer (to a different question than you answered).
+3. Read and respond to someone else's answer ~~(to a different question than you answered)~~.
 
 Note that you will need to sign up for an account with [Disqus](https://disqus.com/profile/login/) to be able to leave a comment.
 
