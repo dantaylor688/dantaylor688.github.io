@@ -7,7 +7,7 @@ title: Sunday School
 In compliance with the requests of Federal, State and Local government authorities to slow the spread of coronavirus COVID-19, the Boys' 14-15 Year Old Sunday School class is temporarily moving online. Here, I will post each week's lesson consisting of a few notes from me about the chapter we are studying as well as some questions. Your assignment will be to:
 
 1. Read the relevant chapter of the Bible and whatever notes I post
-2. Answer at least __two__ of the questions given throughout the lesson (in the comments section) and
+2. Answer ~~at least __two_~~ all of the questions given throughout the lesson (in the comments section) and
 3. Read and respond to someone else's answer (to a different question than you answered).
 
 Note that you will need to sign up for an account with [Disqus](https://disqus.com/profile/login/) to be able to leave a comment.
