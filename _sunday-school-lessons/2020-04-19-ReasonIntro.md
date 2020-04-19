@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: The Reason for God: Introduction
+title: The Reason for God - Introduction
 comments: true
 ---
 
