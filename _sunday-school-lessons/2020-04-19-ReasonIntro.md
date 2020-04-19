@@ -51,3 +51,5 @@ Many of the questions in this study will be based on material freely available f
 > **Question 3** Discuss some of the questions and doubts you would like to explore as we go through this series.
 
 > **Question 4**  What are some way to practice empathy when talking to someone who disagrees with you?
+
+Another great introduction to the book comes from Tim Keller himself in [this talk given at Google](https://www.youtube.com/watch?v=Kxup3OS5ZhQ). I highly recommend it if you are interested.
