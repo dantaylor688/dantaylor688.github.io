@@ -46,7 +46,7 @@ Many of the questions in this study will be based on material freely available f
 
 > **Question 1** We said that _both_ believers and unbelievers should wrestle with their doubts. Keller says one’s doubts “should only be discarded after long reflection”. Would you agree that a loosely held doubt is as pointless as loosely held religious faith? Explain.
 
-> **Question 2** Keller continues: “Every doubt…is based on a leap of faith”. How do you feel about his implication that even doubt is a type of faith? Add a note about fact vs belief.
+> **Question 2** Keller continues: “Every doubt…is based on a leap of faith”. How do you feel about his implication that even doubt is a type of faith?
 
 > **Question 3** Discuss some of the questions and doubts you would like to explore as we go through this series.
 
