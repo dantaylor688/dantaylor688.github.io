@@ -34,7 +34,7 @@ I think we should also all admit that the Bible contains the seeds for fighting 
 
 The Old Testament prophets fiercely condemned the use of religion for oppression. For example, the prophet Isaiah said:
 
-> Yet they seek me daily and delight to know my ways, as if they were a nation that did righteousness and did not forsake the judgment of their God; they ask of me righteous judgments; they delight to draw near to God. ‘Why have we fasted, and you see it not? Why have we humbled ourselves, and you take no knowledge of it?’ Behold, in the day of your fast you seek your own pleasure, and oppress all your workers. Behold, you fast only to quarrel and to fight and to hit with a wicked fist. Fasting like yours this day will not make your voice to be heard on high. Is such the fast that I choose, a day for a person to humble himself? Is it to bow down his head like a reed, and to spread sackcloth and ashes under him? Will you call this a fast, and a day acceptable to the Lord? “Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed[b] go free, and to break every yoke? Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh? (Isaiah 58:2-7, ESV)
+> Yet they seek me daily and delight to know my ways, as if they were a nation that did righteousness and did not forsake the judgment of their God; they ask of me righteous judgments; they delight to draw near to God. ‘Why have we fasted, and you see it not? Why have we humbled ourselves, and you take no knowledge of it?’ Behold, in the day of your fast you seek your own pleasure, and oppress all your workers. Behold, you fast only to quarrel and to fight and to hit with a wicked fist. Fasting like yours this day will not make your voice to be heard on high. Is such the fast that I choose, a day for a person to humble himself? Is it to bow down his head like a reed, and to spread sackcloth and ashes under him? Will you call this a fast, and a day acceptable to the Lord? “Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke? Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh? (Isaiah 58:2-7, ESV)
 
 Jesus regularly condemned those who would use religion to gain wealth and power
 
@@ -44,7 +44,7 @@ It is clear that the Bible is full of harsh words for anyone who would choose to
 
 But why does it seem like there are so many non-religious people who are more moral and well-adjusted compared to those in the church? Christianity actually explains this phenomenon in a sense. First with the doctrine of _common grace_, the Bible explains how "every good gift and every perfect gift is from above, coming down from the Father of lights" (James 1:17). So no matter the source (whether a believer or unbeliever), _any_ good deed is a gift from God to poor undeserving sinners. Second, the Bible also teaches that _no one_ is made right with God based on moral performance. Instead, we are reconciled to God as a gift of his grace (Eph. 2:8-9). We shouldn't be surprised then if we see moral failings within God's people. "The church is a hospital for sinners, not a museum for saints."
 
-Good character is largely shaped by families, schools, and social environments.<sup>[1](https://www.nber.org/papers/w19656)</sup>. These are things that the individual cannot control. Many people come from broken homes and have terrible struggles in their personal lives that you know nothing about. Imagine someone with such a background. He is hypersensitive, distrustful and angry but this brokenness drives him to God and he becomes a Christian. His character improves _significantly_ from where it started, but he may still be less secure and self-disciplined than the person who grew up with a better background and does not recognize their need for God.
+Good character is largely shaped by families, schools, and social environments.<sup>[1](https://www.nber.org/papers/w19656)</sup> These are things that the individual cannot control. Many people come from broken homes and have terrible struggles in their personal lives that you know nothing about. Imagine someone with such a background. He is hypersensitive, distrustful and angry but this brokenness drives him to God and he becomes a Christian. His character improves _significantly_ from where it started, but he may still be less secure and self-disciplined than the person who grew up with a better background and does not recognize their need for God.
 
 So the view that treats Christianity as a moral improvement plan, where we go from nominal belief to fanatical falls short. If we only consider Christianity as a way to live a moral life, those who are fanatics would really be intense moralists. They are really the same as the religious Pharisees in Jesus' day. If instead, we consider what the Bible teaches about how we are sinners saved by grace, then the natural response is not pride at how moral we are, but humility because we see our desperate need for a Savior. As Keller says, those who are considered fanatical are typically "overbearing, self-righteous, opinionated, insensitive and harsh. Why? It's not because they are too Christian, but because they are not Christian enough."
 
@@ -52,19 +52,19 @@ So the view that treats Christianity as a moral improvement plan, where we go fr
 
 > If what you want is an argument against Christianity ... you can easily find some stupid and unsatisfactory Christian and say ... "so, there's your boasted 'new man'! Give me the old kind." But if once you have begun to see that Christianity is on other grounds probable, you will know in your heart that this is only evading the issue. What can you ever really know of other people's souls - of their temptations, their opportunities, their struggles? One soul in the whole creation you do know: and it is the only one whose fate is placed in your hands. If there is a God, you are, in a sense, alone with Him. You cannot put Him off with speculations about your next-door neighbors or memories of what you have read in books. What will all that chatter and hearsay count when the anesthetic fog we call "nature" or "the real world" fades away and the Divine Presence in which you have always stood becomes palpable, immediate, and unavoidable?
 >
-> - C.S. Lewis
+> C.S. Lewis
 
 > [Fanatics are] overbearing, self-righteous, opinionated, insensitive and harsh. Why? It's not because they are too Christian, but because they are not Christian enough.
 >
-> - Tim Keller
+> Tim Keller
 
 > Silence in the face of evil is itself evil: God will not hold us guiltless. Not to speak is to speak. Not to act is to act.
 >
-> - Dietrich Boenhoeffer
+> Dietrich Boenhoeffer
 
 > A private faith that does not act in the face of oppression is no faith at all.
 >
-> - William Wilberforce
+> William Wilberforce
 
 ## The Questions
 
