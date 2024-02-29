@@ -3,11 +3,7 @@ layout: page
 title: About
 ---
 
-I am currently a computer scientist working on the autonomous vehicle at [GM](https://www.gm.com/all-news-stories/technology.html). Prior to this I spent time at [Ford Motor Company](http://www.ford.com/). Before that, I was the data analyst at (now extinct) [Stratos Inc.](https://stratoscard.com/), a startup in Ann Arbor, MI. Going even further back, I was a research scientist at [Michigan Aerospace Corp.](http://www.michiganaerospace.com/), 
-where I worked on applying machine learning algorithms and solving inverse problems. I 
-have also been an adjunct lecturer at [Eastern Michigan University](http://www.emich.edu/math/), 
-where I have taught Intermediate Algebra and Calculus I. Here is a link to my [CV]({{ site.url }}/assets/about/dan_taylor_cv.pdf) or if you prefer a shorter version, you can see my 
-[resume]({{ site.url }}/assets/about/dan_taylor_resume.pdf).
+I am a math guy who has made a career out of applying machine learning to problems in industry and research. Currently I work as a machine learning engineer at [Cavnue](https://www.cavnue.com/) working on the future of roads. Before that, I was a Principal AIML Scientist at [GM](https://www.gm.com/all-news-stories/technology.html) where I focused on building maps from crowd-sourced information. I also spent time at UM Emergency Medicine where I worked on predicting patient outcomes and using AI to read chest X-rays. My [resume]({{ site.url }}/assets/about/dan_taylor_resume.pdf) lists some publications and patents that I have worked on.
 
 This site is a place to host a variety of items, including:
 
