@@ -4,9 +4,9 @@ permalink:        pretty
 # Setup
 title:            Dan Taylor
 tagline:          Math. Data Science. Exposition.
-url:              http://dantaylor688.github.io
+url:              https://dantaylor688.github.io
 paginate:         1
-baseurl:          http://dantaylor688.github.io
+baseurl:          https://dantaylor688.github.io
 author:
   name:           Dan Taylor
   url:            https://twitter.com/dantaylor688
